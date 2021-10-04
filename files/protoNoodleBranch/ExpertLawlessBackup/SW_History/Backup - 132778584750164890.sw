@@ -89,29 +89,4 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,-20,0,0]
-   rotation: [ 0, Random(-90,90), 0]
-   color: [15,15,15,15]
-   njs: 30
-   fake: true
-   interactable: false
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,-20,0,0]
-   rotation: [0, Random(-90,90) , 0]
-   color: [15,0,15,15]
-   njs: 30
-   fake: true
-   interactable: false
 #pre-drop particles
