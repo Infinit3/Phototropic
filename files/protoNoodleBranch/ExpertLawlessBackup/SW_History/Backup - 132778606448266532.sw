@@ -149,6 +149,6 @@ Workspace:ProtoPhonix
 0: AssignPathAnimation
    track:pdParticles
    duration: 1
-   animateDissolve: [1,0],[1,0.3],[0,1]
+   animateDissolve: [1,0],[1,0.6],[0,1]
 
 #pre-drop particles Events--------------------------
