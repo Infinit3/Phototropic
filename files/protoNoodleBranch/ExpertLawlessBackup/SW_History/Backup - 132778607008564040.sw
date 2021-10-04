@@ -78,7 +78,7 @@ Workspace:ProtoPhonix
 0: AssignPathAnimation
    track: intPart
    duration: 16
-   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
+   animateDissolve: [0,0],[1,0.1]
 61: AnimateTrack
    track: intPart
    duration: 1

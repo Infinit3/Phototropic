@@ -15,62 +15,33 @@ Workspace:ProtoPhonix
 0: Import
    Path:ExpertLawless_Old.dat
 
-#intro Pt. 1--------------------------
+
 5: Wall
    repeat: 350
    repeatAddTime: 0.1
    scale: [0.5,0.5,0.5]
-   position: [Random(-20,-3),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
+   position: [Random(-20,20),Random(-50,50),0]
+   rotation: [0,0, { repeat * 2} ]
    njs: 10
    njsOffset: 3
    fake: true
    interactable: false
    color: [10.6,10.6,10.6,1]
    track:intPart
-5: Wall
-   repeat: 350
-   repeatAddTime: 0.1
-   scale: [0.5,0.5,0.5]
-   position: [Random(3,20),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [10.6,10.6,10.6,1]
-   track:intPart
-#intro Pt. 1--------------------------
-
-
-#intro Pt. 2--------------------------
 37: Wall
    repeat: 350
    repeatAddTime: 0.1
    scale: [0.2,0.2,0.2]
-   position: [Random(-20,-3),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
+   position: [Random(-20,20),Random(-50,50),0]
+   rotation: [0,0, { repeat * 2} ]
    njs: 10
    njsOffset: 3
    fake: true
    interactable: false
    color: [10.5,0,10,1]
    track:intPart
-37: Wall
-   repeat: 350
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,0.2]
-   position: [Random(3,20),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [10.5,0,10,1]
-   track:intPart
-#intro Pt. 2--------------------------
 
-#intro Events--------------------------
+
 5: AnimateTrack
    track: intPart
    duration: 16
@@ -78,17 +49,17 @@ Workspace:ProtoPhonix
 0: AssignPathAnimation
    track: intPart
    duration: 16
-   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
+   animateDissolve: [0,0],[1,0.1]
 61: AnimateTrack
    track: intPart
    duration: 1
    animateDissolve: [1,0],[0,0.3]
-#intro Events--------------------------
 
 
 
 
-#pre-drop particles--------------------------
+
+#pre-drop particles
 71: Wall
    duration: -1
    repeat: 1200
@@ -101,7 +72,6 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-   track:pdParticles
 71: Wall
    duration: -1
    repeat: 1200
@@ -114,7 +84,6 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-   track:pdParticles
 
 71: Wall
    duration: -1
@@ -128,7 +97,6 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-   track:pdParticles
 71: Wall
    duration: -1
    repeat: 1200
@@ -141,14 +109,4 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-   track:pdParticles
-#pre-drop particles--------------------------
-
-#pre-drop particles Events--------------------------
-
-0: AssignPathAnimation
-   track:pdParticles
-   duration: 1
-   animateDissolve: [1,0],[1,0.3],[0,1]
-
-#pre-drop particles Events--------------------------
+#pre-drop particles
