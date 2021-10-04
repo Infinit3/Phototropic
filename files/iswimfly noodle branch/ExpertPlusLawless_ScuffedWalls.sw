@@ -192,14 +192,13 @@ var:pink
     duration:0.5
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
-#reddekwallanimationpartend
-
 Workspace:iswimfly
+
 
 309:Wall
     track:Bubbly
     duration:1
-    repeat:300
+    repeat:305
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -210,17 +209,18 @@ Workspace:iswimfly
 309:Wall
     track:Bubbly
     duration:1
-    repeat:300
+    repeat:305
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
     position:[Random(5,10),Random(0,6)]
+    rotation:[0,0,Random(0,359)]
     color:[0.1,1,1,1]
 
 341:Wall
     track:Bubbly
     duration:1
-    repeat:300
+    repeat:320
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -232,7 +232,7 @@ Workspace:iswimfly
 341:Wall
     track:Bubbly
     duration:1
-    repeat:300
+    repeat:320
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
