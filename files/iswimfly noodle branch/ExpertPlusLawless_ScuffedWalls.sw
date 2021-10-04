@@ -194,11 +194,15 @@ var:pink
 
 Workspace:iswimfly
 
+307:AnimateTrack
+    track:Bubbly
+    duration:3
+    animatedissolve:[0,0],[1,1]
 
 309:Wall
     track:Bubbly
     duration:1
-    repeat:305
+    repeat:335
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -209,7 +213,7 @@ Workspace:iswimfly
 309:Wall
     track:Bubbly
     duration:1
-    repeat:305
+    repeat:335
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -217,10 +221,20 @@ Workspace:iswimfly
     rotation:[0,0,Random(0,359)]
     color:[0.1,1,1,1]
 
-341:Wall
+339:AnimateTrack
     track:Bubbly
+    duration:1.5
+    animatedissolve:[1,0],[0,1]
+
+340:AnimateTrack
+    track:Bubbly2
+    duration:2
+    animatedissolve:[0,0],[1,1]
+
+341:Wall
+    track:Bubbly2
     duration:1
-    repeat:320
+    repeat:360
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -230,9 +244,9 @@ Workspace:iswimfly
     color:[1,0.5,0.05,1]
 
 341:Wall
-    track:Bubbly
+    track:Bubbly2
     duration:1
-    repeat:320
+    repeat:360
     repeataddtime:0.1
     NJS:30
     scale:[1,1,2]
@@ -240,3 +254,8 @@ Workspace:iswimfly
     rotation:[0,0,Random(0,359)]
     animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
     color:[1,0.5,0.05,1]
+
+371.5:AnimateTrack
+    track:Bubbly2
+    duration:1.5
+    animatedissolve:[1,0],[0,1]
