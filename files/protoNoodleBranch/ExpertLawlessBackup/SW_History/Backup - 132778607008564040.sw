@@ -77,8 +77,8 @@ Workspace:ProtoPhonix
    animateRotation: [0,0,0,0],[0,0,360,1]
 0: AssignPathAnimation
    track: intPart
-   duration: 1.6
-   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
+   duration: 16
+   animateDissolve: [0,0],[1,0.1]
 61: AnimateTrack
    track: intPart
    duration: 1
@@ -150,9 +150,5 @@ Workspace:ProtoPhonix
    track:pdParticles
    duration: 1
    animateDissolve: [1,0],[1,0.3],[0,1]
-133: AnimateTrack
-   track:pdParticles
-   duration: 1
-   animateDissolve: [1,0],[0,1]
 
 #pre-drop particles Events--------------------------

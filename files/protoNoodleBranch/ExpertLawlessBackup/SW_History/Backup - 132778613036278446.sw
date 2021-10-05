@@ -150,9 +150,5 @@ Workspace:ProtoPhonix
    track:pdParticles
    duration: 1
    animateDissolve: [1,0],[1,0.3],[0,1]
-133: AnimateTrack
-   track:pdParticles
-   duration: 1
-   animateDissolve: [1,0],[0,1]
 
 #pre-drop particles Events--------------------------
