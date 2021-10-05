@@ -162,7 +162,7 @@ Workspace:ProtoPhonix
    definiteDurationBeats: 100
    scale: [5,5,5]
    color: [1,1,1,1]
-   localRotation: [0,0,-7]
+   localRotation: [0,0,-5]
    cutdirection:8
    fake: true
    interactable: false
@@ -181,54 +181,10 @@ Workspace:ProtoPhonix
 165:AnimateTrack
    track:levelupNote
    duration:1
-   repeat: 24
+   repeat: 32
    repeatAddTime: 1
    animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
    animateColor: [1,1,1,1,0],[1,0,0,1,0.4],[1,1,1,1,0.8]
    animateDissolve: [0,0],[1,0.8]
-0:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [0,0]
-189:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [1,0],[0,1]
+
 #levelupNote Events--------------------------
-
-#noteBabies!--------------------------
-
-189: note
-   repeat: 100
-   repeatAddTime: 0.1
-   position: [Random(-10,-20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),10,0]
-   fake: true
-   interactable: false
-   disableNoteLook: true
-   track:noteBabies!
-   njs: 150
-   njsOffset: 2
-189: note
-   repeat: 100
-   repeatAddTime: 0.1
-   position: [Random(10,20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),-10,0]
-   fake: true
-   interactable: false
-   disableNoteLook: true
-   track:noteBabies!
-   njs: 150
-   njsOffset: 2
-
-#noteBabies!--------------------------
-
-#noteBabies! Events--------------------------
-0: AssignPathAnimation
-   track:noteBabies!
-   duration: 1
-   animateDissolveArrow: [0,0]
-   animateDissolve: [0,0],[1,0.5]
-#noteBabies! Events--------------------------

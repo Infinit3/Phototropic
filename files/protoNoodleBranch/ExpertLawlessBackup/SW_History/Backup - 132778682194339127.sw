@@ -201,9 +201,9 @@ Workspace:ProtoPhonix
 189: note
    repeat: 100
    repeatAddTime: 0.1
-   position: [Random(-10,-20),0,0]
+   position: [-10,0,0]
    scale: [5,5,5]
-   rotation: [Random(-90,90),10,0]
+   rotation: [Random(-90,90),0,Random(-90,90)]
    fake: true
    interactable: false
    disableNoteLook: true
@@ -213,9 +213,9 @@ Workspace:ProtoPhonix
 189: note
    repeat: 100
    repeatAddTime: 0.1
-   position: [Random(10,20),0,0]
+   position: [10,0,0]
    scale: [5,5,5]
-   rotation: [Random(-90,90),-10,0]
+   rotation: [Random(-90,90),0,Random(-90,90)]
    fake: true
    interactable: false
    disableNoteLook: true

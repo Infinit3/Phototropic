@@ -201,26 +201,26 @@ Workspace:ProtoPhonix
 189: note
    repeat: 100
    repeatAddTime: 0.1
-   position: [Random(-10,-20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),10,0]
+   position: [-20,0,0]
+   scale: [2,2,2]
+   rotation: [Random(-90,90),0,0]
    fake: true
    interactable: false
    disableNoteLook: true
    track:noteBabies!
-   njs: 150
+   njs: 50
    njsOffset: 2
 189: note
    repeat: 100
    repeatAddTime: 0.1
-   position: [Random(10,20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),-10,0]
+   position: [20,0,0]
+   scale: [2,2,2]
+   rotation: [Random(-90,90),0,0]
    fake: true
    interactable: false
    disableNoteLook: true
    track:noteBabies!
-   njs: 150
+   njs: 50
    njsOffset: 2
 
 #noteBabies!--------------------------
