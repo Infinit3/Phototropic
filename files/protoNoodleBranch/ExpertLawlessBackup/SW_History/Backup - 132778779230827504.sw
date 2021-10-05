@@ -184,6 +184,7 @@ Workspace:ProtoPhonix
    repeat: 24
    repeatAddTime: 1
    animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
+   animateColor: [1,1,1,1,0],[1,0,0,1,0.2],[1,1,1,1,0.6]
    animateDissolve: [0,0],[1,0.8]
    animateDissolveArrow: [0,0],[1,0.8]
 0:AnimateTrack
@@ -199,12 +200,6 @@ Workspace:ProtoPhonix
    duration:1
    animateDissolve: [0,0]
    animateDissolveArrow: [0,0]
-164.6: AnimateTrack
-   track:levelupNote
-   duration: 1
-   repeat: 24
-   repeatAddTime: 1
-   animateColor: [1,0,0,1,0],[1,1,1,1,0.8]
 #levelupNote Events--------------------------
 
 #noteBabies!--------------------------
