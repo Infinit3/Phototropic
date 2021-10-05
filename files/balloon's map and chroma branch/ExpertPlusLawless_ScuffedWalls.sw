@@ -25,9 +25,16 @@ Workspace:EnvRemoval
     active:false
 
 1:Environment
-    id:^TimbalandEnvironment\.\[0]Environment\.\[\d]Buildings$
+    id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingRight$
     lookupmethod:Regex
-    active:false
+    active:true
+    position:[-25,1.2,-3]
+
+1:Environment
+    id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingLeft$
+    lookupmethod:Regex
+    active:true
+    position:[25,1.2,-3]
 
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TopStructure$
@@ -42,7 +49,9 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackMirror$
     lookupmethod:Regex
-    active:false
+    active:true
+    scale:[200,100,100]
+    position:[0,-10,-50]
 
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackConstruction$
@@ -452,7 +461,7 @@ Workspace:ProtoPhonix
    animateRotation: [0,0,0,0],[0,0,360,1]
 0: AssignPathAnimation
    track: intPart
-   duration: 16
+   duration: 1.6
    animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
 61: AnimateTrack
    track: intPart
@@ -525,5 +534,85 @@ Workspace:ProtoPhonix
    track:pdParticles
    duration: 1
    animateDissolve: [1,0],[1,0.3],[0,1]
+133: AnimateTrack
+   track:pdParticles
+   duration: 1
+   animateDissolve: [1,0],[0,1]
 
-#pre-drop particles Events--------------------------
+#levelupNote--------------------------
+
+165: note
+   position: [0,0,0]
+   definiteDurationBeats: 100
+   scale: [5,5,5]
+   color: [1,1,1,1]
+   localRotation: [0,0,-7]
+   cutdirection:8
+   fake: true
+   interactable: false
+   track:levelupNote
+   disableNoteLook: true
+   disableNoteGravity: true
+
+#levelupNote--------------------------
+
+#levelupNote Events--------------------------
+
+165:AssignPathAnimation
+   track:levelupNote
+   duration:1
+   animateDefinitePosition: [0,10,60,0.5]
+165:AnimateTrack
+   track:levelupNote
+   duration:1
+   repeat: 24
+   repeatAddTime: 1
+   animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
+   animateColor: [1,1,1,1,0],[1,0,0,1,0.4],[1,1,1,1,0.8]
+   animateDissolve: [0,0],[1,0.8]
+0:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [0,0]
+189:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [1,0],[0,1]
+#levelupNote Events--------------------------
+
+#noteBabies!--------------------------
+
+189: note
+   repeat: 100
+   repeatAddTime: 0.1
+   position: [Random(-10,-20),0,0]
+   scale: [5,5,5]
+   rotation: [Random(-90,90),10,0]
+   fake: true
+   interactable: false
+   disableNoteLook: true
+   track:noteBabies!
+   njs: 150
+   njsOffset: 2
+189: note
+   repeat: 100
+   repeatAddTime: 0.1
+   position: [Random(10,20),0,0]
+   scale: [5,5,5]
+   rotation: [Random(-90,90),-10,0]
+   fake: true
+   interactable: false
+   disableNoteLook: true
+   track:noteBabies!
+   njs: 150
+   njsOffset: 2
+
+#noteBabies!--------------------------
+
+#noteBabies! Events--------------------------
+0: AssignPathAnimation
+   track:noteBabies!
+   duration: 1
+   animateDissolveArrow: [0,0]
+   animateDissolve: [0,0],[1,0.5]
+#noteBabies! Events--------------------------
