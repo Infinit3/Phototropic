@@ -73,10 +73,68 @@ Workspace:EnvRemoval
     lookupmethod:Regex
     active:false
 
-Workspace:Import
+Workspace:General
 
 0:import
     path:HardLawless.dat
+
+Workspace:raindrops
+
+var:randomX
+    data:Random(-3,-8)
+    recompute:1
+
+var:Y
+    data:0
+
+var:randomZ
+    data:Random(15,5)
+    recompute:1
+
+6.9:modelToWall
+    path:raindropcircle.dae
+    hasanimation:true
+    duration:1.5
+    track:position
+    animateDissolve:[0,0],[1,0.2],[1,0.7],[0,0.8]
+    repeataddtime:4
+    repeat:8
+
+5.4:animateTrack
+    track:position
+    duration:0
+    animateposition:[randomX,Y,randomZ,1]
+    repeat:8
+    repeataddtime:4
+
+workspace:raindrops2
+
+var:randomX2
+    data:Random(3,8)
+    recompute:1
+
+var:Y2
+    data:0
+
+var:randomZ2
+    data:Random(15,5)
+    recompute:1
+
+6.9:modelToWall
+    path:raindropcircle.dae
+    hasanimation:true
+    duration:1.5
+    track:position2
+    animateDissolve:[0,0],[1,0.2],[1,0.7],[0,0.8]
+    repeataddtime:4
+    repeat:8
+
+5.4:animateTrack
+    track:position2
+    duration:0
+    animateposition:[randomX2,Y2,randomZ2,1]
+    repeat:8
+    repeataddtime:4
 
 Workspace:thanksreddek:heart:
 
