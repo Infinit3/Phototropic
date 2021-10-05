@@ -92,7 +92,7 @@ var:randomZ
     recompute:1
 
 6.9:modelToWall
-    path:raindropcircle.dae
+    path:raindrop.dae
     hasanimation:true
     duration:1.5
     track:position
@@ -121,7 +121,7 @@ var:randomZ2
     recompute:1
 
 6.9:modelToWall
-    path:raindropcircle.dae
+    path:raindrop.dae
     hasanimation:true
     duration:1.5
     track:position2
