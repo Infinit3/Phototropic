@@ -152,7 +152,7 @@ Workspace:ProtoPhonix
    animateDissolve: [1,0],[1,0.3],[0,1]
 101: AnimateTrack
    track:pdParticles
-   duration: 0.8
+   duration: 0.5
    animateDissolve: [1,0],[0,1]
 
 #levelupNote--------------------------
