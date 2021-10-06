@@ -262,8 +262,121 @@ var:pink
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
 #reddekwallanimationpartend
-
 Workspace:iswimfly
+
+#CHANGEABLE!
+var:sides
+data:30
+
+var:LMAO
+data:repeat-1
+
+#CHANGEABLE!
+var:xPos
+data:0
+    
+#CHANGEABLE!
+var:yPos
+data:3
+
+var:angles
+data:3.14*2/sides
+
+var:rot
+data:360/sides*repeat
+    
+var:radians
+data:angles*LMAO
+
+#CHANGEABLE!
+var:radius
+data:30
+
+var:width
+data:2*radius*Tan(3.14/sides)
+
+var:height
+data:2
+
+var:sx
+data:xPos+Cos(radians)*radius-width/2
+    
+var:sy
+data:yPos+Sin(radians)*radius-height/2
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,2,0]
+    color:[1,0,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,12,0]
+    color:[1,0.5,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,22,0]
+    color:[1,1,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,32,0]
+    color:[0.2,1,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,42,0]
+    color:[0,0.2,1,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,8]
+    animatedefiniteposition:[0,0,52,0]
+    color:[0.6,0,0.6,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+Workspace:iswimfly2
 
 var:sides
 data:60
