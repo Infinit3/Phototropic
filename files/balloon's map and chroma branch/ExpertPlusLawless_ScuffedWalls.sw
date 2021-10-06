@@ -73,12 +73,321 @@ Workspace:EnvRemoval
     lookupmethod:Regex
     active:false
 
-Workspace:General
+Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN THIS WORKSPACE balloon/noteanim
+
 
 0:import
     path:HardLawless.dat
 
-Workspace:raindrops
+197.5:AppendToAllNotesBetween
+    tobeat:198.7
+    selecttype:1
+    track:bluenotestrobe1
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+197.5:AppendToAllNotesBetween
+    tobeat:198.7
+    selecttype:3
+    track:bluenotestrobe1bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:bluenotestrobe1
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+197:animatetrack
+    track:bluenotestrobe1
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+197.031:animatetrack
+    track:bluenotestrobe1bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e
+
+199.5:AppendToAllNotesBetween
+    tobeat:200.7
+    selecttype:0
+    track:rednotestrobe1
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+199.5:AppendToAllNotesBetween
+    tobeat:200.7
+    selecttype:3
+    track:rednotestrobe1bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe1
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+199:animatetrack
+    track:rednotestrobe1
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+199.031:animatetrack
+    track:rednotestrobe1bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e2
+
+201.5:AppendToAllNotesBetween
+    tobeat:202.7
+    selecttype:1
+    track:bluenotestrobe2
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+201.5:AppendToAllNotesBetween
+    tobeat:202.7
+    selecttype:3
+    track:bluenotestrobe2bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:bluenotestrobe2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+201:animatetrack
+    track:bluenotestrobe2
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+201.031:animatetrack
+    track:bluenotestrobe2bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e3
+
+203.5:AppendToAllNotesBetween
+    tobeat:204.7
+    selecttype:0
+    track:rednotestrobe2
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+203.5:AppendToAllNotesBetween
+    tobeat:204.7
+    selecttype:3
+    track:rednotestrobe2bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+203:animatetrack
+    track:rednotestrobe2
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+203.031:animatetrack
+    track:rednotestrobe2bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e4
+
+205.5:AppendToAllNotesBetween
+    tobeat:206
+    selecttype:0
+    track:rednotestrobe15
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+205.5:AppendToAllNotesBetween
+    tobeat:206
+    selecttype:3
+    track:rednotestrobe15bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe15
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+205:animatetrack
+    track:rednotestrobe15
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+205.031:animatetrack
+    track:rednotestrobe15bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#bombAppear
+
+207.5:AnimateTrack
+    track:bombAppear1
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+207.5:AnimateTrack
+    track:noteAppear1
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+208:AnimateTrack
+    track:bombAppear2
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+208:AnimateTrack
+    track:noteAppear2
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+208.5:AnimateTrack
+    track:bombAppear3
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+208.5:AnimateTrack
+    track:noteAppear3
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+209:AnimateTrack
+    track:bombAppear4
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+209:AnimateTrack
+    track:noteAppear4
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+209.5:AnimateTrack
+    track:bombAppear5
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+209.5:AnimateTrack
+    track:noteAppear5
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+210:AnimateTrack
+    track:bombAppear6
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
+
+210:AnimateTrack
+    track:noteAppear6
+    animateDissolve:[0,0],[1,1]
+    animateDissolveArrow:[0,0],[1,1]
+    duration:0.0001
+
+0:AnimateTrack
+    track:noteAppear1
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+    
+0:AnimateTrack
+    track:noteAppear2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:noteAppear3
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:noteAppear4
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:noteAppear5
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:noteAppear6
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+Workspace:balloon/raindrops
 
 var:randomX
     data:Random(-3,-8)
@@ -626,8 +935,8 @@ Workspace:ProtoPhonix
    repeat: 24
    repeatAddTime: 1
    animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
-   animateColor: [1,1,1,1,0],[1,0,0,1,0.4],[1,1,1,1,0.8]
    animateDissolve: [0,0],[1,0.8]
+   animateDissolveArrow: [0,0],[1,0.8]
 0:AnimateTrack
    track:levelupNote
    duration:1
@@ -636,6 +945,17 @@ Workspace:ProtoPhonix
    track:levelupNote
    duration:1
    animateDissolve: [1,0],[0,1]
+0:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [0,0]
+   animateDissolveArrow: [0,0]
+164.6: AnimateTrack
+   track:levelupNote
+   duration: 1
+   repeat: 24
+   repeatAddTime: 1
+   animateColor: [1,0,0,1,0],[1,1,1,1,0.8]
 #levelupNote Events--------------------------
 
 #noteBabies!--------------------------
@@ -673,4 +993,4 @@ Workspace:ProtoPhonix
    duration: 1
    animateDissolveArrow: [0,0]
    animateDissolve: [0,0],[1,0.5]
-#noteBabies! Events--------------------------
+#noteBabies! Events-------------------------- 
