@@ -33,7 +33,7 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingLeft$
     lookupmethod:Regex
-    active:true
+    active:false
     position:[25,1.2,-3]
 
 1:Environment
@@ -49,7 +49,7 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackMirror$
     lookupmethod:Regex
-    active:true
+    active:false
     scale:[200,100,100]
     position:[0,-10,-50]
 
@@ -287,104 +287,285 @@ Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN TH
 207.5:AnimateTrack
     track:bombAppear1
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 207.5:AnimateTrack
-    track:noteAppear1
+    track:NoteAppear1
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 208:AnimateTrack
     track:bombAppear2
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 208:AnimateTrack
-    track:noteAppear2
+    track:NoteAppear2
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 208.5:AnimateTrack
     track:bombAppear3
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 208.5:AnimateTrack
-    track:noteAppear3
+    track:NoteAppear3
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 209:AnimateTrack
     track:bombAppear4
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 209:AnimateTrack
-    track:noteAppear4
+    track:NoteAppear4
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 209.5:AnimateTrack
     track:bombAppear5
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 209.5:AnimateTrack
-    track:noteAppear5
+    track:NoteAppear5
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 210:AnimateTrack
     track:bombAppear6
     animateDissolve:[1,0],[0,1]
-    duration:0.0001
+    duration:0.2
 
 210:AnimateTrack
-    track:noteAppear6
+    track:NoteAppear6
     animateDissolve:[0,0],[1,1]
     animateDissolveArrow:[0,0],[1,1]
-    duration:0.0001
+    duration:0.2
 
 0:AnimateTrack
-    track:noteAppear1
+    track:NoteAppear1
     animateDissolve:[0,0]
     animateDissolveArrow:[0,0]
     duration:0.1
     
+200:AnimateTrack
+    track:NoteAppear2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+200:AnimateTrack
+    track:NoteAppear3
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+200:AnimateTrack
+    track:NoteAppear4
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+200:AnimateTrack
+    track:NoteAppear5
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+200:AnimateTrack
+    track:NoteAppear6
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+
+
+
+
+#notes on side of strobe red
+
+198:Note
+    njs:45
+    position:[15,-3,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesSidesRight
+    njsOffset:1
+    localrotation:[0,0,45]
+
+198:Note
+    njs:45
+    position:[-15,-3,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesSidesLeft
+    njsOffset:1
+    localrotation:[0,0,-45]
+
+198:Note
+    njs:45
+    position:[0,10,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+
+198:Note
+    njs:45
+    position:[0,-10,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesBottom
+    njsOffset:1
+
+#ANIMATE TRACKS FOR THE ABOVE ------------------
+
 0:AnimateTrack
-    track:noteAppear2
+    track:sideNotesSidesLeft
     animateDissolve:[0,0]
     animateDissolveArrow:[0,0]
     duration:0.1
 
 0:AnimateTrack
-    track:noteAppear3
+    track:sideNotesSidesRight
     animateDissolve:[0,0]
     animateDissolveArrow:[0,0]
     duration:0.1
 
 0:AnimateTrack
-    track:noteAppear4
+    track:sideNotesTop
     animateDissolve:[0,0]
     animateDissolveArrow:[0,0]
     duration:0.1
 
 0:AnimateTrack
-    track:noteAppear5
+    track:sideNotesBottom
     animateDissolve:[0,0]
     animateDissolveArrow:[0,0]
     duration:0.1
 
-0:AnimateTrack
-    track:noteAppear6
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
+197:animateTrack
+    track:sideNotesBottom
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+    
+
+
+197:animateTrack
+    track:sideNotesSidesLeft
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+197:animateTrack
+    track:sideNotesSidesRight
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+197:animateTrack
+    track:sideNotesTop
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+#sideanimation
+
+197:animateTrack
+    track:sideNotesSidesRight
+    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+
+197:animateTrack
+    track:sideNotesSidesLeft
+    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+
+199:animateTrack
+    track:sideNotesSidesRight
+    animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+
+199:animateTrack
+    track:sideNotesSidesLeft
+    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+
+201:animateTrack
+    track:sideNotesSidesRight
+    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+
+201:animateTrack
+    track:sideNotesSidesLeft
+    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+
+203:animateTrack
+    track:sideNotesSidesRight
+    animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+
+203:animateTrack
+    track:sideNotesSidesLeft
+    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+
+205:animateTrack
+    track:sideNotesSidesRight
+    animatePosition:[0,0,0,0],[100,0,0,1,"easeOutQuad"]
+    duration:2
+    animatescale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+
+205:animateTrack
+    track:sideNotesSidesLeft
+    animatePosition:[0,0,0,0],[-100,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+
 
 
 Workspace:balloon/raindrops
