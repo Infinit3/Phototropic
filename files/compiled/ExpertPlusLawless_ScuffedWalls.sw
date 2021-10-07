@@ -262,7 +262,7 @@ var:pink
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
 #reddekwallanimationpartend
-Workspace:iswimfly
+Workspace:iswimflyRainbowRings
 
 #CHANGEABLE!
 var:sides
@@ -310,8 +310,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,2,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,10,0]
     color:[1,0,0,1]
     animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -322,8 +322,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,12,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,20,0]
     color:[1,0.5,0,1]
     animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -334,8 +334,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,22,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,30,0]
     color:[1,1,0,1]
     animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -346,8 +346,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,32,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,40,0]
     color:[0.2,1,0,1]
     animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -358,8 +358,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,42,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,50,0]
     color:[0,0.2,1,1]
     animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -370,8 +370,8 @@ data:yPos+Sin(radians)*radius-height/2
     position:[{sx},{sy}]
     interactable: false
     duration:29
-    scale:[6.5,1,8]
-    animatedefiniteposition:[0,0,52,0]
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,60,0]
     color:[0.6,0,0.6,1]
     animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
     animatedissolve:[1,0],[1,0.9],[0,0.95]
@@ -400,7 +400,7 @@ var:radians
 data:angles*LMAO
 
 var:radius
-data:6
+data:9
 
 var:width
 data:2*radius*Tan(3.14/sides)
@@ -421,7 +421,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,0,0.125],[0,0,0,0.85],[0,0,-10,1]
     color:[100,100,100,1]
 
@@ -432,7 +432,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,5,0.166]
     color:[100,100,100,1]
 
@@ -443,7 +443,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,10,0.25]
     color:[100,100,100,1]
 
@@ -454,7 +454,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,15,0.25]
     color:[100,100,100,1]
 
@@ -465,7 +465,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,20,0.25]
     color:[100,100,100,1]
 
@@ -476,7 +476,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,25,0.25]
     color:[100,100,100,1]
 
@@ -487,7 +487,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,30,0.25]
     color:[100,100,100,1]
 
@@ -499,7 +499,7 @@ data:yPos+Sin(radians)*radius-height/2
 196.1:AnimateTrack
     track:MainDropRing
     duration:1
-    animatescale:[0.75,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
+    animatescale:[1.25,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
     animatedissolve:[1,0],[0,1,"easeInOutCubic"]
 
 307:AnimateTrack

@@ -1,3 +1,5 @@
+
+   
 # ScuffedWalls v1.5.0
 
 # Documentation on functions can be found at
@@ -23,9 +25,16 @@ Workspace:EnvRemoval
     active:false
 
 1:Environment
-    id:^TimbalandEnvironment\.\[0]Environment\.\[\d]Buildings$
+    id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingRight$
     lookupmethod:Regex
-    active:false
+    active:true
+    position:[-25,1.2,-3]
+
+1:Environment
+    id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingLeft$
+    lookupmethod:Regex
+    active:true
+    position:[25,1.2,-3]
 
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TopStructure$
@@ -40,7 +49,9 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackMirror$
     lookupmethod:Regex
-    active:false
+    active:true
+    scale:[200,100,100]
+    position:[0,-10,-50]
 
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackConstruction$
@@ -62,12 +73,70 @@ Workspace:EnvRemoval
     lookupmethod:Regex
     active:false
 
-Workspace:Import
+Workspace:General
 
 0:import
     path:HardLawless.dat
 
-Workspace:Balloon
+Workspace:raindrops
+
+var:randomX
+    data:Random(-3,-8)
+    recompute:1
+
+var:Y
+    data:0
+
+var:randomZ
+    data:Random(15,5)
+    recompute:1
+
+6.9:modelToWall
+    path:raindrop.dae
+    hasanimation:true
+    duration:1.5
+    track:position
+    animateDissolve:[0,0],[1,0.2],[1,0.7],[0,0.8]
+    repeataddtime:4
+    repeat:8
+
+5.4:animateTrack
+    track:position
+    duration:0
+    animateposition:[randomX,Y,randomZ,1]
+    repeat:8
+    repeataddtime:4
+
+workspace:raindrops2
+
+var:randomX2
+    data:Random(3,8)
+    recompute:1
+
+var:Y2
+    data:0
+
+var:randomZ2
+    data:Random(15,5)
+    recompute:1
+
+6.9:modelToWall
+    path:raindrop.dae
+    hasanimation:true
+    duration:1.5
+    track:position2
+    animateDissolve:[0,0],[1,0.2],[1,0.7],[0,0.8]
+    repeataddtime:4
+    repeat:8
+
+5.4:animateTrack
+    track:position2
+    duration:0
+    animateposition:[randomX2,Y2,randomZ2,1]
+    repeat:8
+    repeataddtime:4
+
+Workspace:thanksreddek:heart:
 
 var:purple
     data:0.58823529411,0.16078431372,0.94117647058
@@ -192,7 +261,122 @@ var:pink
     duration:0.5
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
-Workspace:iswimfly
+#reddekwallanimationpartend
+Workspace:iswimflyRainbowRings
+
+#CHANGEABLE!
+var:sides
+data:30
+
+var:LMAO
+data:repeat-1
+
+#CHANGEABLE!
+var:xPos
+data:0
+    
+#CHANGEABLE!
+var:yPos
+data:3
+
+var:angles
+data:3.14*2/sides
+
+var:rot
+data:360/sides*repeat
+    
+var:radians
+data:angles*LMAO
+
+#CHANGEABLE!
+var:radius
+data:30
+
+var:width
+data:2*radius*Tan(3.14/sides)
+
+var:height
+data:2
+
+var:sx
+data:xPos+Cos(radians)*radius-width/2
+    
+var:sy
+data:yPos+Sin(radians)*radius-height/2
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,10,0]
+    color:[1,0,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,20,0]
+    color:[1,0.5,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,30,0]
+    color:[1,1,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,40,0]
+    color:[0.2,1,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,50,0]
+    color:[0,0.2,1,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,60,0]
+    color:[0.6,0,0.6,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+Workspace:iswimfly2
 
 var:sides
 data:60
@@ -216,7 +400,7 @@ var:radians
 data:angles*LMAO
 
 var:radius
-data:6
+data:9
 
 var:width
 data:2*radius*Tan(3.14/sides)
@@ -237,7 +421,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,0,0.125],[0,0,0,0.85],[0,0,-10,1]
     color:[100,100,100,1]
 
@@ -248,7 +432,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,5,0.166]
     color:[100,100,100,1]
 
@@ -259,7 +443,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,10,0.25]
     color:[100,100,100,1]
 
@@ -270,7 +454,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,15,0.25]
     color:[100,100,100,1]
 
@@ -281,7 +465,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,20,0.25]
     color:[100,100,100,1]
 
@@ -292,7 +476,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,25,0.25]
     color:[100,100,100,1]
 
@@ -303,7 +487,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,30,0.25]
     color:[100,100,100,1]
 
@@ -315,7 +499,7 @@ data:yPos+Sin(radians)*radius-height/2
 196.1:AnimateTrack
     track:MainDropRing
     duration:1
-    animatescale:[0.75,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
+    animatescale:[1.25,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
     animatedissolve:[1,0],[0,1,"easeInOutCubic"]
 
 307:AnimateTrack
@@ -386,46 +570,80 @@ data:yPos+Sin(radians)*radius-height/2
 
 Workspace:ProtoPhonix
 
+#intro Pt. 1--------------------------
 5: Wall
    repeat: 350
    repeatAddTime: 0.1
    scale: [0.5,0.5,0.5]
-   position: [Random(-20,20),Random(-50,50),0]
-   rotation: [0,0, { repeat * 2} ]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
    njs: 10
    njsOffset: 3
    fake: true
    interactable: false
    color: [10.6,10.6,10.6,1]
    track:intPart
+5: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.6,10.6,10.6,1]
+   track:intPart
+#intro Pt. 1--------------------------
+
+
+#intro Pt. 2--------------------------
 37: Wall
    repeat: 350
    repeatAddTime: 0.1
    scale: [0.2,0.2,0.2]
-   position: [Random(-20,20),Random(-50,50),0]
-   rotation: [0,0, { repeat * 2} ]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
    njs: 10
    njsOffset: 3
    fake: true
    interactable: false
    color: [10.5,0,10,1]
    track:intPart
+37: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.5,0,10,1]
+   track:intPart
+#intro Pt. 2--------------------------
 
-
+#intro Events--------------------------
 5: AnimateTrack
    track: intPart
    duration: 16
    animateRotation: [0,0,0,0],[0,0,360,1]
 0: AssignPathAnimation
    track: intPart
-   duration: 16
-   animateDissolve: [0,0],[1,0.1]
+   duration: 1.6
+   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
 61: AnimateTrack
    track: intPart
    duration: 1
    animateDissolve: [1,0],[0,0.3]
+#intro Events--------------------------
 
-#pre-drop particles
+
+
+
+#pre-drop particles--------------------------
 71: Wall
    duration: -1
    repeat: 1200
@@ -438,6 +656,7 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
+   track:pdParticles
 71: Wall
    duration: -1
    repeat: 1200
@@ -450,6 +669,7 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
+   track:pdParticles
 
 71: Wall
    duration: -1
@@ -463,6 +683,7 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
+   track:pdParticles
 71: Wall
    duration: -1
    repeat: 1200
@@ -475,4 +696,94 @@ Workspace:ProtoPhonix
    njs: 30
    fake: true
    interactable: false
-#pre-drop particles
+   track:pdParticles
+#pre-drop particles--------------------------
+
+#pre-drop particles Events--------------------------
+
+0: AssignPathAnimation
+   track:pdParticles
+   duration: 1
+   animateDissolve: [1,0],[1,0.3],[0,1]
+133: AnimateTrack
+   track:pdParticles
+   duration: 1
+   animateDissolve: [1,0],[0,1]
+
+#levelupNote--------------------------
+
+165: note
+   position: [0,0,0]
+   definiteDurationBeats: 100
+   scale: [5,5,5]
+   color: [1,1,1,1]
+   localRotation: [0,0,-7]
+   cutdirection:8
+   fake: true
+   interactable: false
+   track:levelupNote
+   disableNoteLook: true
+   disableNoteGravity: true
+
+#levelupNote--------------------------
+
+#levelupNote Events--------------------------
+
+165:AssignPathAnimation
+   track:levelupNote
+   duration:1
+   animateDefinitePosition: [0,10,60,0.5]
+165:AnimateTrack
+   track:levelupNote
+   duration:1
+   repeat: 24
+   repeatAddTime: 1
+   animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
+   animateColor: [1,1,1,1,0],[1,0,0,1,0.4],[1,1,1,1,0.8]
+   animateDissolve: [0,0],[1,0.8]
+0:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [0,0]
+189:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [1,0],[0,1]
+#levelupNote Events--------------------------
+
+#noteBabies!--------------------------
+
+189: note
+   repeat: 100
+   repeatAddTime: 0.1
+   position: [Random(-10,-20),0,0]
+   scale: [5,5,5]
+   rotation: [Random(-90,90),10,0]
+   fake: true
+   interactable: false
+   disableNoteLook: true
+   track:noteBabies!
+   njs: 150
+   njsOffset: 2
+189: note
+   repeat: 100
+   repeatAddTime: 0.1
+   position: [Random(10,20),0,0]
+   scale: [5,5,5]
+   rotation: [Random(-90,90),-10,0]
+   fake: true
+   interactable: false
+   disableNoteLook: true
+   track:noteBabies!
+   njs: 150
+   njsOffset: 2
+
+#noteBabies!--------------------------
+
+#noteBabies! Events--------------------------
+0: AssignPathAnimation
+   track:noteBabies!
+   duration: 1
+   animateDissolveArrow: [0,0]
+   animateDissolve: [0,0],[1,0.5]
+#noteBabies! Events--------------------------
