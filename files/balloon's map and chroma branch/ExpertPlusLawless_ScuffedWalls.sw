@@ -1137,6 +1137,8 @@ var:pink
     repeataddtime:1
     Color:[0.58823529411,0.16078431372,0.94117647058,1]
 
+
+
 #reddekwallanimationpartstart
 
 430:animateTrack
@@ -1195,6 +1197,7 @@ var:pink
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
 #reddekwallanimationpartend
+
 
 #reddek wall background
 
@@ -1260,13 +1263,125 @@ var:pink
 
 #animations
 
-1:animateTrack
+0:animateTrack
     track:VROOM
     duration:8
     animateDissolve:[0,0],[0,0.955],[1,1]
 
+1:animateTrack
+    track:VROOM
+    duration:8
+    animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5],[0,0,-270,0.75],[0,0,0,1]
+
+9:animateTrack
+    track:VROOM
+    duration:8
+    animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5],[0,0,-270,0.75],[0,0,0,1]
+
+17:animateTrack
+    track:VROOM
+    duration:8
+    animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5],[0,0,-270,0.75],[0,0,0,1]
+
 
 #reddek wall background end
+
+Workspace:Balloon/shapes
+
+#CHANGEABLE!
+var:sides
+data:3
+
+var:LMAO
+data:repeat-1
+
+#CHANGEABLE!
+var:xPos
+data:11
+    
+#CHANGEABLE!
+var:yPos
+data:3
+
+var:angles
+data:3.14*2/sides
+
+var:rot
+data:360/sides*repeat
+    
+var:radians
+data:angles*LMAO
+
+#CHANGEABLE!
+var:radius
+data:8
+
+var:width
+data:2*radius*Tan(3.14/sides)
+
+var:height
+data:2
+
+var:sx
+data:xPos+Cos(radians)*radius-width/2
+    
+var:sy
+data:yPos+Sin(radians)*radius-height/2
+
+224.6:Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:10
+    scale:[0.5,0.02173913043,0.02173913043]
+    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
+    color:[0.071,0.961,0.937,2]
+    track:triangleScale1
+    njs:1
+
+223:AnimateTrack
+    track:triangleScale1
+    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
+    animateDissolve:[1,0],[0,1]
+    duration:1
+
+225.6:Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:10
+    scale:[0.5,0.02173913043,0.02173913043]
+    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
+    color:[0.071,0.961,0.937,2]
+    track:triangleScale2
+    njs:1
+
+224:AnimateTrack
+    track:triangleScale2
+    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
+    animateDissolve:[1,0],[0,1]
+    duration:1
+
+227.1:Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:10
+    scale:[0.5,0.02173913043,0.02173913043]
+    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
+    color:[0.071,0.961,0.937,2]
+    track:triangleScale3
+    njs:1
+
+224.5:AnimateTrack
+    track:triangleScale3
+    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
+    animateDissolve:[1,0],[0,1]
+    duration:1
+
 
 Workspace:iswimfly
 
