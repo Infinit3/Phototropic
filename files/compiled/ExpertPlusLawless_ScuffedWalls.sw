@@ -33,7 +33,7 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingLeft$
     lookupmethod:Regex
-    active:false
+    active:true
     position:[25,1.2,-3]
 
 1:Environment
@@ -49,7 +49,7 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackMirror$
     lookupmethod:Regex
-    active:false
+    active:true
     scale:[200,100,100]
     position:[0,-10,-50]
 
@@ -73,502 +73,12 @@ Workspace:EnvRemoval
     lookupmethod:Regex
     active:false
 
-Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN THIS WORKSPACE balloon/noteanim
-
+Workspace:General
 
 0:import
     path:HardLawless.dat
 
-197.5:AppendToAllNotesBetween
-    tobeat:198.7
-    selecttype:1
-    track:bluenotestrobe1
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-197.5:AppendToAllNotesBetween
-    tobeat:198.7
-    selecttype:3
-    track:bluenotestrobe1bombs
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-0:animatetrack
-    track:bluenotestrobe1
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-197:animatetrack
-    track:bluenotestrobe1
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-197.031:animatetrack
-    track:bluenotestrobe1bombs
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-#e
-
-199.5:AppendToAllNotesBetween
-    tobeat:200.7
-    selecttype:0
-    track:rednotestrobe1
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-199.5:AppendToAllNotesBetween
-    tobeat:200.7
-    selecttype:3
-    track:rednotestrobe1bombs
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-0:animatetrack
-    track:rednotestrobe1
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-199:animatetrack
-    track:rednotestrobe1
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-199.031:animatetrack
-    track:rednotestrobe1bombs
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-#e2
-
-201.5:AppendToAllNotesBetween
-    tobeat:202.7
-    selecttype:1
-    track:bluenotestrobe2
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-201.5:AppendToAllNotesBetween
-    tobeat:202.7
-    selecttype:3
-    track:bluenotestrobe2bombs
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-0:animatetrack
-    track:bluenotestrobe2
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-201:animatetrack
-    track:bluenotestrobe2
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-201.031:animatetrack
-    track:bluenotestrobe2bombs
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-#e3
-
-203.5:AppendToAllNotesBetween
-    tobeat:204.7
-    selecttype:0
-    track:rednotestrobe2
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-203.5:AppendToAllNotesBetween
-    tobeat:204.7
-    selecttype:3
-    track:rednotestrobe2bombs
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-0:animatetrack
-    track:rednotestrobe2
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-203:animatetrack
-    track:rednotestrobe2
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-203.031:animatetrack
-    track:rednotestrobe2bombs
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-#e4
-
-205.5:AppendToAllNotesBetween
-    tobeat:206
-    selecttype:0
-    track:rednotestrobe15
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-205.5:AppendToAllNotesBetween
-    tobeat:206
-    selecttype:3
-    track:rednotestrobe15bombs
-    interactable:false
-    fake:true
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-
-0:animatetrack
-    track:rednotestrobe15
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-205:animatetrack
-    track:rednotestrobe15
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-205.031:animatetrack
-    track:rednotestrobe15bombs
-    animateDissolve:[1,0],[0,0.5],[1,1]
-    animateDissolveArrow:[1,0],[0,0.5],[1,1]
-    duration:0.062
-    repeat:23
-    repeatAddTime:0.062
-
-#bombAppear
-
-207.5:AnimateTrack
-    track:bombAppear1
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-207.5:AnimateTrack
-    track:NoteAppear1
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-208:AnimateTrack
-    track:bombAppear2
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-208:AnimateTrack
-    track:NoteAppear2
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-208.5:AnimateTrack
-    track:bombAppear3
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-208.5:AnimateTrack
-    track:NoteAppear3
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-209:AnimateTrack
-    track:bombAppear4
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-209:AnimateTrack
-    track:NoteAppear4
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-209.5:AnimateTrack
-    track:bombAppear5
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-209.5:AnimateTrack
-    track:NoteAppear5
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-210:AnimateTrack
-    track:bombAppear6
-    animateDissolve:[1,0],[0,1]
-    duration:0.2
-
-210:AnimateTrack
-    track:NoteAppear6
-    animateDissolve:[0,0],[1,1]
-    animateDissolveArrow:[0,0],[1,1]
-    duration:0.2
-
-0:AnimateTrack
-    track:NoteAppear1
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-    
-200:AnimateTrack
-    track:NoteAppear2
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-200:AnimateTrack
-    track:NoteAppear3
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-200:AnimateTrack
-    track:NoteAppear4
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-200:AnimateTrack
-    track:NoteAppear5
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-200:AnimateTrack
-    track:NoteAppear6
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-
-
-
-
-
-#notes on side of strobe red
-
-198:Note
-    njs:45
-    position:[15,-3,0]
-    repeat:45
-    repeataddtime:0.2
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-    animatescale:[15,15,10,1]
-    interactable:false
-    fake:true
-    disablenotegravity:true
-    disablespawneffect:true
-    DisableNoteLook:true
-    track:sideNotesSidesRight
-    njsOffset:1
-    localrotation:[0,0,45]
-
-198:Note
-    njs:45
-    position:[-15,-3,0]
-    repeat:45
-    repeataddtime:0.2
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-    animatescale:[15,15,10,1]
-    interactable:false
-    fake:true
-    disablenotegravity:true
-    disablespawneffect:true
-    DisableNoteLook:true
-    track:sideNotesSidesLeft
-    njsOffset:1
-    localrotation:[0,0,-45]
-
-198:Note
-    njs:45
-    position:[0,10,0]
-    repeat:45
-    repeataddtime:0.2
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-    animatescale:[15,15,10,1]
-    interactable:false
-    fake:true
-    disablenotegravity:true
-    disablespawneffect:true
-    DisableNoteLook:true
-    track:sideNotesTop
-    njsOffset:1
-    localrotation:[0,0,180]
-
-198:Note
-    njs:45
-    position:[0,-10,0]
-    repeat:45
-    repeataddtime:0.2
-    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
-    animatescale:[15,15,10,1]
-    interactable:false
-    fake:true
-    disablenotegravity:true
-    disablespawneffect:true
-    DisableNoteLook:true
-    track:sideNotesBottom
-    njsOffset:1
-
-#ANIMATE TRACKS FOR THE ABOVE ------------------
-
-0:AnimateTrack
-    track:sideNotesSidesLeft
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-0:AnimateTrack
-    track:sideNotesSidesRight
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-0:AnimateTrack
-    track:sideNotesTop
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-0:AnimateTrack
-    track:sideNotesBottom
-    animateDissolve:[0,0]
-    animateDissolveArrow:[0,0]
-    duration:0.1
-
-197:animateTrack
-    track:sideNotesBottom
-    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
-    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
-    duration:2
-    
-
-
-197:animateTrack
-    track:sideNotesSidesLeft
-    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
-    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
-    duration:2
-
-197:animateTrack
-    track:sideNotesSidesRight
-    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
-    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
-    duration:2
-
-197:animateTrack
-    track:sideNotesTop
-    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
-    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
-    duration:2
-
-#sideanimation
-
-197:animateTrack
-    track:sideNotesSidesRight
-    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
-    duration:2
-    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
-
-197:animateTrack
-    track:sideNotesSidesLeft
-    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
-    duration:2
-    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
-
-199:animateTrack
-    track:sideNotesSidesRight
-    animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
-    duration:2
-
-199:animateTrack
-    track:sideNotesSidesLeft
-    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
-    duration:2
-
-201:animateTrack
-    track:sideNotesSidesRight
-    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
-    duration:2
-    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
-
-201:animateTrack
-    track:sideNotesSidesLeft
-    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
-    duration:2
-    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
-
-203:animateTrack
-    track:sideNotesSidesRight
-    animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
-    duration:2
-
-203:animateTrack
-    track:sideNotesSidesLeft
-    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
-    duration:2
-
-205:animateTrack
-    track:sideNotesSidesRight
-    animatePosition:[0,0,0,0],[100,0,0,1,"easeOutQuad"]
-    duration:2
-    animatescale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
-
-205:animateTrack
-    track:sideNotesSidesLeft
-    animatePosition:[0,0,0,0],[-100,0,0,1,"easeOutQuad"]
-    duration:2
-    animateScale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
-
-
-
-Workspace:balloon/raindrops
+Workspace:raindrops
 
 var:randomX
     data:Random(-3,-8)
@@ -752,8 +262,121 @@ var:pink
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
 #reddekwallanimationpartend
+Workspace:iswimflyRainbowRings
 
-Workspace:iswimfly
+#CHANGEABLE!
+var:sides
+data:30
+
+var:LMAO
+data:repeat-1
+
+#CHANGEABLE!
+var:xPos
+data:0
+    
+#CHANGEABLE!
+var:yPos
+data:3
+
+var:angles
+data:3.14*2/sides
+
+var:rot
+data:360/sides*repeat
+    
+var:radians
+data:angles*LMAO
+
+#CHANGEABLE!
+var:radius
+data:30
+
+var:width
+data:2*radius*Tan(3.14/sides)
+
+var:height
+data:2
+
+var:sx
+data:xPos+Cos(radians)*radius-width/2
+    
+var:sy
+data:yPos+Sin(radians)*radius-height/2
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,10,0]
+    color:[1,0,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,20,0]
+    color:[1,0.5,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,30,0]
+    color:[1,1,0,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,40,0]
+    color:[0.2,1,0,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,50,0]
+    color:[0,0.2,1,1]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+104.6: Wall
+    repeat:{sides+1}
+    localrotation:[0,0,{33.8+rot}]
+    position:[{sx},{sy}]
+    interactable: false
+    duration:29
+    scale:[6.5,1,10]
+    animatedefiniteposition:[0,0,60,0]
+    color:[0.6,0,0.6,1]
+    animaterotation:[0,0,360,0],[0,0,270,0.25],[0,0,180,0.5],[0,0,90,0.75],[0,0,0,1]
+    animatedissolve:[1,0],[1,0.9],[0,0.95]
+
+Workspace:iswimfly2
 
 var:sides
 data:60
@@ -777,7 +400,7 @@ var:radians
 data:angles*LMAO
 
 var:radius
-data:6
+data:9
 
 var:width
 data:2*radius*Tan(3.14/sides)
@@ -798,7 +421,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,0,0.125],[0,0,0,0.85],[0,0,-10,1]
     color:[100,100,100,1]
 
@@ -809,7 +432,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,5,0.166]
     color:[100,100,100,1]
 
@@ -820,7 +443,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,10,0.25]
     color:[100,100,100,1]
 
@@ -831,7 +454,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,15,0.25]
     color:[100,100,100,1]
 
@@ -842,7 +465,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,20,0.25]
     color:[100,100,100,1]
 
@@ -853,7 +476,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,25,0.25]
     color:[100,100,100,1]
 
@@ -864,7 +487,7 @@ data:yPos+Sin(radians)*radius-height/2
     localrotation:[0,0,{33.8+rot}]
     position:[{sx},{sy}]
     interactable: false
-    scale:[0.75,0.75,1]
+    scale:[1.25,0.75,1]
     animatedefiniteposition:[0,0,30,0],[0,0,30,0.25]
     color:[100,100,100,1]
 
@@ -876,7 +499,7 @@ data:yPos+Sin(radians)*radius-height/2
 196.1:AnimateTrack
     track:MainDropRing
     duration:1
-    animatescale:[0.75,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
+    animatescale:[1.25,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
     animatedissolve:[1,0],[0,1,"easeInOutCubic"]
 
 307:AnimateTrack
@@ -1116,8 +739,8 @@ Workspace:ProtoPhonix
    repeat: 24
    repeatAddTime: 1
    animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
+   animateColor: [1,1,1,1,0],[1,0,0,1,0.4],[1,1,1,1,0.8]
    animateDissolve: [0,0],[1,0.8]
-   animateDissolveArrow: [0,0],[1,0.8]
 0:AnimateTrack
    track:levelupNote
    duration:1
@@ -1126,17 +749,6 @@ Workspace:ProtoPhonix
    track:levelupNote
    duration:1
    animateDissolve: [1,0],[0,1]
-0:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [0,0]
-   animateDissolveArrow: [0,0]
-164.6: AnimateTrack
-   track:levelupNote
-   duration: 1
-   repeat: 24
-   repeatAddTime: 1
-   animateColor: [1,0,0,1,0],[1,1,1,1,0.8]
 #levelupNote Events--------------------------
 
 #noteBabies!--------------------------
@@ -1174,4 +786,4 @@ Workspace:ProtoPhonix
    duration: 1
    animateDissolveArrow: [0,0]
    animateDissolve: [0,0],[1,0.5]
-#noteBabies! Events-------------------------- 
+#noteBabies! Events--------------------------
