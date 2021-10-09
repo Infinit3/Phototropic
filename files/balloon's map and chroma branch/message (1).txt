@@ -1,0 +1,132 @@
+It's a stupid long way to do it but: 
+
+```js
+
+for (let i = 0; i < 40; i++) {
+	_obstacles.push({
+		_time: 132-HJD+1*i,
+		_duration: 2,
+		_lineIndex: 0,
+		_type: 0,
+		_width: 0,
+		_customData:{
+			_noteJumpStartBeatOffset: 4,
+			_noteJumpMovementSpeed: 40,
+			_interactable: false,
+			_disableSpawnEffect: true,
+			_track: "VROOM",
+			_scale: [0.20,0.025,0.80],
+			_position: [0,16,16],
+			_animation: {
+				_scale: [[200,20,700,0]],
+				_rotation: [[0,0,0,0]],
+				_dissolve: [[0,0],[1,0.1],[1,0.6],[0,0.7]]
+			}
+		}
+	},{
+		_time: 132-HJD+1*i,
+		_duration: 2,
+		_lineIndex: 0,
+		_type: 0,
+		_width: 0,
+		_customData:{
+			_noteJumpStartBeatOffset: 4,
+			_noteJumpMovementSpeed: 40,
+			_interactable: false,
+			_disableSpawnEffect: true,
+			_track: "VROOM",
+			_scale: [0.20,0.025,0.80],
+			_position: [0,16,16],
+			_animation: {
+				_scale: [[200,20,700,0]],
+				_rotation: [[0,0,90,0]],
+				_dissolve: [[0,0],[1,0.1],[1,0.6],[0,0.7]]
+			}
+		}
+	},{
+		_time: 132-HJD+1*i,
+		_duration: 2,
+		_lineIndex: 0,
+		_type: 0,
+		_width: 0,
+		_customData:{
+			_noteJumpStartBeatOffset: 4,
+			_noteJumpMovementSpeed: 40,
+			_interactable: false,
+			_disableSpawnEffect: true,
+			_track: "VROOM",
+			_scale: [0.20,0.025,0.80],
+			_position: [0,16,16],
+			_animation: {
+				_scale: [[200,20,700,0]],
+				_rotation: [[0,0,180,0]],
+				_dissolve: [[0,0],[1,0.1],[1,0.6],[0,0.7]]
+			}
+		}
+	},{
+		_time: 132-HJD+1*i,
+		_duration: 2,
+		_lineIndex: 0,
+		_type: 0,
+		_width: 0,
+		_customData:{
+			_noteJumpStartBeatOffset: 4,
+			_noteJumpMovementSpeed: 40,
+			_interactable: false,
+			_disableSpawnEffect: true,
+			_track: "VROOM",
+			_scale: [0.20,0.025,0.80],
+			_position: [0,16,16],
+			_animation: {
+				_scale: [[200,20,700,0]],
+				_rotation: [[0,0,270,0]],
+				_dissolve: [[0,0],[1,0.1],[1,0.6],[0,0.7]]
+			}
+		}
+	})
+
+	_customEvents.push({
+		_time: 132-8,
+		_type: "AnimateTrack",
+		_data:{
+			_track: "VROOM",
+			_duration: 8,
+			_dissolve: [[0,0],[0,0.955],[1,1]]
+		}
+	})
+
+	for (let a = 0; a < 4; a++) {
+		_customEvents.push({
+			_time: 132+8*a,
+			_type: "AnimateTrack",
+			_data:{
+				_track: "VROOM",
+				_duration: 8,
+				_color: "Rainbow"
+			}
+		})
+	}
+
+	for (let a = 0; a < 3; a++) {
+		_customEvents.push({
+			_time: 132+16*a,
+			_type: "AnimateTrack",
+			_data:{
+				_track: "VROOM",
+				_duration: 16,
+				_rotation: "spinAroundZneg"
+			}
+		})
+	}
+
+	_customEvents.push({
+		_time: 164,
+		_type: "AnimateTrack",
+		_data:{
+			_track: "VROOM",
+			_duration: 2,
+			_dissolve: [[1,0],[0,0.95]]
+		}
+	})
+}
+```

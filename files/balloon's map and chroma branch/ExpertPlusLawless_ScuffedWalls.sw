@@ -27,7 +27,7 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingRight$
     lookupmethod:Regex
-    active:true
+    active:false
     position:[-25,1.2,-3]
 
 1:Environment
@@ -512,61 +512,504 @@ Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN TH
 
 197:animateTrack
     track:sideNotesSidesRight
-    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
+    animatePosition:[0,0,0,0],[-3,0,0,1,"easeOutQuad"]
     duration:2
     animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
 
 197:animateTrack
     track:sideNotesSidesLeft
-    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
+    animatePosition:[0,0,0,0],[3,0,0,1,"easeOutQuad"]
     duration:2
     animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-45,0],[0,0,-90,1]
 
 199:animateTrack
     track:sideNotesSidesRight
     animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
     duration:2
+    animateLocalRotation:[0,0,90,0],[0,0,45,1]
 
 199:animateTrack
     track:sideNotesSidesLeft
-    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    animatePosition:[3,0,0,0],[0,0,0,1,"easeOutQuad"]
     duration:2
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
 
 201:animateTrack
     track:sideNotesSidesRight
-    animatePosition:[0,0,0,0],[-4,0,0,1,"easeOutQuad"]
+    animatePosition:[0,0,0,0],[-3,0,0,1,"easeOutQuad"]
     duration:2
     animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
 
 201:animateTrack
     track:sideNotesSidesLeft
-    animatePosition:[0,0,0,0],[4,0,0,1,"easeOutQuad"]
+    animatePosition:[0,0,0,0],[3,0,0,1,"easeOutQuad"]
     duration:2
     animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-45,0],[0,0,-90,1]
 
 203:animateTrack
     track:sideNotesSidesRight
-    animatePosition:[-4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    animatePosition:[-3,0,0,0],[0,0,0,1,"easeOutQuad"]
     duration:2
+    animateLocalRotation:[0,0,90,0],[0,0,45,1]
 
 203:animateTrack
     track:sideNotesSidesLeft
-    animatePosition:[4,0,0,0],[0,0,0,1,"easeOutQuad"]
+    animatePosition:[3,0,0,0],[0,0,0,1,"easeOutQuad"]
     duration:2
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
 
 205:animateTrack
     track:sideNotesSidesRight
     animatePosition:[0,0,0,0],[100,0,0,1,"easeOutQuad"]
     duration:2
     animatescale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
 
 205:animateTrack
     track:sideNotesSidesLeft
     animatePosition:[0,0,0,0],[-100,0,0,1,"easeOutQuad"]
     duration:2
     animateScale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-45,0],[0,0,-90,1]
+
+#bomb scatter
+
+211:animateTrack
+    track:bomb1
+    duration:1.5
+    animatePosition:[0,0,0,0],[-7,7,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+211:animateTrack
+    track:bomb2
+    duration:1.5
+    animatePosition:[0,0,0,0],[-3,5,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+211:animateTrack
+    track:bomb3
+    duration:1.5
+    animatePosition:[0,0,0,0],[0,-2,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+211:animateTrack
+    track:bomb4
+    duration:1.5
+    animatePosition:[0,0,0,0],[3,4,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+211:animateTrack
+    track:bomb5
+    duration:1.5
+    animatePosition:[0,0,0,0],[7,7,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+211:animateTrack
+    track:bomb7
+    duration:1.5
+    animatePosition:[0,0,0,0],[10,10,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+#start e, my beloved
+
+213.5:AppendToAllNotesBetween
+    tobeat:214.7
+    selecttype:1
+    track:bluenotestrobe10
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+213.5:AppendToAllNotesBetween
+    tobeat:214.7
+    selecttype:3
+    track:bluenotestrobe10bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:bluenotestrobe10
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
 
 
+213:animatetrack
+    track:bluenotestrobe10
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+213.031:animatetrack
+    track:bluenotestrobe10bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e
+
+215.5:AppendToAllNotesBetween
+    tobeat:216.7
+    selecttype:0
+    track:rednotestrobe10
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+215.5:AppendToAllNotesBetween
+    tobeat:216.7
+    selecttype:3
+    track:rednotestrobe10bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe10
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+215:animatetrack
+    track:rednotestrobe10
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+215.031:animatetrack
+    track:rednotestrobe10bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e2
+
+217.5:AppendToAllNotesBetween
+    tobeat:218.7
+    selecttype:1
+    track:bluenotestrobe20
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+217.5:AppendToAllNotesBetween
+    tobeat:218.7
+    selecttype:3
+    track:bluenotestrobe20bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:bluenotestrobe20
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+217:animatetrack
+    track:bluenotestrobe20
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+217.031:animatetrack
+    track:bluenotestrobe2bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e3
+
+219.5:AppendToAllNotesBetween
+    tobeat:220.7
+    selecttype:0
+    track:rednotestrobe20
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+219.5:AppendToAllNotesBetween
+    tobeat:220.7
+    selecttype:3
+    track:rednotestrobe20bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe20
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+219:animatetrack
+    track:rednotestrobe20
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+219.031:animatetrack
+    track:rednotestrobe20bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#e4
+
+221.25:AppendToAllNotesBetween
+    tobeat:221.7
+    selecttype:1
+    track:rednotestrobe150
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+221.25:AppendToAllNotesBetween
+    tobeat:221.7
+    selecttype:3
+    track:rednotestrobe150bombs
+    interactable:false
+    fake:true
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+
+0:animatetrack
+    track:rednotestrobe150
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+
+221:animatetrack
+    track:rednotestrobe150
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+221.031:animatetrack
+    track:rednotestrobe150bombs
+    animateDissolve:[1,0],[0,0.5],[1,1]
+    animateDissolveArrow:[1,0],[0,0.5],[1,1]
+    duration:0.062
+    repeat:23
+    repeatAddTime:0.062
+
+#notes on side of strobe red
+
+214:Note
+    njs:45
+    position:[15,-3,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesSidesRight2
+    njsOffset:1
+    localrotation:[0,0,45]
+
+214:Note
+    njs:45
+    position:[-15,-3,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesSidesLeft2
+    njsOffset:1
+    localrotation:[0,0,-45]
+
+214:Note
+    njs:45
+    position:[0,10,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesTop2
+    njsOffset:1
+    localrotation:[0,0,180]
+
+214:Note
+    njs:45
+    position:[0,-10,0]
+    repeat:45
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0)]
+    animatescale:[15,15,10,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    track:sideNotesBottom2
+    njsOffset:1
+
+#ANIMATE TRACKS FOR THE ABOVE ------------------
+
+0:AnimateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[3,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
+
+0:AnimateTrack
+    track:sideNotesSidesRight2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:sideNotesTop2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+0:AnimateTrack
+    track:sideNotesBottom2
+    animateDissolve:[0,0]
+    animateDissolveArrow:[0,0]
+    duration:0.1
+
+210:animateTrack
+    track:sideNotesBottom2
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+    
+
+
+213:animateTrack
+    track:sideNotesSidesLeft2
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+213:animateTrack
+    track:sideNotesSidesRight2
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+213:animateTrack
+    track:sideNotesTop2
+    animateDissolve:[0,0],[0.5,1,"easeOutExpo"]
+    animateDissolveArrow:[0,0],[0.7,1,"easeOutExpo"]
+    duration:2
+
+#sideanimation
+
+213:animateTrack
+    track:sideNotesSidesRight2
+    animatePosition:[0,0,0,0],[-3,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
+
+213:animateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[0,0,0,0],[3,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-45,0],[0,0,-90,1]
+    
+
+215:animateTrack
+    track:sideNotesSidesRight2
+    animatePosition:[-3,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+    animateLocalRotation:[0,0,90,0],[0,0,45,1]
+
+215:animateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[3,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
+
+217:animateTrack
+    track:sideNotesSidesRight2
+    animatePosition:[0,0,0,0],[-3,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
+
+217:animateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[0,0,0,0],[3,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[1.1,1.1,1,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
+
+219:animateTrack
+    track:sideNotesSidesRight2
+    animatePosition:[-3,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+    animateLocalRotation:[0,0,90,0],[0,0,45,1]
+
+219:animateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[3,0,0,0],[0,0,0,1,"easeOutQuad"]
+    duration:2
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
+
+221:animateTrack
+    track:sideNotesSidesRight2
+    animatePosition:[0,0,0,0],[100,0,0,1,"easeOutQuad"]
+    duration:2
+    animatescale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,45,0],[0,0,90,1]
+
+221:animateTrack
+    track:sideNotesSidesLeft2
+    animatePosition:[0,0,0,0],[-100,0,0,1,"easeOutQuad"]
+    duration:2
+    animateScale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
+    animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
 
 Workspace:balloon/raindrops
 
@@ -752,6 +1195,78 @@ var:pink
     animateScale:[1,1,1,0],[2,1,2,1,"easeOutExpo"]
 
 #reddekwallanimationpartend
+
+#reddek wall background
+
+1:wall
+    duration:2
+    njsOFfset:4
+    NJS:40
+    repeat:100
+    repeatAddTime:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    animatescale:[200,20,700,0]
+    animaterotation:[0,0,0,0]
+    position:[0,16,16]
+    animateDissolve:[0,0],[1,0.1],[1,0.6],[0,0.7]
+    track:VROOM
+
+1:wall
+    duration:2
+    njsOFfset:4
+    NJS:40
+    repeat:100
+    repeatAddTime:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    animatescale:[200,20,700,0]
+    animaterotation:[0,0,90,0]
+    position:[0,16,16]
+    animateDissolve:[0,0],[1,0.1],[1,0.6],[0,0.7]
+    track:VROOM
+
+1:wall
+    duration:2
+    njsOFfset:4
+    NJS:40
+    repeat:100
+    repeatAddTime:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    animatescale:[200,20,700,0]
+    animaterotation:[0,0,180,0]
+    position:[0,16,16]
+    animateDissolve:[0,0],[1,0.1],[1,0.6],[0,0.7]
+    track:VROOM
+
+1:wall
+    duration:2
+    njsOFfset:4
+    NJS:40
+    repeat:100
+    repeatAddTime:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    animatescale:[200,20,700,0]
+    animaterotation:[0,0,270,0]
+    position:[0,16,16]
+    animateDissolve:[0,0],[1,0.1],[1,0.6],[0,0.7]
+    track:VROOM
+
+#animations
+
+1:animateTrack
+    track:VROOM
+    duration:8
+    animateDissolve:[0,0],[0,0.955],[1,1]
+
+
+#reddek wall background end
 
 Workspace:iswimfly
 

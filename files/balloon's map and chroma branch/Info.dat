@@ -81,6 +81,16 @@
                 "_screenDisplacementEffectsEnabled": true
               }
             },
+            "_colorLeft": {
+              "r": 0.588,
+              "g": 0.16,
+              "b": 0.941
+            },
+            "_colorRight": {
+              "r": 0.259,
+              "g": 0.655,
+              "b": 0.639
+            },
             "_suggestions": []
           }
         }
