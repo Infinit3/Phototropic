@@ -177,7 +177,7 @@ Workspace:ProtoPhonix
 165:AssignPathAnimation
    track:levelupNote
    duration:1
-   animateDefinitePosition: [0,5,60,0.5]
+   animateDefinitePosition: [0,10,60,0.5]
 165:AnimateTrack
    track:levelupNote
    duration:1
