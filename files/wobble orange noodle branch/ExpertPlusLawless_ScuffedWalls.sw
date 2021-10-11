@@ -480,8 +480,9 @@ animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
     repeataddtime:0.1
     #NJS:30
     #scale:[1,1,2]
-    position:[Random(-10,-5),Random(0,6)]
-    rotation:[0,0,Random(0,359)]
+    position:[Random(-10,-6),Random(-2,8)]
+    #rotation:[0,0,Random(0,359)]
+    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
     color:[0.1,1,1,1]
 
 309:modelToWall
@@ -493,8 +494,9 @@ animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
     repeataddtime:0.1
     #NJS:30
     #scale:[1,1,2]
-    position:[Random(5,10),Random(0,6)]
-    rotation:[0,0,Random(0,359)]
+    position:[Random(6,10),Random(-2,8)]
+    #rotation:[0,0,Random(0,359)]
+    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
     color:[0,1,0,1]
 
 339:AnimateTrack
@@ -507,33 +509,217 @@ animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
     duration:2
     animatedissolve:[0,0],[1,1]
 
-341:modelToWall
-    track:Bubbly2
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:360
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(-10,-5),0]
-    #rotation:[0,0,Random(0,359)]
-    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-    color:[1,0.5,0.05,1]
+# -- over
+341:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+343.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+346:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+348.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+351:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+353.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+356:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+358.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+361:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+363.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+366:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+368.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+371:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
 
-341:modelToWall
-    track:Bubbly2
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:360
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(10,5),0]
-    #rotation:[0,0,Random(0,359)]
-    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-    color:[1,0.5,0.05,1]
+# -- under
+341:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+343.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+346:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+348.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+351:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+353.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+356:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+358.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+361:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+363.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+366:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+368.5:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
+371:modeltowall
+  path:triangle.dae
+  normal:true
+  color:[1,0.5,0.05,1]
+  repeat:26
+  repeataddtime:0.1
+  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
+  deltarotation:[Random(-60,60),Random(-30,30),0]
 
 371.5:AnimateTrack
     track:Bubbly2
