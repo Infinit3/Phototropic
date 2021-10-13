@@ -459,7 +459,27 @@ animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
 
-# --- 
+
+# -- notes come out of impossible triangle
+
+
+307:ModeltoWall
+path:impossible.dae
+duration:65
+thicc:12
+position:[0,0]
+animateposition:[-2,1,35,0]
+ #animaterotation:[0,0,90,0],[0,0,180,0.25],[0,0,270,0.5],[0,0,360,0.75],[0,0,270,1]
+animatecolor:[Random(0.1,0.8),Random(0.1,0.8),Random(0.1,0.8),1,0],[Random(0.1,0.8),Random(0.1,0.8),Random(0.1,0.8),1,0.25],[Random(0.1,0.8),Random(0.1,0.8),Random(0.1,0.8),0.5,0],[Random(0.1,0.8),Random(0.1,0.8),Random(0.1,0.8),1,1]
+
+
+
+307:AppendToAllNotesBetween
+tobeat:373
+AnimatePosition:[0,6,0,0.05],[0,-0.3,0,0.1],[0,0,0,0.15]
+AnimateScale:[1,1,1,0.05],[1,1,1,0.08],[1.45,0.55,1.45,0.12],[1,1,1,0.15]
+NJSOffset:1
+
 
 
 
