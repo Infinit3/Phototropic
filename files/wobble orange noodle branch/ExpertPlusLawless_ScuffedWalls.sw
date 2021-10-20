@@ -1022,7 +1022,7 @@ var:randomX
     recompute:1
 
 var:Y
-    data:0
+    data:-1.5
 
 var:randomZ
     data:Random(15,5)
@@ -1051,7 +1051,7 @@ var:randomX2
     recompute:1
 
 var:Y2
-    data:0
+    data:-1.5
 
 var:randomZ2
     data:Random(15,5)
@@ -2272,7 +2272,81 @@ Workspace:ProtoPhonix
 
 #pre-drop particles Events--------------------------
 
+# -- test at 535 565
 
+#intro Pt. 1--------------------------
+537: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+537: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+#intro Pt. 1--------------------------
+
+
+#intro Pt. 2--------------------------
+565: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+565: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+#intro Pt. 2--------------------------
+
+#intro Events--------------------------
+#535: AnimateTrack
+#   track: intPart
+#   duration: 16
+#   animateRotation: [0,0,0,0],[0,0,360,1]
+#0: AssignPathAnimation
+#   track: intPart
+#   duration: 1.6
+#   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
+#555: AnimateTrack
+#   track: intPart
+#   duration: 10
+#   animaterotation: [0,0,0,0],[0,0,900,1]
+#intro Events--------------------------
 
 #levelupNote--------------------------
 
@@ -2391,9 +2465,29 @@ position:[0,0]
 animateposition:[-2,0,2,0]
 animaterotation:[0,180,0,0]
 
+# -- water
+
+0:Wall
+duration:60
+position:[0,0]
+scale:[30,0.1,60]
+animatedefiniteposition:[-15,-2,-5,0]
+color:[0,0,0.1,-100]
+interactable:false
+fake:false
+animatedissolve:[0.2,0],[0.3,0.4],[0.8,0.95],[0,1]
+
+0:Wall
+duration:60
+position:[0,0]
+scale:[30,0.1,60]
+animatedefiniteposition:[-15,-2.1,-6,0]
+color:[0,0,0.1,-1]
+interactable:false
+fake:false
+animatedissolve:[0.2,0],[0.4,0.95],[0,1]
 
 # -- rain part 1
-
 
 1:ModeltoWall
 path:somecloud.dae
@@ -2418,7 +2512,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[{(-2+repeat/2)},5,8,0]
+animateposition:[{(-2+repeat/2)},4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 4:ModeltoWall
@@ -2431,7 +2525,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[0,5,12,0]
+animateposition:[0,4,12,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 6:ModeltoWall
@@ -2444,7 +2538,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[{(3-repeat/2)},5,14,0]
+animateposition:[{(3-repeat/2)},4,14,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2565,7 +2659,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[-2,5,8,0]
+animateposition:[-2,4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 35:ModeltoWall
@@ -2578,7 +2672,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[0,5,4,0]
+animateposition:[0,4,4,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 36:ModeltoWall
@@ -2591,7 +2685,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[2,5,8,0]
+animateposition:[2,4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2605,7 +2699,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[-1,5,12,0]
+animateposition:[-1,4,12,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 37:ModeltoWall
@@ -2618,7 +2712,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[-3,5,12,0]
+animateposition:[-3,4,12,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 37.5:ModeltoWall
@@ -2631,7 +2725,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[2,5,10,0]
+animateposition:[2,4,10,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2646,7 +2740,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[3,5,14,0]
+animateposition:[3,4,14,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2660,7 +2754,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[3,5,8,0]
+animateposition:[3,4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 38:ModeltoWall
@@ -2673,7 +2767,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[1,5,14,0]
+animateposition:[1,4,14,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 38.5:ModeltoWall
@@ -2686,7 +2780,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[1,5,14,0]
+animateposition:[1,4,14,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2704,7 +2798,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[2,5,16,0]
+animateposition:[2,4,16,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 3.55:ModeltoWall
@@ -2717,7 +2811,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[3,5,14,0]
+animateposition:[3,4,14,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 36:ModeltoWall
@@ -2730,7 +2824,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[-3,5,12,0]
+animateposition:[-3,4,12,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2744,7 +2838,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[1,5,18,0]
+animateposition:[1,4,18,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 37:ModeltoWall
@@ -2757,7 +2851,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[3,5,12,0]
+animateposition:[3,4,12,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 37.5:ModeltoWall
@@ -2770,7 +2864,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[2,5,8,0]
+animateposition:[2,4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2785,7 +2879,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[{(-3+repeat)},5,7,0]
+animateposition:[{(-3+repeat)},4,7,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -2799,7 +2893,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[3,5,6,0]
+animateposition:[3,4,6,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 39.5:ModeltoWall
@@ -2812,7 +2906,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[-1,5,8,0]
+animateposition:[-1,4,8,0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 38.5:ModeltoWall
@@ -2825,7 +2919,7 @@ normal:false
 thicc:12
 alpha:0.5
 position:[0,0]
-animateposition:[{(3-repeat)},5,{(2+repeat)},0]
+animateposition:[{(3-repeat)},4,{(2+repeat)},0]
 animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
@@ -3069,36 +3163,65 @@ animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,0.5],[0,0,2700,0.75],[0,0,360
 color:bleh
 
 
+105:Wall
+duration:1
+repeat:32
+repeataddtime:0.04
+scale:[1,112]
+position:[Random(-10,-5),5]
+animatePosition:[0,0,20,0]
+rotation:[0,0,Random(0,359)]
+animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,0.5],[0,0,2700,0.75],[0,0,3600,1]
+color:bleh
+
+
 109:Wall
 duration:0.5
 repeat:12
 repeataddtime:0.02
 scale:[1,80]
 position:[Random(-10,-5),5]
+animatePosition:[0,0,20,0]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,5],[0,40,270,0.75],[0,50,360,1]
-color:blah
-
-111:Wall
-duration:0.5
-repeat:12
-repeataddtime:0.02
-scale:[1,80]
-position:[Random(-10,-5),5]
-rotation:[0,0,Random(0,359)]
-animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,5],[0,0,2700,0.75],[0,0,3600,1]
 color:bleh
 
-113:Wall
-duration:0.5
-repeat:12
-repeataddtime:0.02
-scale:[1,80]
+
+# -- testing
+
+125:Wall
+duration:1
+repeat:32
+repeataddtime:0.04
+scale:[2,0.1,4]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
-animaterotation:[0,0,0,0],[0,0,-900,0.25],[0,0,-1800,5],[0,0,-2700,0.75],[0,0,-3600,1]
-color:blah
+animatePosition:[0,0,20,0],[0,0,40,1]
+animaterotation:[20,0,0,0],[20,0,900,0.25],[20,0,1800,0.5],[20,0,2700,0.75],[20,0,3600,1]
+color:[0.2,0.1,0.6,1000]
 
+135:Wall
+duration:1
+repeat:24
+repeataddtime:0.08
+scale:[5,5,4]
+position:[-5,15]
+rotation:[0,0,Random(0,359)]
+animatePosition:[0,0,20,0],[0,0,40,1]
+animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,-90,0.5],[0,90,-90,0.75],[360,-90,-90,1]
+color:[0.2,0.1,0.6,1000]
+
+
+145:Wall
+duration:1
+repeat:32
+repeataddtime:0.04
+scale:[80,6]
+position:[-12,2]
+#rotation:[0,0,Random(0,359)]
+animatePosition:[0,0,20,0],[0,0,40,1]
+animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+color:[0.2,0.1,0.6,1000]
 
 
 
