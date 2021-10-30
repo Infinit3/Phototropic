@@ -1433,819 +1433,6 @@ data:yPos+Sin(radians)*radius-height/2
 
 # -- spinning triangles ----------------
 
-307:AnimateTrack
-    track:Bubbly
-    duration:3
-    animatedissolve:[0,0],[1,1]
-
-309:modelToWall
-    track:Bubbly
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:335
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(-10,-6),Random(-2,8)]
-    #rotation:[0,0,Random(0,359)]
-    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
-    color:[0.1,1,1,1]
-
-309:modelToWall
-    track:Bubbly
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:335
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(6,10),Random(-2,8)]
-    #rotation:[0,0,Random(0,359)]
-    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
-    color:[0,1,0,1]
-
-339:AnimateTrack
-    track:Bubbly
-    duration:1.5
-    animatedissolve:[1,0],[0,1]
-
-340:AnimateTrack
-    track:Bubbly2
-    duration:2
-    animatedissolve:[0,0],[1,1]
-
-# -- over
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-# -- under
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-# -- over
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-346:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-348.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-356:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-358.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-366:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-368.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.625)+(Random(-0.5,0.5))},{(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-# -- under
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-346:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-348.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-356:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-358.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-366:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-368.5:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:26
-  repeataddtime:0.1
-  position:[{(8-repeat/1.625)+(Random(-0.5,0.5))},{-(Sin(repeat/8)*12)+(Random(-0.5,0.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-# -- over
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-# -- under
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-
-371.5:AnimateTrack
-    track:Bubbly2
-    duration:1.5
-    animatedissolve:[1,0],[0,1]
-
-
 
 
 Workspace:ProtoPhonix
@@ -2271,6 +1458,8 @@ Workspace:ProtoPhonix
 #pre-drop particles--------------------------
 
 #pre-drop particles Events--------------------------
+
+
 
 # -- test at 535 565
 
@@ -2347,6 +1536,14 @@ Workspace:ProtoPhonix
 #   duration: 10
 #   animaterotation: [0,0,0,0],[0,0,900,1]
 #intro Events--------------------------
+
+
+
+
+
+
+
+
 
 #levelupNote--------------------------
 
@@ -2442,488 +1639,6 @@ Workspace:ProtoPhonix
 
 Workspace:wobble
 
-#wrong way, no peepo separate for different alpha
-1:ModeltoWall
-path:wrongway.dae
-duration:590
-interactable:false
-normal:false
-thicc:12
-alpha:0.2
-position:[0,0]
-animateposition:[-2,0,2,0]
-animaterotation:[0,180,0,0]
-
-1:ModeltoWall
-path:nopeepo.dae
-duration:590
-interactable:false
-normal:false
-thicc:12
-alpha:0.1
-position:[0,0]
-animateposition:[-2,0,2,0]
-animaterotation:[0,180,0,0]
-
-# -- water
-
-0:Wall
-duration:60
-position:[0,0]
-scale:[30,0.1,60]
-animatedefiniteposition:[-15,-2,-5,0]
-color:[0,0,0.1,-100]
-interactable:false
-fake:false
-animatedissolve:[0.2,0],[0.3,0.4],[0.8,0.95],[0,1]
-
-0:Wall
-duration:60
-position:[0,0]
-scale:[30,0.1,60]
-animatedefiniteposition:[-15,-2.1,-6,0]
-color:[0,0,0.1,-1]
-interactable:false
-fake:false
-animatedissolve:[0.2,0],[0.4,0.95],[0,1]
-
-# -- rain part 1
-
-1:ModeltoWall
-path:somecloud.dae
-duration:67
-interactable:false
-normal:false
-hasanimation:true
-thicc:12
-alpha:0.2
-position:[0,6]
-#animateposition:[0,7,0,0]
-animatedissolve:[0,0],[0.4,0.1],[0.4,0.9],[0,1]
-
-
-2:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:12
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(-2+repeat/2)},4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-4:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:12
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[0,4,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-6:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:10
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(3-repeat/2)},4,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# -- rain part 2
-
-
-33:ModeltoWall
-path:fullcloud.dae
-duration:30
-interactable:false
-normal:false
-hasanimation:true
-thicc:12
-alpha:0.2
-position:[0,6]
-#animateposition:[0,7,0,0]
-animatedissolve:[0,0],[0.4,0.15],[0.4,0.9],[0,1]
-
-33:ModeltoWall
-path:sun2.dae
-duration:30
-interactable:false
-normal:false
-hasanimation:true
-thicc:12
-alpha:0.6
-position:[0,0]
-animateposition:[0,0,15,0]
-animatedissolve:[0,0],[1,0.5],[1,0.9],[0,1]
-
-
-
-
-34:ModeltoWall
-path:umbrella.dae
-duration:27
-interactable:false
-normal:false
-thicc:12
-alpha:0.2
-position:[0,0]
-#animateposition:[-2,0,2,0]
-#animaterotation:[0,0,0,0],[0,179,0,1]
-animatedissolve:[0,0],[1,0.1],[1,0.95],[0,1]
-
-# -- umbrella drops
-
-35:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-110+repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-35:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-130+repeat*10)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-30-repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-20+repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# -- random drops
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-2,4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[0,4,4,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-1,4,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-3,4,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,4,10,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,4,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-39:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,4,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,4,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# --- more small drop
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,4,16,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-3.55:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,4,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-3,4,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-36.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,4,18,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,4,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(-3+repeat)},4,7,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-39:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,4,6,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-39.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-1,4,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(3-repeat)},4,{(2+repeat)},0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
 
 
 # -- spinny blocks
@@ -2935,6 +1650,8 @@ data:[0.2,0.6,0.6,-100]
 
 var:blah
 data:[0.2,0.6,0.6,100]
+
+
 
 71:Wall
 duration:1
@@ -3139,7 +1856,7 @@ rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,900,0.25],[0,20,1800,0.5],[0,-20,270,0.75],[0,20,0,1]
 color:bleh
 
-
+# -- dbldbldblo
 101:Wall
 duration:3
 repeat:72
@@ -3155,40 +1872,65 @@ color:[Random(0,1),0,Random(0,1),0.3]
 105:Wall
 duration:1
 repeat:32
-repeataddtime:0.04
-scale:[1,112]
+#repeataddtime:0.04
+NJS:12
+scale:[1,15]
+animateScale:[1,1,1,0.8],[0.1,0.1,0.1,1]
 position:[Random(-10,-5),5]
-rotation:[0,0,Random(0,359)]
-animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,0.5],[0,0,2700,0.75],[0,0,3600,1]
-color:bleh
-
-
-105:Wall
-duration:1
-repeat:32
-repeataddtime:0.04
-scale:[1,112]
-position:[Random(-10,-5),5]
-animatePosition:[0,0,20,0]
+animatePosition:[0,0,20,0],[0,-10,40,1]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,0.5],[0,0,2700,0.75],[0,0,3600,1]
 color:bleh
 
 
 109:Wall
-duration:0.5
-repeat:12
-repeataddtime:0.02
-scale:[1,80]
-position:[Random(-10,-5),5]
-animatePosition:[0,0,20,0]
-rotation:[0,0,Random(0,359)]
-animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,5],[0,40,270,0.75],[0,50,360,1]
+duration:3
+repeat:24
+#repeataddtime:0.02
+NJS:12
+scale:[1,40]
+animateScale:[1,1,1,0.9],[2,2,2,1,"easeStep"]
+position:[1,6]
+animatePosition:[0,0,20,0],[0,10,40,0.75],[0,10,60,1]
+rotation:[0,0,{repeat*(360/24)}]
+animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,360,1]
 color:bleh
+animateDissolve:[1,0.90],[0,1]
 
 
-# -- testing
+113:Wall
+duration:3
+repeat:24
+#repeataddtime:0.02
+NJS:12
+scale:[1,40]
+position:[1,6]
+animatePosition:[0,0,20,0],[0,10,40,0.75],[0,10,60,1]
+rotation:[0,0,{repeat*(360/24)}]
+animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,360,1]
+color:bleh
+animateDissolve:[1,0.7],[0,1]
 
+
+
+
+
+117:Wall
+duration:14
+repeat:32
+#repeataddtime:0.06
+NJS:12
+scale:[0.1,0.1]
+animateScale:[10,10,10,0]
+position:[{0+repeat/2},10]
+animatePosition:[0,0,-20,0],[0,0,60,1]
+rotation:[0,0,{(repeat-1)*(360/32)}]
+animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+#color:[{0.1+repeat/20},0,{0.4+repeat/10},-10]
+color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
+animateLocalRotation:[0,0,30,0]
+
+# -- flat discs
 125:Wall
 duration:1
 repeat:32
@@ -3200,30 +1942,373 @@ animatePosition:[0,0,20,0],[0,0,40,1]
 animaterotation:[20,0,0,0],[20,0,900,0.25],[20,0,1800,0.5],[20,0,2700,0.75],[20,0,3600,1]
 color:[0.2,0.1,0.6,1000]
 
+
+
+
+
 135:Wall
-duration:1
-repeat:24
-repeataddtime:0.08
-scale:[5,5,4]
-position:[-5,15]
-rotation:[0,0,Random(0,359)]
-animatePosition:[0,0,20,0],[0,0,40,1]
-animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,-90,0.5],[0,90,-90,0.75],[360,-90,-90,1]
-color:[0.2,0.1,0.6,1000]
-
-
-145:Wall
-duration:1
+duration:4
 repeat:32
-repeataddtime:0.04
-scale:[80,6]
-position:[-12,2]
-#rotation:[0,0,Random(0,359)]
+#repeataddtime:0.04
+NJS:12
+scale:[0.1,0.2]
+animateScale:[10,10,10,0]
+position:[{0+repeat/3},10]
+animatePosition:[0,0,20,0],[0,0,60,1]
+rotation:[0,0,{repeat*(360/32)}]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+color:[0,0,1,-10]
+animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
+#,[0,-20,180,0.5],[0,-20,180,0.75],[0,-20,180,1]
+
+
+142:Wall
+duration:2
+repeat:32
+#repeataddtime:0.04
+NJS:12
+scale:[0.1,2]
+animateScale:[10,10,10,0]
+position:[{2+repeat/3},16]
+animatePosition:[0,0,20,0],[0,0,60,1]
+rotation:[0,0,{repeat+1*(360/32)}]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+color:[0,1,0.4,-10]
+animateLocalRotation:[0,-20,0,0],[0,20,90,0.25]
+#,[0,-20,180,0.5],[0,-20,180,0.75],[0,-20,180,1]
+
+
+
+
+
+
+148:Wall
+duration:4
+repeat:32
+#repeataddtime:0.04
+NJS:12
+scale:[0.1,2]
+animateScale:[10,10,10,0]
+position:[{2+repeat/3},10]
 animatePosition:[0,0,20,0],[0,0,40,1]
-animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
-color:[0.2,0.1,0.6,1000]
+rotation:[{repeat*(360/32)},0,0]
+#animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+animaterotation:[0,-90,0,0]
+color:[0.4,0.2,1,-100]
+animateLocalRotation:[0,180,0,0],[0,270,0,0.5],[0,360,0,0.75],[0,90,0,1]
+#animateLocalRotation:[0,-90,0,0],[0,-90,0,0.25]
+#,[0,-20,180,0.5],[0,-20,180,0.75],[0,-20,180,1]
+
 
 
 
 # -- end spinny blocks
+
+
+
+
+
+
+
+
+workspace: growblocks
+
+var:blockR_Y
+data:Random(6,8)
+recompute:1
+
+var:blockR_Z
+data:Random(4,60)
+recompute:1
+
+# -- grow blocks
+
+# -- grow blocks inline
+
+#2
+374:Wall
+track:biiig
+duration:60
+repeat:10
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.4,0.4,0.4]
+position:[-8,-8]
+#Rotation:[0,Random(-60,5),0]
+animatedefinitePosition:[0,8,{70-repeat*8},0],[0,-0.5,{70-repeat*8},0.05,"easeStep"]
+color:[{0.2+repeat/100},0.1,{0.9-repeat/100},1]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+# 3
+374:Wall
+track:biiig2
+duration:60
+repeat:10
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.4,0.4,0.4]
+position:[8,8]
+animateLocalRotation:[0,0,90,0]
+#Rotation:[0,Random(-5,60),0]
+animatedefinitePosition:[0,8,{70-repeat*8},0],[0,-0.5,{70-repeat*8},0.05,"easeStep"]
+color:[{0.2+repeat/100},0.1,{0.9-repeat/100},1]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+# 4
+374:Wall
+track:biiig
+duration:60
+repeat:6
+repeataddtime:1
+interactable:false
+fake:true
+scale:[0.4,0.4,0.4]
+position:[-8,8]
+animateLocalRotation:[0,0,180,0]
+#Rotation:[0,Random(-60,5),0]
+animatedefinitePosition:[0,8,{70-repeat*16},0],[0,-0.5,{70-repeat*16},0.05,"easeStep"]
+color:[{0.2+repeat/100},0.1,{0.9-repeat/100},1]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+# 1
+374:Wall
+track:biiig2
+duration:60
+repeat:6
+repeataddtime:1
+interactable:false
+fake:true
+scale:[0.4,0.4,0.4]
+position:[8,-8]
+#Rotation:[0,Random(-5,60),0]
+animatedefinitePosition:[0,8,{70-repeat*16},0],[0,-0.5,{70-repeat*16},0.05,"easeStep"]
+color:[{0.2+repeat/100},0.1,{0.9-repeat/100},1]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+
+
+
+
+
+
+374:Wall
+track:looong1
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.3,0.38,70]
+position:[8,-8]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+color:[0.8,0,0.3,-100]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+374:Wall
+track:looong2
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.38,0.38,70]
+position:[-8,-8]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+color:[0.8,0,0.3,-100]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+374:Wall
+track:looong3
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.38,0.38,70]
+position:[8,8]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+animateLocalRotation:[0,0,90,0]
+color:[0.8,0,0.3,-100]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+374:Wall
+track:looong4
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.38,0.38,70]
+position:[-8,8]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+animateLocalRotation:[0,0,180,0]
+color:[0.8,0,0.4,-100]
+animateDissolve:[0,0],[1,0.05,"easeStep"]
+
+
+
+405:animateTrack
+track:biiig
+duration:8
+animateScale:[1.5,1.5,1.5,0],[2,2,2,0.25,"easeStep"],[3,3,3,0.5,"easeStep"],[2,2,2,0.75,"easeStep"],[4,4,4,1,"easeStep"]
+
+413:animateTrack
+track:biiig
+duration:4
+animateScale:[4,4,4,0],[6,6,6,0.25,"easeStep"],[8,8,8,0.5,"easeStep"],[4,4,4,0.75,"easeStep"],[6,6,6,1,"easeStep"]
+
+417:animateTrack
+track:biiig
+duration:12
+animateScale:[6,6,6,0,"easeStep"],[8,8,8,0.0833,"easeStep"],[11,11,11,0.1666,"easeStep"],[5,5,5,0.2499,"easeStep"],[8,8,8,0.3332,"easeStep"],[11,11,11,0.4165,"easeStep"],[14,14,14,0.4998,"easeStep"],[10,10,10,0.5831,"easeStep"],[12,12,12,0.6664,"easeStep"],[14,14,14,0.7497,"easeStep"],[16,16,16,0.833,"easeStep"],[18,18,18,0.9163,"easeStep"],[20,20,20,0.9996,"easeStep"],[22,22,22,1,"easeStep"]
+animateDissolve:[1,0.25],[0.2,0.5]
+#,[1,0.166666666666667],[0.6,0.25],[1,0.333333333333333],[0.6,0.416666666666667],[1,0.5],[0.6,0.583333333333333],[1,0.666666666666667],[0.6,0.75],[1,0.833333333333333],[0.2,0.916666666666667]
+
+
+
+
+
+405:animateTrack
+track:biiig2
+duration:8
+animateScale:[1.5,1.5,1.5,0],[2,2,2,0.25,"easeStep"],[3,3,3,0.5,"easeStep"],[2,2,2,0.75,"easeStep"],[4,4,4,1,"easeStep"]
+
+413:animateTrack
+track:biiig2
+duration:4
+animateScale:[4,4,4,0],[6,6,6,0.25,"easeStep"],[8,8,8,0.5,"easeStep"],[4,4,4,0.75,"easeStep"],[6,6,6,1,"easeStep"]
+
+417:animateTrack
+track:biiig2
+duration:12
+animateScale:[6,6,6,0,"easeStep"],[8,8,8,0.0833,"easeStep"],[11,11,11,0.1666,"easeStep"],[5,5,5,0.2499,"easeStep"],[8,8,8,0.3332,"easeStep"],[11,11,11,0.4165,"easeStep"],[14,14,14,0.4998,"easeStep"],[10,10,10,0.5831,"easeStep"],[12,12,12,0.6664,"easeStep"],[14,14,14,0.7497,"easeStep"],[16,16,16,0.833,"easeStep"],[18,18,18,0.9163,"easeStep"],[20,20,20,0.9996,"easeStep"],[22,22,22,1,"easeStep"]
+animateDissolve:[1,0.25],[0.2,0.5]
+#,[1,0.166666666666667],[0.6,0.25],[1,0.333333333333333],[0.6,0.416666666666667],[1,0.5],[0.6,0.583333333333333],[1,0.666666666666667],[0.6,0.75],[1,0.833333333333333],[0.2,0.916666666666667]
+
+
+
+405:animateTrack
+track:looong1
+duration:8
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatedefinitePosition:[0,0,0,0],[0,8,0,1]
+
+405:animateTrack
+track:looong2
+duration:8
+animateScale:[1.5,1,1,0],[2,1,1,0.25,"easeStep"],[6,1,1,0.5,"easeStep"],[12,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
+animatePosition:[0,0,0,0],[8,0,0,1]
+
+405:animateTrack
+track:looong3
+duration:8
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatedefinitePosition:[8,0,0,0],[0,0,0,1]
+
+405:animateTrack
+track:looong4
+duration:8
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatedefinitePosition:[0,0,0,0],[0,8,0,1]
+
+
+
+
+
+417:animateTrack
+track:looong1
+duration:12
+
+animateDissolve:[1,0.25],[0.6,0.5]
+
+417:animateTrack
+track:looong2
+duration:12
+
+animateDissolve:[1,0.25],[0.6,0.5]
+
+417:animateTrack
+track:looong3
+duration:12
+
+animateDissolve:[1,0.25],[0.6,0.5]
+
+417:animateTrack
+track:looong4
+duration:12
+
+animateDissolve:[1,0.25],[0.6,0.5]
+
+
+
+
+
+423:animateTrack
+track:biiig
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+423:animateTrack
+track:biiig2
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+
+423:animateTrack
+track:looong1
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+423:animateTrack
+track:looong2
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+423:animateTrack
+track:looong3
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+423:animateTrack
+track:looong4
+duration:12
+animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,360,1]
+
+
+
+
+
+
+
+434:animateTrack
+track:biiig
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+434:animateTrack
+track:biiig2
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+434:animateTrack
+track:looong1
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+434:animateTrack
+track:looong2
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+434:animateTrack
+track:looong3
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+434:animateTrack
+track:looong4
+duration:1
+animateDissolve:[0.8,0],[0,1]
+
+
+
+
 
