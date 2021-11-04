@@ -27,13 +27,13 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingRight$
     lookupmethod:Regex
-    active:false
+    active:true
     position:[-25,1.2,-3]
 
 1:Environment
     id:^TimbalandEnvironment\.\[\d]Environment\.\[\d]Buildings\.\[\d]NearBuildingLeft$
     lookupmethod:Regex
-    active:false
+    active:true
     position:[25,1.2,-3]
 
 1:Environment
@@ -49,9 +49,9 @@ Workspace:EnvRemoval
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackMirror$
     lookupmethod:Regex
-    active:false
+    active:true
     scale:[200,100,100]
-    position:[0,-10,-50]
+    position:[100,-10,-50]
 
 1:Environment
     id:^TimbalandEnvironment\.\[0]Environment\.\[\d]TrackConstruction$
@@ -73,13 +73,88 @@ Workspace:EnvRemoval
     lookupmethod:Regex
     active:false
 
-Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN THIS WORKSPACE balloon/noteanim
 
+Workspace:iswimflywobble
+
+var:TOTAL
+data:32
+
+# -- loooong
+
+118:Wall
+duration:14
+repeat:16
+NJS:12
+scale:[4,0.1]
+animateScale:[10,10,10,0]
+position:[5,10]
+animatePosition:[0,0,-20,0],[0,0,60,1]
+rotation:[0,0,{repeat*(360/16)}]
+animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
+animateLocalRotation:[0,0,30,0]
+animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
+
+# Post-Drop
+
+132.6:Wall
+duration:8
+repeat:32
+#NJS:12
+scale:[0.1,2]
+animateScale:[10,10,10,0]
+position:[{0+repeat/3},10]
+animatePosition:[0,0,40,0],[0,0,60,1]
+rotation:[0,0,{repeat*(360/TOTAL)}]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+animatecolor:[0.1,0,0,-10,0],[0.3,0,0,-10,1]
+animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
+animatedissolve:[0,0],[0,0.125],[1,0.25],[1,0.85],[0,1]
+
+140.6:Wall
+duration:8
+repeat:32
+NJS:30
+scale:[0.1,2]
+animateScale:[10,10,10,0]
+position:[{0+repeat/3},10]
+animatePosition:[0,0,40,0],[0,0,60,1]
+rotation:[0,0,{repeat*(360/TOTAL)}]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+animatecolor:[0.2,0,0,-10,0],[0.5,0,0,-10,1]
+animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
+animatedissolve:[0,0],[0,0.1],[1,0.15],[1,0.85],[0,1]
+
+var:OtherTotal
+data:40
+
+147.6:Wall
+duration:16
+repeat:40
+#NJS:12
+scale:[0.1,2]
+animateScale:[10,10,10,0]
+position:[{0+repeat/3},10]
+animatePosition:[0,0,40,0],[0,0,60,1]
+rotation:[0,0,{repeat*(360/OtherTotal)}]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
+color:[1,0,Random(0,0.25),-100]
+animateLocalRotation:[0,-20,90,0]
+animatedissolve:[0,0],[0,0.15],[1,0.2]
+
+
+Workspace:Balloon
 
 0:import
     path:HardLawless.dat
 
+#arrow assign path animation
 
+0:assignPathAnimation
+    track:glitch
+    duration:1.6
+    animatedissolve:[0,0],[0,1]
+    animatedissolveArrow:[0,0.1],[0,0.3],[1,0.31],[1,0.4],[0,0.5]
 
 197.5:AppendToAllNotesBetween
     tobeat:198.7
@@ -1013,6 +1088,27 @@ Workspace:DO ALL NOTE ANIMS HERE PLEASE IT WILL ONLY WORK BELOW THE IMPORT IN TH
     animateScale:[1,1,1,0],[2,2,2,1,"easeOutQuad"]
     animateLocalRotation:[0,0,-90,0],[0,0,-45,1]
 
+#note fly out
+
+69:AnimateTrack
+    track:noteFlyOutBase
+    animateDissolve:[1,0],[0.5,1]
+    duration:0.2
+
+68:AnimateTrack
+    track:noteFlyOutFly
+    animateDissolve:[1,0],[0.5,1]
+    duration:0.0001
+
+69:AnimateTrack
+    track:noteFlyOutFly
+    animateDissolve:[0.5,0],[0.5,0.769],[0,1]
+    duration:2
+    animatePosition:[0,0,0,0],[-3.5,3.5,20,1]
+    animateLocalRotation:[0,0,0,0],[0,0,90,0.3333333],[0,0,180,0.6666666],[0,0,270,1]
+    animateScale:[1,1,1,0],[1.25,1.25,1.25,0.75],[0,0,0,1,"easeInOutQuad"]
+    animateDissolveArrow:[1,0],[1,0.769],[0,1]
+
 
 
 Workspace:balloon/raindrops
@@ -1022,7 +1118,7 @@ var:randomX
     recompute:1
 
 var:Y
-    data:-1.5
+    data:0
 
 var:randomZ
     data:Random(15,5)
@@ -1051,7 +1147,7 @@ var:randomX2
     recompute:1
 
 var:Y2
-    data:-1.5
+    data:0
 
 var:randomZ2
     data:Random(15,5)
@@ -1202,108 +1298,7 @@ var:pink
 
 #reddekwallanimationpartend
 
-
-#NO reddek wall background
 #reddek wall background end
-
-
-
-Workspace:Balloon/shapes
-
-#CHANGEABLE!
-var:sides
-data:3
-
-var:LMAO
-data:repeat-1
-
-#CHANGEABLE!
-var:xPos
-data:11
-    
-#CHANGEABLE!
-var:yPos
-data:3
-
-var:angles
-data:3.14*2/sides
-
-var:rot
-data:360/sides*repeat
-    
-var:radians
-data:angles*LMAO
-
-#CHANGEABLE!
-var:radius
-data:8
-
-var:width
-data:2*radius*Tan(3.14/sides)
-
-var:height
-data:2
-
-var:sx
-data:xPos+Cos(radians)*radius-width/2
-    
-var:sy
-data:yPos+Sin(radians)*radius-height/2
-
-224.6:Wall
-    repeat:{sides+1}
-    localrotation:[0,0,{33.8+rot}]
-    position:[{sx},{sy}]
-    interactable: false
-    duration:10
-    scale:[0.5,0.02173913043,0.02173913043]
-    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
-    color:[0.071,0.961,0.937,2]
-    track:triangleScale1
-    njs:1
-
-223:AnimateTrack
-    track:triangleScale1
-    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
-    animateDissolve:[1,0],[0,1]
-    duration:1
-
-225.6:Wall
-    repeat:{sides+1}
-    localrotation:[0,0,{33.8+rot}]
-    position:[{sx},{sy}]
-    interactable: false
-    duration:10
-    scale:[0.5,0.02173913043,0.02173913043]
-    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
-    color:[0.071,0.961,0.937,2]
-    track:triangleScale2
-    njs:1
-
-224:AnimateTrack
-    track:triangleScale2
-    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
-    animateDissolve:[1,0],[0,1]
-    duration:1
-
-227.1:Wall
-    repeat:{sides+1}
-    localrotation:[0,0,{33.8+rot}]
-    position:[{sx},{sy}]
-    interactable: false
-    duration:10
-    scale:[0.5,0.02173913043,0.02173913043]
-    animatedefiniteposition:[0,0,-5,0],[0,0,-5,1]
-    color:[0.071,0.961,0.937,2]
-    track:triangleScale3
-    njs:1
-
-224.5:AnimateTrack
-    track:triangleScale3
-    animateScale:[46,46,46,0],[46,46,7000,1,"easeInOutCubic"]
-    animateDissolve:[1,0],[0,1]
-    duration:1
-
 
 Workspace:iswimfly
 
@@ -1431,42 +1426,32 @@ data:yPos+Sin(radians)*radius-height/2
     animatescale:[0.75,0.75,1,0],[0.75,0.75,150,1,"easeInOutCubic"]
     animatedissolve:[1,0],[0,1,"easeInOutCubic"]
 
-
-# -- spinning triangles ----------------
-
-
 307:AnimateTrack
     track:Bubbly
     duration:3
     animatedissolve:[0,0],[1,1]
 
-309:modelToWall
+309:Wall
     track:Bubbly
-	path:triangle.dae
-	normal:true
     duration:1
     repeat:335
     repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(-10,-6),Random(-2,8)]
-    #rotation:[0,0,Random(0,359)]
-    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
+    NJS:30
+    scale:[1,1,2]
+    position:[Random(-10,-5),Random(0,6)]
+    rotation:[0,0,Random(0,359)]
     color:[0.1,1,1,1]
 
-309:modelToWall
+309:Wall
     track:Bubbly
-	path:triangle.dae
-	normal:true
     duration:1
     repeat:335
     repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(6,10),Random(-2,8)]
-    #rotation:[0,0,Random(0,359)]
-    deltarotation:[Random(-60,60),Random(-30,30),Random(-60,60)]
-    color:[0,1,0,1]
+    NJS:30
+    scale:[1,1,2]
+    position:[Random(5,10),Random(0,6)]
+    rotation:[0,0,Random(0,359)]
+    color:[0.1,1,1,1]
 
 339:AnimateTrack
     track:Bubbly
@@ -1478,397 +1463,176 @@ data:yPos+Sin(radians)*radius-height/2
     duration:2
     animatedissolve:[0,0],[1,1]
 
+341:Wall
+    track:Bubbly2
+    duration:1
+    repeat:360
+    repeataddtime:0.1
+    NJS:30
+    scale:[1,1,2]
+    position:[Random(-10,-5),0]
+    rotation:[0,0,Random(0,359)]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
+    color:[1,0.5,0.05,1]
 
-# -- over
+341:Wall
+    track:Bubbly2
+    duration:1
+    repeat:360
+    repeataddtime:0.1
+    NJS:30
+    scale:[1,1,2]
+    position:[Random(5,10),0]
+    rotation:[0,0,Random(0,359)]
+    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
+    color:[1,0.5,0.05,1]
 
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(-8+repeat/1.25)+(Random(-0.5,0.5))},{(Sin(repeat/6)*10)+(Random(1,1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-# -- under
-341:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-343:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-345:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-347:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-349:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-351:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-353:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-355:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-357:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-359:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-361:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-363:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-365:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-367:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-369:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-371:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-373:modeltowall
-  path:triangle.dae
-  normal:true
-  color:[1,0.5,0.05,1]
-  repeat:20
-  repeataddtime:0.1
-  position:[{(8-repeat/1.25)+(Random(-0.5,0.5))},{-(Sin(repeat/6)*10)+(Random(-1,-1.5))}]
-  deltarotation:[Random(-60,60),Random(-30,30),0]
-
-
-
-
-
-
-
+371.5:AnimateTrack
+    track:Bubbly2
+    duration:1.5
+    animatedissolve:[1,0],[0,1]
 
 Workspace:ProtoPhonix
 
 #intro Pt. 1--------------------------
-#-- moved to outro
+5: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.6,10.6,10.6,1]
+   track:intPart
+5: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.6,10.6,10.6,1]
+   track:intPart
 #intro Pt. 1--------------------------
 
 
 #intro Pt. 2--------------------------
-#-- moved to outro
+37: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.5,0,10,1]
+   track:intPart
+37: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [10.5,0,10,1]
+   track:intPart
 #intro Pt. 2--------------------------
 
 #intro Events--------------------------
-#-- moved to outro
+5: AnimateTrack
+   track: intPart
+   duration: 16
+   animateRotation: [0,0,0,0],[0,0,360,1]
+0: AssignPathAnimation
+   track: intPart
+   duration: 1.6
+   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
+61: AnimateTrack
+   track: intPart
+   duration: 1
+   animateDissolve: [1,0],[0,0.3]
 #intro Events--------------------------
+
 
 
 
 #pre-drop particles--------------------------
+71: Wall
+   duration: -1
+   repeat: 1200
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,150]
+   position: [0,0,0]
+   animateDefinitePosition: [0,20,0,0]
+   rotation: [ 0, Random(-90,90), 0]
+   color: [15,15,15,15]
+   njs: 30
+   fake: true
+   interactable: false
+   track:pdParticles
+71: Wall
+   duration: -1
+   repeat: 1200
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,150]
+   position: [0,0,0]
+   animateDefinitePosition: [0,20,0,0]
+   rotation: [0, Random(-90,90) , 0]
+   color: [15,0,15,15]
+   njs: 30
+   fake: true
+   interactable: false
+   track:pdParticles
 
+71: Wall
+   duration: -1
+   repeat: 1200
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,150]
+   position: [0,0,0]
+   animateDefinitePosition: [0,-20,0,0]
+   rotation: [ 0, Random(-90,90), 0]
+   color: [15,15,15,15]
+   njs: 30
+   fake: true
+   interactable: false
+   track:pdParticles
+71: Wall
+   duration: -1
+   repeat: 1200
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,150]
+   position: [0,0,0]
+   animateDefinitePosition: [0,-20,0,0]
+   rotation: [0, Random(-90,90) , 0]
+   color: [15,0,15,15]
+   njs: 30
+   fake: true
+   interactable: false
+   track:pdParticles
 #pre-drop particles--------------------------
 
 #pre-drop particles Events--------------------------
 
-
-
-# -- test at 535 565
-
-#intro Pt. 1--------------------------
-537: Wall
-   repeat: 320
-   repeatAddTime: 0.1
-   scale: [0.5,0.5,0.5]
-   position: [Random(-20,-3),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [1,1,1,-1000]
-   track:intPart
-   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
-537: Wall
-   repeat: 350
-   repeatAddTime: 0.1
-   scale: [0.5,0.5,0.5]
-   position: [Random(3,20),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [1,1,1,-1000]
-   track:intPart
-   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
-#intro Pt. 1--------------------------
-
-
-#intro Pt. 2--------------------------
-565: Wall
-   repeat: 320
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,0.2]
-   position: [Random(-20,-3),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [1,0,1,-1000]
-   track:intPart
-   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
-565: Wall
-   repeat: 350
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,0.2]
-   position: [Random(3,20),Random(-50,50),0]
-   localRotation: [0,0, { repeat * 2} ]
-   njs: 10
-   njsOffset: 3
-   fake: true
-   interactable: false
-   color: [1,0,1,-1000]
-   track:intPart
-   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
-#intro Pt. 2--------------------------
-
-#intro Events--------------------------
-#535: AnimateTrack
-#   track: intPart
-#   duration: 16
-#   animateRotation: [0,0,0,0],[0,0,360,1]
-#0: AssignPathAnimation
-#   track: intPart
-#   duration: 1.6
-#   animateDissolve: [0,0],[1,0.1],[1,0.8],[0,1]
-#555: AnimateTrack
-#   track: intPart
-#   duration: 10
-#   animaterotation: [0,0,0,0],[0,0,900,1]
-#intro Events--------------------------
-
-
-
-
-
-
+0: AssignPathAnimation
+   track:pdParticles
+   duration: 1
+   animateDissolve: [1,0],[1,0.3],[0,1]
+101: AnimateTrack
+   track:pdParticles
+   duration: 0.8
+   animateDissolve: [1,0],[0,1]
 
 #levelupNote--------------------------
 
@@ -1892,7 +1656,7 @@ Workspace:ProtoPhonix
 165:AssignPathAnimation
    track:levelupNote
    duration:1
-   animateDefinitePosition: [0,10,60,0.5]
+   animateDefinitePosition: [0,5,60,0.5]
 165:AnimateTrack
    track:levelupNote
    duration:1
@@ -1957,9 +1721,7 @@ Workspace:ProtoPhonix
    duration: 1
    animateDissolveArrow: [0,0]
    animateDissolve: [0,0],[1,0.5]
-#noteBabies! Events-------------------------- 
-
-
+#noteBabies! Events--------------------------
 
 
 Workspace:wobble
@@ -2684,7 +2446,6 @@ animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,3
 color:bleh
 animateDissolve:[1,0.90],[0,1]
 
-
 113:Wall
 duration:3
 repeat:24
@@ -2697,91 +2458,6 @@ rotation:[0,0,{repeat*(360/24)}]
 animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,360,1]
 color:bleh
 animateDissolve:[1,0.7],[0,1]
-
-
-
-
-Workspace:iswimflyWobble
-
-var:TOTAL
-data:32
-
-# -- loooong
-
-118:Wall
-duration:14
-repeat:32
-NJS:12
-scale:[2,0.1]
-animateScale:[10,1,5,0]
-position:[5,10]
-animatePosition:[0,0,-20,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
-color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
-animateLocalRotation:[0,0,30,0]
-animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
-
-# Post-Drop
-
-132.6:Wall
-duration:8
-repeat:32
-NJS:12
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-animatecolor:[0.1,0,0,-10,0],[0.3,0,0,-10,1]
-animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
-animatedissolve:[0,0],[0,0.125],[1,0.25],[1,0.85],[0,1]
-
-140.6:Wall
-duration:8
-repeat:32
-NJS:12
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-animatecolor:[0.2,0,0,-10,0],[0.5,0,0,-10,1]
-animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
-animatedissolve:[0,0],[0,0.1],[1,0.15],[1,0.85],[0,1]
-
-var:OtherTotal
-data:40
-
-147.6:Wall
-duration:16
-repeat:40
-NJS:12
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/OtherTotal)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-color:[1,0,Random(0,0.25),-100]
-animateLocalRotation:[0,-20,90,0]
-animatedissolve:[0,0],[0,0.15],[1,0.2]
-
-
-
-
-
-
-
-# -- end spinny blocks
-
-
-
-
-
-
 
 
 workspace: growblocks
@@ -2914,19 +2590,25 @@ animateDissolve:[0.8,0],[0,1]
 
 
 
+
 # -- grow spin walls
 
+var:longwall
+data:[0.8,0,0.3,-100]
+
+# - CW
 448:Wall
 track:looong1
 duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[0,8]
+scale:[0.6,0.6,70]
+position:[0,16]
+localRotation:[5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong2
@@ -2934,11 +2616,12 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[8,0]
-animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+scale:[0.6,0.6,70]
+position:[16,0]
+localRotation:[0,-5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong3
@@ -2946,11 +2629,12 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[0,-8]
+scale:[0.6,0.6,70]
+position:[0,-16]
+localRotation:[-5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong4
@@ -2958,20 +2642,75 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[-8,0]
+scale:[0.6,0.6,70]
+position:[-16,0]
+localRotation:[0,5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+
+# - CCW
+448:Wall
+track:looong11
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[0,16]
+localRotation:[5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.4,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong22
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[16,0]
+localRotation:[0,-5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong33
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[0,-16]
+localRotation:[-5,0,0]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong44
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[-16,0]
+localRotation:[0,5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 
 
 
+# -- CW animate
 455:animateTrack
 track:looong1
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
-#animatedefinitePosition:[0,0,0,0],[0,8,0,1]
 
 455:animateTrack
 track:looong2
@@ -2983,7 +2722,6 @@ animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"]
 track:looong3
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
-#animatedefinitePosition:[8,0,0,0],[0,0,0,1]
 
 455:animateTrack
 track:looong4
@@ -3010,22 +2748,82 @@ duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
 
 
-
-463:animateTrack
+462:animateTrack
 track:looong1
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong2
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong3
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong4
-duration:1
+duration:0.5
+animateDissolve:[1,0],[0,1]
+
+
+
+# -- CCW animate
+455:animateTrack
+track:looong11
+duration:4
+animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
+
+455:animateTrack
+track:looong22
+duration:4
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
+
+455:animateTrack
+track:looong33
+duration:4
+animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
+
+455:animateTrack
+track:looong44
+duration:4
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
+
+
+460:animateTrack
+track:looong11
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong22
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong33
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong44
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+
+
+462:animateTrack
+track:looong11
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong22
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong33
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong44
+duration:0.5
 animateDissolve:[1,0],[0,1]
 
 
@@ -3033,3 +2831,67 @@ animateDissolve:[1,0],[0,1]
 
 
 
+
+
+
+workspace:ProtoOutroTest
+
+# -- test at 535 565
+
+#intro Pt. 1--------------------------
+537: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   #track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+537: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   #track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+#intro Pt. 1--------------------------
+
+
+#intro Pt. 2--------------------------
+565: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   #track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+565: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   #track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
