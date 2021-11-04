@@ -1723,8 +1723,32 @@ Workspace:ProtoPhonix
 #noteBabies! Events--------------------------
 
 
-Workspace:wobble
+Workspace:NoPeepo
+#wrong way, no peepo separate for different alpha
+1:ModeltoWall
+path:wrongway.dae
+duration:590
+interactable:false
+normal:false
+thicc:12
+alpha:0.2
+position:[0,0]
+animateposition:[-2,0,2,0]
+animaterotation:[0,180,0,0]
 
+1:ModeltoWall
+path:nopeepo.dae
+duration:590
+interactable:false
+normal:false
+thicc:12
+alpha:0.1
+position:[0,0]
+animateposition:[-2,0,2,0]
+animaterotation:[0,180,0,0]
+
+
+Workspace:wobble
 
 # -- water
 
@@ -2591,17 +2615,22 @@ animateDissolve:[0.8,0],[0,1]
 
 # -- grow spin walls
 
+var:longwall
+data:[0.8,0,0.3,-100]
+
+# - CW
 448:Wall
 track:looong1
 duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[0,8]
+scale:[0.6,0.6,70]
+position:[0,16]
+localRotation:[5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong2
@@ -2609,11 +2638,12 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[8,0]
-animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+scale:[0.6,0.6,70]
+position:[16,0]
+localRotation:[0,-5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong3
@@ -2621,11 +2651,12 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[0,-8]
+scale:[0.6,0.6,70]
+position:[0,-16]
+localRotation:[-5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.3,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 448:Wall
 track:looong4
@@ -2633,20 +2664,75 @@ duration:120
 repeataddtime:0.5
 interactable:false
 fake:true
-scale:[0.38,0.38,70]
-position:[-8,0]
+scale:[0.6,0.6,70]
+position:[-16,0]
+localRotation:[0,5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+
+# - CCW
+448:Wall
+track:looong11
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[0,16]
+localRotation:[5,0,0]
 animatedefinitePosition:[0.01,-0.5,-5.01,0]
-color:[0.8,0,0.4,-100]
-animateDissolve:[0,0],[1,0.05,"easeStep"]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong22
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[16,0]
+localRotation:[0,-5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong33
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[0,-16]
+localRotation:[-5,0,0]
+animatedefinitePosition:[0.01,-0.5,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
+
+448:Wall
+track:looong44
+duration:120
+repeataddtime:0.5
+interactable:false
+fake:true
+scale:[0.6,0.6,70]
+position:[-16,0]
+localRotation:[0,5,0]
+animatedefinitePosition:[0.01,0,-5.01,0]
+color:longwall
+animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 
 
 
+# -- CW animate
 455:animateTrack
 track:looong1
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
-#animatedefinitePosition:[0,0,0,0],[0,8,0,1]
 
 455:animateTrack
 track:looong2
@@ -2658,7 +2744,6 @@ animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"]
 track:looong3
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
-#animatedefinitePosition:[8,0,0,0],[0,0,0,1]
 
 455:animateTrack
 track:looong4
@@ -2685,22 +2770,82 @@ duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
 
 
-
-463:animateTrack
+462:animateTrack
 track:looong1
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong2
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong3
-duration:1
+duration:0.5
 animateDissolve:[1,0],[0,1]
-463:animateTrack
+462:animateTrack
 track:looong4
-duration:1
+duration:0.5
+animateDissolve:[1,0],[0,1]
+
+
+
+# -- CCW animate
+455:animateTrack
+track:looong11
+duration:4
+animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
+
+455:animateTrack
+track:looong22
+duration:4
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
+
+455:animateTrack
+track:looong33
+duration:4
+animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
+
+455:animateTrack
+track:looong44
+duration:4
+animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
+animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
+
+
+460:animateTrack
+track:looong11
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong22
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong33
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+460:animateTrack
+track:looong44
+duration:4
+animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
+
+
+462:animateTrack
+track:looong11
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong22
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong33
+duration:0.5
+animateDissolve:[1,0],[0,1]
+462:animateTrack
+track:looong44
+duration:0.5
 animateDissolve:[1,0],[0,1]
 
 
