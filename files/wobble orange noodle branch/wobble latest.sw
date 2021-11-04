@@ -977,3 +977,69 @@ animateDissolve:[1,0],[0,1]
 track:looong4
 duration:1
 animateDissolve:[1,0],[0,1]
+
+
+
+
+
+workspace:ProtoOutroTest
+
+# -- test at 535 565
+
+#intro Pt. 1--------------------------
+537: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+537: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.5,0.5,0.5]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,1,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+#intro Pt. 1--------------------------
+
+
+#intro Pt. 2--------------------------
+565: Wall
+   repeat: 320
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(-20,-3),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+565: Wall
+   repeat: 350
+   repeatAddTime: 0.1
+   scale: [0.2,0.2,0.2]
+   position: [Random(3,20),Random(-50,50),0]
+   localRotation: [0,0, { repeat * 2} ]
+   njs: 10
+   njsOffset: 3
+   fake: true
+   interactable: false
+   color: [1,0,1,-1000]
+   track:intPart
+   animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
