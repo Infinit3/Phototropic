@@ -1724,8 +1724,32 @@ Workspace:ProtoPhonix
 #noteBabies! Events--------------------------
 
 
-Workspace:wobble
+Workspace:NoPeepo
+#wrong way, no peepo separate for different alpha
+1:ModeltoWall
+path:wrongway.dae
+duration:590
+interactable:false
+normal:false
+thicc:12
+alpha:0.2
+position:[0,0]
+animateposition:[-2,0,2,0]
+animaterotation:[0,180,0,0]
 
+1:ModeltoWall
+path:nopeepo.dae
+duration:590
+interactable:false
+normal:false
+thicc:12
+alpha:0.1
+position:[0,0]
+animateposition:[-2,0,2,0]
+animaterotation:[0,180,0,0]
+
+
+Workspace:wobble
 
 # -- water
 
