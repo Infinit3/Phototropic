@@ -12,9 +12,6 @@
 
 Workspace:ProtoPhonix
 
-0: Import
-   Path:ExpertLawless_Old.dat
-
 #intro Pt. 1--------------------------
 5: Wall
    repeat: 350

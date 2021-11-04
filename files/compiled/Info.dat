@@ -18,7 +18,7 @@
     "_editors": {
       "_lastEditedBy": "ScuffedWalls",
       "ChroMapper": {
-        "version": "0.8.441"
+        "version": "0.8.445"
       },
       "ScuffedWalls": {
         "version": "v1.5.0"
@@ -49,6 +49,9 @@
             },
             "_suggestions": [
               "Chroma"
+            ],
+            "_requirements": [
+              "Noodle Extensions"
             ]
           }
         },
@@ -67,16 +70,32 @@
             "_settings": {
               "_playerOptions": {
                 "_leftHanded": false,
+                "_environmentEffectsFilterDefaultPreset": "AllEffects",
+                "_environmentEffectsFilterExpertPlusPreset": "AllEffects",
                 "_hideNoteSpawnEffect": true
               },
-              "_colors": {
-                "_overrideDefaultColors": true
+              "_environments": {
+                "_overrideEnvironments": false
               },
               "_graphics": {
-                "_mirrorGraphicsSettings": 3,
                 "_maxShockwaveParticles": 0,
+                "_mainEffectGraphicsSetting": 1,
                 "_screenDisplacementEffectsEnabled": true
+              },
+              "_chroma": {
+                "_disableChromaEvents": false,
+                "_disableEnvironmentEnhancements": false
               }
+            },
+            "_colorLeft": {
+              "r": 0.588,
+              "g": 0.16,
+              "b": 0.941
+            },
+            "_colorRight": {
+              "r": 0.259,
+              "g": 0.655,
+              "b": 0.639
             },
             "_suggestions": []
           }
