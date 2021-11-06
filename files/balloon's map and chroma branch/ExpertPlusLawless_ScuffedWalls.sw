@@ -10,6 +10,12 @@
 
 # Playtest your maps
 
+Workspace:Script
+0:Run
+  Javascript:template.js
+  RunBefore: false
+  refreshonsave:true
+
 Workspace:EnvRemoval
 
 1:Environment
