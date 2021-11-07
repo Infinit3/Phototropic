@@ -10,11 +10,20 @@
 
 # Playtest your maps
 
-Workspace:Script
-0:Run
-  Javascript:template.js
-  RunBefore: false
-  refreshonsave:true
+Workspace:Default
+# ScuffedWalls v1.5.0
+
+# Documentation on functions can be found at
+# https://github.com/thelightdesigner/ScuffedWalls/blob/main/Functions.md
+            
+# DM @thelightdesigner#1337 for more help?
+
+# Using this tool requires an understanding of Noodle Extensions.
+# https://github.com/Aeroluna/NoodleExtensions/blob/master/Documentation/AnimationDocs.md
+
+# Playtest your maps
+
+
 
 Workspace:EnvRemoval
 
@@ -79,7 +88,7 @@ Workspace:EnvRemoval
 
 
 0:import
-    path:ExpertPLusLawless.dat
+    path:HardLawless.dat
 
 #arrow assign path animation
 
@@ -1238,9 +1247,307 @@ var:pink
 
 
 
-Workspace:Balloon/shapes
+Workspace:whitewallOut
+
+var:space
+    data:2.5
+
+231.25:ModelToWall
+    path:squareAnim.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+233.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+234.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animateRotation:[0,0,90,0]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+235.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+236.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animateRotation:[0,0,90,0]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+237.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+238.25:ModelToWall
+    path:squareAnim.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+Workspace:bombFling2
+
+237:animateTrack
+    track:bomb11
+    duration:1.5
+    animatePosition:[0,0,0,0],[-7,7,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb12
+    duration:1.5
+    animatePosition:[0,0,0,0],[-3,5,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb13
+    duration:1.5
+    animatePosition:[0,0,0,0],[0,-2,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb14
+    duration:1.5
+    animatePosition:[0,0,0,0],[3,4,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb15
+    duration:1.5
+    animatePosition:[0,0,0,0],[7,7,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb16
+    duration:1.5
+    animatePosition:[0,0,0,0],[10,10,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb17
+    duration:1.5
+    animatePosition:[0,0,0,0],[10,10,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
+
+237:animateTrack
+    track:bomb18
+    duration:1.5
+    animatePosition:[0,0,0,0],[9,9,30,1,"easeInOutQuad"]
+    animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
+    animateDissolve:[1,0],[0,1,"easeInOutQuad"]
 
 
+Workspace:wallsAfterWhiteWallOut
+
+
+239:wall
+    repeat:120
+    repeatAddTime:0.05
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(5,15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles
+    njs:40
+
+239:wall
+    repeat:120
+    repeatAddTime:0.05
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-5,-15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles
+    njs:40
+
+239:wall
+    repeat:120
+    repeatAddTime:0.05
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles
+    njs:40
+
+239:wall
+    repeat:120
+    repeatAddTime:0.05
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(-5,-10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles
+    njs:40
+
+200:AnimateTrack
+    track:whiteParticles
+    duration:1
+    animateDissolve:[0,0]
+
+239:AnimateTrack
+    track:whiteParticles
+    duration:0.5
+    animateDissolve:[0,0],[1,1]
+
+241:AnimateTrack
+    track:whiteParticles
+    duration:0.25
+    animateRotation:[0,0,0,0],[90,0,0,1]
+
+243:AnimateTrack
+    track:whiteParticles
+    duration:0.25
+    animateRotation:[90,0,0,0],[180,0,0,1]
+
+243:AnimateTrack
+    track:whiteParticles
+    animateDissolve:[1,0],[0,1]
+    duration:1
+
+244:AnimateTrack
+    track:whiteParticles
+    animateDissolve:[1,0],[0,1]
+    duration:1
+
+
+
+Workspace:whitewallOut2
+
+var:space
+    data:2.5
+
+248.25:ModelToWall
+    path:squareAnim.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+249.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+250.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animateRotation:[0,0,90,0]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+251.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+252.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animateRotation:[0,0,90,0]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+253.25:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+254.25:ModelToWall
+    path:squareAnim.dae
+    definitedurationbeats:0.1
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
 Workspace:iswimfly
 

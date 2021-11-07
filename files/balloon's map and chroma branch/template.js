@@ -26,7 +26,46 @@ console.log("Ran this script " + count + " times in a row!");
 
 //        -  -  -  -  -  -  -  -  -  -  -  -  -  LOOK BELOW FOR COMMENT TEXT WITH A LINE LIKE THIS. READ ALL OF THESE BEFORE USING!  -  -  -  -  -  -  -  -  -  -  -  -  -  
 
+function wallDupe (beat, endBeat, amount, space, delay, rot) {
+  filterednotes = _obstacles.filter(n=> n._time >= beat && n._time < endBeat)
+  filterednotes.forEach(obstacle => {
+  if (obstacle._customData._track !== "wallDuper")
+  obstacle._customData._disableSpawnEffect = true;
+  for (let index = 0; index < amount; index++) {
+    let obstaclef = JSON.parse(JSON.stringify(obstacle));
+    obstaclef._customData._fake = true;
+    obstaclef._customData._interactable = false;
+    obstaclef._time += 0.0000001+(index*delay)
+    obstaclef._customData._animation = {};
+    obstaclef._customData._animation._position = [[0,0,space*index,0]];
+    obstaclef._customData._animation._rotation = [[0,0,rot*index,0]];
+    _obstacles.push(obstaclef);
+    }
+  });
+}
 
+function noteDupe (beat, endBeat, amount, space, delay, rot, dissolveAmount, arrowDissolveAmount, NJS, NJSOffset) {
+  filterednotes = _notes.filter(n=> n._time >= beat && n._time < endBeat)
+  filterednotes.forEach(note => {
+  if (note._customData._track !== "noteDuper")
+  note._customData._disableSpawnEffect = true;
+  for (let index = 0; index < amount; index++) {
+    let notef = JSON.parse(JSON.stringify(note));
+    notef._customData = {}
+    notef._customData._fake = true;
+    notef._customData._interactable = false;
+    notef._time += 0.0000001+(index*delay)
+    notef._customData._animation = {}
+    notef._customData._animation._rotation = [[0,0,rot*index,0]];
+    notef._customData._animation._position = [[0,0,space*index,0]];
+    notef._customData._animation._dissolve = [[dissolveAmount,0],[dissolveAmount,0.49],[dissolveAmount,0.5]]
+    notef._customData._animation._dissolveArrow = [[arrowDissolveAmount,0],[arrowDissolveAmount,0.49],[arrowDissolveAmount,0.5]]
+    notef._customData._noteJumpMovementSpeed = NJS;
+    notef._customData._noteJumpStartBeatOffset = NJSOffset;
+    _notes.push(notef);
+    }
+  });
+}
 
 
 
@@ -406,46 +445,7 @@ function BombNoteBoom(note, dissolve = true, bombTrack) {
   _notes.push(bomb);
 }
 
-function wallDupe (beat, endBeat, amount, space, delay, rot) {
-  filterednotes = _obstacles.filter(n=> n._time >= beat && n._time < endBeat)
-  filterednotes.forEach(obstacle => {
-  if (obstacle._customData._track !== "wallDuper")
-  obstacle._customData._disableSpawnEffect = true;
-  for (let index = 0; index < amount; index++) {
-    let obstaclef = JSON.parse(JSON.stringify(obstacle));
-    obstaclef._customData._fake = true;
-    obstaclef._customData._interactable = false;
-    obstaclef._time += 0.0000001+(index*delay)
-    //obstaclef._customData._animation = {};
-    obstaclef._customData._animation._position = [[0,0,space*index,0]];
-    obstaclef._customData._animation._rotation = [[0,0,rot*index,0]];
-    _obstacles.push(obstaclef);
-    }
-  });
-}
 
-function noteDupe (beat, endBeat, amount, space, delay, rot, dissolveAmount, arrowDissolveAmount, NJS, NJSOffset) {
-  filterednotes = _notes.filter(n=> n._time >= beat && n._time < endBeat)
-  filterednotes.forEach(note => {
-  if (note._customData._track !== "noteDuper")
-  note._customData._disableSpawnEffect = true;
-  for (let index = 0; index < amount; index++) {
-    let notef = JSON.parse(JSON.stringify(note));
-    notef._customData = {}
-    notef._customData._fake = true;
-    notef._customData._interactable = false;
-    notef._time += 0.0000001+(index*delay)
-    notef._customData._animation = {}
-    notef._customData._animation._rotation = [[0,0,rot*index,0]];
-    notef._customData._animation._position = [[0,0,space*index,0]];
-    notef._customData._animation._dissolve = [[dissolveAmount,0],[dissolveAmount,0.49],[dissolveAmount,0.5]]
-    notef._customData._animation._dissolveArrow = [[arrowDissolveAmount,0],[arrowDissolveAmount,0.49],[arrowDissolveAmount,0.5]]
-    notef._customData._noteJumpMovementSpeed = NJS;
-    notef._customData._noteJumpStartBeatOffset = NJSOffset;
-    _notes.push(notef);
-    }
-  });
-}
 
 function glitchPos(beat, endBeat) {
   filterednotes = _notes.filter(n => n._time >= beat && n._time < endBeat);
@@ -612,10 +612,32 @@ function CircEx(trackN, startTime, endTime, Amount, More, radius, Dur, h, l, xPo
     }
 }
 
+function arrowWiggle (beat, endBeat, amount, wX1, wX2, NJS, NJSOffset) {
+  filterednotes = _notes.filter(n=> n._time >= beat && n._time < endBeat)
+  filterednotes.forEach(note => {
+  if (note._customData._track !== "arrowWiggle")
+  note._customData._disableSpawnEffect = true;
+  for (let index = 0; index < amount; index++) {
+    let notef = JSON.parse(JSON.stringify(note));
+    notef._customData = {}
+    notef._customData._fake = true;
+    notef._customData._interactable = false;
+    notef._time += 0.0000001
+    notef._customData._animation = {}
+    notef._customData._animation._position = [[0,0,0,0],[wX1,0,0,0.1],[0,0,0,0.2],[wX2,0,0,0.3]];
+    notef._customData._noteJumpMovementSpeed = NJS;
+    notef._customData._noteJumpStartBeatOffset = NJSOffset;
+    _notes.push(notef);
+    }
+  });
+}
+
+
+
 //#endregion
 
 
-
+arrowWiggle(1, 20, 1, -0.1, 0.1, 20, -0.4) 
 
 
 
@@ -701,6 +723,7 @@ _customEvents.push({
 
 
 
+wallDupe(231,233.7,10,2,0.15,0)
 
 
 

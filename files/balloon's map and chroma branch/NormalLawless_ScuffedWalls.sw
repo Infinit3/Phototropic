@@ -1251,7 +1251,18 @@ var:pink
 
 
 
-Workspace:Balloon/shapes
+Workspace:Balloon/walls/shapes/modeltowall
+
+233.6:ModelToWall
+    path:figure.dae
+    duration:1
+    interactable:false
+    normal:false
+    alpha:0.2
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    track:wallDuper
+
+
 
 
 
