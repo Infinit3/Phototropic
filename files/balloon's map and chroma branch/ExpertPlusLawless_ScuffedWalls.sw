@@ -87,6 +87,8 @@ Workspace:EnvRemoval
     active:false
 
 
+Workspace:Notes
+
 0:import
     path:HardLawless.dat
 
@@ -1330,6 +1332,7 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    
 
 Workspace:bombFling2
 
@@ -1389,9 +1392,7 @@ Workspace:bombFling2
     animateScale:[1,1,1,0],[3.5,2.5,2.5,1,"easeInOutQuad"]
     animateDissolve:[1,0],[0,1,"easeInOutQuad"]
 
-
-Workspace:wallsAfterWhiteWallOut
-
+Workspace:whiteParticles
 
 239:wall
     repeat:120
@@ -1402,6 +1403,7 @@ Workspace:wallsAfterWhiteWallOut
     DisableSpawnEffect:true
     track:whiteParticles
     njs:40
+    interactable:false
 
 239:wall
     repeat:120
@@ -1412,6 +1414,7 @@ Workspace:wallsAfterWhiteWallOut
     DisableSpawnEffect:true
     track:whiteParticles
     njs:40
+    interactable:false
 
 239:wall
     repeat:120
@@ -1422,6 +1425,7 @@ Workspace:wallsAfterWhiteWallOut
     DisableSpawnEffect:true
     track:whiteParticles
     njs:40
+    interactable:false
 
 239:wall
     repeat:120
@@ -1432,6 +1436,7 @@ Workspace:wallsAfterWhiteWallOut
     DisableSpawnEffect:true
     track:whiteParticles
     njs:40
+    interactable:false
 
 200:AnimateTrack
     track:whiteParticles
@@ -1462,7 +1467,75 @@ Workspace:wallsAfterWhiteWallOut
     track:whiteParticles
     animateDissolve:[1,0],[0,1]
     duration:1
+Workspace:whiteParticles2
 
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(5,15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-5,-15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(-5,-10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+200:AnimateTrack
+    track:whiteParticles2
+    duration:1
+    animateDissolve:[0,0]
+
+
+
+
+
+255:AnimateTrack
+    track:whiteParticles2
+    animateDissolve:[0,0],[1,1]
+    duration:2
+
+257:AnimateTrack
+    track:whiteParticles2
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
 
 
 Workspace:whitewallOut2
@@ -1544,6 +1617,22 @@ var:space
     interactable:false
     normal:false
     repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+Workspace:bottomrectangle
+
+var:space
+    data:5
+
+263:ModelToWall
+    path:bottomRectangle.dae
+    definitedurationbeats:0.2
+    interactable:false
+    normal:false
+    repeat:20
     repeataddtime:0.1
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
