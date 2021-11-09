@@ -1,0 +1,57 @@
+Workspace:ReddekWalls
+
+4:wall
+    duration:10
+    njsOffset:4
+    njs:100
+    interactable:false
+    disablespawneffect:true
+    track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[30,30,30]
+    animatescale:[100,20,100,0]
+    animaterotation:[0,0,0,0]
+    animateLocalRotation:[0,0,0,0],[45,0,45,1]
+    animatecolor:[0,1,1,1,0],[1,1,0,0.1],[0,1,1,1,0.2],[1,1,0,0.3],[1,1,0,0.4],[0,1,1,1,0.5],[1,1,0,0.6],[1,1,0,0.7],[0,1,1,1,0.8],[1,1,0,0.9],[1,1,1,1,1]
+
+4:wall
+    duration:10
+    njsOffset:4
+    njs:100
+    interactable:false
+    disablespawneffect:true
+    track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[30,30,30]
+    animatescale:[100,20,100,0]
+    animaterotation:[0,0,90,0]
+    animateLocalRotation:[0,0,0,0],[45,0,45,1]
+    animatecolor:[0,1,1,1,0],[1,1,0,0.1],[0,1,1,1,0.2],[1,1,0,0.3],[1,1,0,0.4],[0,1,1,1,0.5],[1,1,0,0.6],[1,1,0,0.7],[0,1,1,1,0.8],[1,1,0,0.9],[1,1,1,1,1]
+
+4:wall
+    duration:10
+    njsOffset:4
+    njs:100
+    interactable:false
+    disablespawneffect:true
+    track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[30,30,30]
+    animatescale:[100,20,100,0]
+    animaterotation:[0,0,180,0]
+    animateLocalRotation:[0,0,0,0],[45,0,45,1]
+    animatecolor:[0,1,1,1,0],[1,1,0,0.1],[0,1,1,1,0.2],[1,1,0,0.3],[1,1,0,0.4],[0,1,1,1,0.5],[1,1,0,0.6],[1,1,0,0.7],[0,1,1,1,0.8],[1,1,0,0.9],[1,1,1,1,1]
+
+4:wall
+    duration:10
+    njsOffset:4
+    njs:100
+    interactable:false
+    disablespawneffect:true
+    track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[30,30,30]
+    animatescale:[100,20,100,0]
+    animaterotation:[0,0,270,0]
+    animateLocalRotation:[0,0,0,0],[45,0,45,1]
+    animatecolor:[0,1,1,1,0],[1,1,0,0.1],[0,1,1,1,0.2],[1,1,0,0.3],[1,1,0,0.4],[0,1,1,1,0.5],[1,1,0,0.6],[1,1,0,0.7],[0,1,1,1,0.8],[1,1,0,0.9],[1,1,1,1,1]
