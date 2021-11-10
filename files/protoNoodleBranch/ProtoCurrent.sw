@@ -12,9 +12,6 @@
 
 Workspace:ProtoPhonix
 
-0: Import
-   Path:ExpertLawless_Old.dat
-
 #intro Pt. 1--------------------------
 5: Wall
    repeat: 350
@@ -150,7 +147,7 @@ Workspace:ProtoPhonix
    track:pdParticles
    duration: 1
    animateDissolve: [1,0],[1,0.3],[0,1]
-101: AnimateTrack
+102: AnimateTrack
    track:pdParticles
    duration: 0.8
    animateDissolve: [1,0],[0,1]
