@@ -12,9 +12,6 @@
 
 Workspace:ProtoPhonix
 
-0: Import
-   Path:ExpertLawless_Old.dat
-
 #intro Pt. 1--------------------------
 5: Wall
    repeat: 350
@@ -150,7 +147,7 @@ Workspace:ProtoPhonix
    track:pdParticles
    duration: 1
    animateDissolve: [1,0],[1,0.3],[0,1]
-101: AnimateTrack
+102: AnimateTrack
    track:pdParticles
    duration: 0.8
    animateDissolve: [1,0],[0,1]
@@ -243,3 +240,64 @@ Workspace:ProtoPhonix
    animateDissolveArrow: [0,0]
    animateDissolve: [0,0],[1,0.5]
 #noteBabies! Events--------------------------
+
+
+
+
+
+
+
+
+
+
+#levelupNote--------------------------
+
+405: note
+   position: [0,0,0]
+   definiteDurationBeats: 100
+   scale: [5,5,5]
+   color: [1,1,1,1]
+   localRotation: [0,0,-7]
+   cutdirection:8
+   fake: true
+   interactable: false
+   track:levelupNote
+   disableNoteLook: true
+   disableNoteGravity: true
+
+#levelupNote--------------------------
+
+#levelupNote Events--------------------------
+
+405:AssignPathAnimation
+   track:levelupNote
+   duration:1
+   animateDefinitePosition: [0,5,60,0.5]
+405:AnimateTrack
+   track:levelupNote
+   duration:1
+   repeat: 24
+   repeatAddTime: 1
+   animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
+   animateDissolve: [0,0],[1,0.8]
+   animateDissolveArrow: [0,0],[1,0.8]
+350:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [0,0]
+429:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [1,0],[0,1]
+350:AnimateTrack
+   track:levelupNote
+   duration:1
+   animateDissolve: [0,0]
+   animateDissolveArrow: [0,0]
+405.6: AnimateTrack
+   track:levelupNote
+   duration: 1
+   repeat: 24
+   repeatAddTime: 1
+   animateColor: [1,0,0,1,0],[1,1,1,1,0.8]
+#levelupNote Events--------------------------

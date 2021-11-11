@@ -1638,6 +1638,146 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
+Workspace:Fiddling
+
+265:Note
+    repeat:60
+    repeatAddTime:0.5
+    localrotation:[0,Random(180,-180),0]
+    definiteDurationBeats:3
+    NJS:13
+    NJSOffset:4
+    animatedissolve:[0,0],[0,1]
+    animatedissolveArrow:[0,0],[0.4,0.2],[0.4,0.8],[0,1]
+    color:[2,0,5,0.1]
+    animatescale:[15,15,50,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    position:[0,0]
+    track:noteRandom
+    animatePosition:[Random(-20,-8),Random(-20,20),Random(5,40),0]
+
+265:Note
+    repeat:60
+    repeatAddTime:0.5
+    localrotation:[0,Random(180,-180),0]
+    definiteDurationBeats:3
+    NJS:13
+    NJSOffset:4
+    animatedissolve:[0,0],[0,1]
+    animatedissolveArrow:[0,0],[0.4,0.2],[0.4,0.8],[0,1]
+    color:[2,0,5,0.1]
+    animatescale:[15,15,50,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    position:[0,0]
+    track:noteRandom
+    animatePosition:[Random(20,8),Random(-20,20),Random(5,40),0]
+
+
+
+
+Workspace:Heaven [real]
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(20,-20),Random(17.5,19),Random(-1,1)]
+    repeat:264
+    repeataddtime:0.125
+    scale:[0.1,0.1,0.1]
+    animateScale:[30,30,30,1]
+    track:cloudsTop
+    color:[1,1,1,2]
+    localrotation:[Random(-360,360),Random(-360,360),Random(-360,360)]
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(20,-20),Random(-7.5,-9),Random(-1,1)]
+    repeat:264
+    repeataddtime:0.125
+    scale:[0.1,0.1,0.1]
+    animateScale:[30,30,30,1]
+    track:cloudsBottom
+    color:[1,1,1,2]
+    localrotation:[Random(-360,360),Random(-360,360),Random(-360,360)]
+
+90:animatetrack
+    track:cloudsTop
+    animateDissolve:[0,0]
+    duration:1
+
+90:animatetrack
+    track:cloudsBottom
+    animateDissolve:[0,0]
+    duration:1
+
+102:AnimateTrack
+    track:cloudsBottom
+    animateDissolve:[0,0],[1,1]
+    duration:1
+
+102:AnimateTrack
+    track:cloudsTop
+    animateDissolve:[0,0],[1,1]
+    duration:1
+
+### cloud beat animation
+
+103:AnimateTrack
+    track:cloudsBottom
+    animatePosition:[0,0,0,0],[0,4,0,0.25,"easeInOutCubic"],[0,0,0,1,"easeInOutQuad"]
+    duration:0.75
+    repeat:15
+    repeatAddtime:2
+
+103:AnimateTrack
+    track:cloudsTop
+    animatePosition:[0,0,0,0],[0,-4,0,0.25,"easeInOutCubic"],[0,0,0,1,"easeInOutQuad"]
+    duration:0.75
+    repeat:15
+    repeatAddtime:2
+
+#### start side walls random ###
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(12,14),-10,Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallLeft
+    color:[Random(0.2,0.7),0,Random(0.3,0.9)]
+    localrotation:[0,0,Random(-20,20)]
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(-12,-14),-10,Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallRight
+    color:[Random(0.2,0.7),0,Random(0.3,0.9)]
+    localrotation:[0,0,Random(-20,20)]
+
+
 Workspace:iswimfly
 
 var:sides
@@ -2586,19 +2726,19 @@ data:32
 
 # -- loooong
 
-118:Wall
-duration:14
-repeat:32
-NJS:12
-scale:[2,0.1]
-animateScale:[10,10,10,0]
-position:[5,10]
-animatePosition:[0,0,-20,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
-color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
-animateLocalRotation:[0,0,30,0]
-animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
+#118:Wall
+#duration:14
+#repeat:32
+#NJS:12
+#scale:[2,0.1]
+#animateScale:[10,10,10,0]
+#position:[5,10]
+#animatePosition:[0,0,-20,0],[0,0,60,1]
+#rotation:[0,0,{repeat*(360/TOTAL)}]
+#animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+#color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
+#animateLocalRotation:[0,0,30,0]
+#animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
 
 # Post-Drop
 
