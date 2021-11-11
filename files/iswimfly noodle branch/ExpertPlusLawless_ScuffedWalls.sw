@@ -3035,35 +3035,5 @@ data:yPos+Sin(radians)*radius-height/2
 
 #I'm fucking mentally insane
 
-var:Pyramid
-data:8
-
-var:Height
-data:2
-
-var:CenterX
-data:0
-
-var:CenterY
-data:0
-
-var:CenterZ
-data:0
-
-263:Wall
-    repeat:{Pyramid}
-    duration:10
-    scale:[0.01,0.01,0.01]
-    animatescale:[{5*(Pyramid-repeat)},{2.5*Height},{5*(Pyramid-repeat)},0]
-    color:[0,0,0,0.05]
-    animatedefiniteposition:[CenterX,{CenterY+(Height/4*repeat)},CenterZ,0]
-
-263:Wall
-    repeat:{Pyramid}
-    duration:10
-    scale:[0.01,0.01,0.01]
-    animatescale:[{5*(Pyramid-repeat)},{2.5*Height},{5*(Pyramid-repeat)},0]
-    color:[0,0,0,0.05]
-    animatedefiniteposition:[CenterX,{CenterY+(Height/4*repeat)},CenterZ,0]
 
 #502 Stuff Here
