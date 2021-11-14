@@ -78,19 +78,18 @@ Workspace:iswimflywobble
 
 var:TOTAL
 data:32
-
 # -- loooong
 
 118:Wall
 duration:14
-repeat:16
+repeat:18
 NJS:12
 scale:[4,0.1]
-animateScale:[10,10,10,0]
+animateScale:[2,5,8,0]
 position:[5,10]
-animatePosition:[0,0,-20,0],[0,0,60,1]
+animatePosition:[0,0,-10,0],[0,0,60,1]
 rotation:[0,0,{repeat*(360/16)}]
-animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,1]
 color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
 animateLocalRotation:[0,0,30,0]
 animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
@@ -98,45 +97,44 @@ animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
 # Post-Drop
 
 132.6:Wall
-duration:8
-repeat:32
+duration:{8-(repeat*24)}
+repeat:24
+repeatAddTime:0.02
 #NJS:12
 scale:[0.1,2]
-animateScale:[10,10,10,0]
+animateScale:[10,1,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
+rotation:[0,0,{repeat*(360/20)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 animatecolor:[0.1,0,0,-10,0],[0.3,0,0,-10,1]
 animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
 animatedissolve:[0,0],[0,0.125],[1,0.25],[1,0.85],[0,1]
 
 140.6:Wall
-duration:8
+duration:{8-(repeat*32)}
 repeat:32
-NJS:30
-scale:[0.1,2]
-animateScale:[10,10,10,0]
+repeatAddTime:0.02
+#NJS:30
+scale:[0.1,1]
+animateScale:[10,1,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
+rotation:[0,0,{repeat*(360/24)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 animatecolor:[0.2,0,0,-10,0],[0.5,0,0,-10,1]
 animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
 animatedissolve:[0,0],[0,0.1],[1,0.15],[1,0.85],[0,1]
 
-var:OtherTotal
-data:40
-
 147.6:Wall
 duration:16
-repeat:40
+repeat:32
 #NJS:12
 scale:[0.1,2]
 animateScale:[10,10,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/OtherTotal)}]
+rotation:[0,0,{repeat*(360/24)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 color:[1,0,Random(0,0.25),-100]
 animateLocalRotation:[0,-20,90,0]
@@ -2722,7 +2720,7 @@ workspace:ProtoOutroTest
    njsOffset: 3
    fake: true
    interactable: false
-   color: [1,1,1,-1000]
+   color: [1,1,1,100]
    track:intPart
    animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
 537: Wall
@@ -2735,7 +2733,7 @@ workspace:ProtoOutroTest
    njsOffset: 3
    fake: true
    interactable: false
-   color: [1,1,1,-1000]
+   color: [1,1,1,100]
    track:intPart
    animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
 #intro Pt. 1--------------------------
@@ -2821,7 +2819,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,5,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2834,7 +2832,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,10,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -2847,7 +2845,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,15,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2860,7 +2858,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,20,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -2873,7 +2871,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,25,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2886,7 +2884,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,30,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -2903,7 +2901,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,35,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2916,7 +2914,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,40,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -2929,7 +2927,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,45,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2942,7 +2940,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,50,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -2955,7 +2953,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,55,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5],[0,0,90,0.625],[0,0,180,0.75],[0,0,270,0.875],[0,0,360,1]
@@ -2968,7 +2966,7 @@ data:yPos+Sin(radians)*radius-height/2
     interactable: false
     duration:30
     scale:[1,1,0.01]
-    animatescale:[0.5,0.5,40,0]
+    animatescale:[0.5,0.5,200,0]
     animatedefiniteposition:[0,0,60,0]
     animatecolor:[1,0.5,1,-5,0],[0,0.6,1,-8,0.1],[1,0.5,1,-5,0.2],[0,0.6,1,-8,0.3],[1,0.5,1,-5,0.4],[0,0.6,1,-8,0.5],[1,0.5,1,-5,0.6],[0,0.6,1,-8,0.7],[1,0.5,1,-5,0.8],[0,0.6,1,-8,0.9],[1,1,1,-5,1]
     animaterotation:[0,0,360,0],[0,0,270,0.125],[0,0,180,0.25],[0,0,90,0.375],[0,0,0,0.5],[0,0,270,0.625],[0,0,180,0.75],[0,0,90,0.875],[0,0,0,1]
@@ -3037,3 +3035,123 @@ data:yPos+Sin(radians)*radius-height/2
 
 
 #502 Stuff Here
+
+Workspace:End
+
+# Length of Each Wall
+var:LWH
+data:15
+
+# How THICC you want the walls
+var:THICK
+data:2
+
+# Center of the Cube on the X Axis
+var:CenterX
+data:2
+# Center of the Cube on the Y Axis
+var:CenterY
+data:0
+
+# Center of the Cube on the Z Axis
+var:CenterZ
+data:0
+
+# Right Square Set One
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    repeat:2
+    scale:[THICK,{if(repeat = 1, LWH, LWH-THICK)},THICK]
+    localrotation:[{90*(repeat-1)},0,0]
+    animatedefiniteposition:[{CenterX-(LWH/2)+THICK/2},{CenterY/2-(LWH/2)},{CenterZ/2+(LWH/2)-(THICK*2)},0]
+# {if(repeat = 1, CenterZ/2+(LWH/2)-1, CenterZ/2+(LWH/2)-2)}
+# Right Square Set Two
+
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    repeat:2
+    scale:[THICK,{if(repeat = 1, LWH, LWH-THICK)},THICK]
+    localrotation:[{90*(repeat+1)},0,0]
+    animatedefiniteposition:[{CenterX-(LWH/2)+THICK/2},{CenterY/2+(LWH/2)},{CenterZ/2-(LWH/2)},0]
+
+# Left Square Set One
+
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    repeat:2
+    scale:[THICK,{if(repeat = 1, LWH, LWH-THICK)},THICK]
+    localrotation:[{90*(repeat-1)},0,0]
+    animatedefiniteposition:[{CenterX+(LWH/2)-THICK/2},{CenterY/2-(LWH/2)},{CenterZ/2+(LWH/2)-(THICK*2)},0]
+
+# Left Square Set Two
+
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    repeat:2
+    scale:[THICK,{if(repeat = 1, LWH, LWH-THICK)},THICK]
+    localrotation:[{90*(repeat+1)},0,0]
+    animatedefiniteposition:[{CenterX+(LWH/2)-THICK/2},{CenterY/2+(LWH/2)},{CenterZ/2-(LWH/2)},0]
+
+# Connecting Edges
+
+#Back Bottom
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    scale:[THICK,LWH,THICK]
+    localrotation:[180,0,270]
+    animatedefiniteposition:[{CenterX-(LWH/2)},{CenterY/2-(LWH/2)+THICK/2},{CenterZ/2+(LWH/2)-THICK},0]
+
+#Back Top
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    scale:[THICK,LWH,THICK]
+    localrotation:[180,0,270]
+    animatedefiniteposition:[{CenterX-(LWH/2)},{CenterY/2+(LWH/2)-THICK/2},{CenterZ/2+(LWH/2)-THICK},0]
+
+#Front Bottom
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    scale:[THICK,LWH,THICK]
+    localrotation:[180,0,270]
+    animatedefiniteposition:[{CenterX-(LWH/2)},{CenterY/2-(LWH/2)+THICK/2},{CenterZ/2-(LWH/2)},0]
+
+#Front Top   
+535:Wall
+    track:Boxhead
+    animatedissolve:[0,0],[1,0.05],[1,0.95],[0,1]
+    duration:30
+    scale:[THICK,LWH,THICK]
+    localrotation:[180,0,270]
+    animatedefiniteposition:[{CenterX-(LWH/2)},{CenterY/2+(LWH/2)-THICK/2},{CenterZ/2-(LWH/2)},0]
+
+0:ParentTrack
+    ParentTrack:CubeParent
+    ChildTracks:["Boxhead"]
+
+534:AnimateTrack
+    track:Boxhead
+    duration:31
+    animaterotation:[0,45,0,0],[90,45,0,0.25],[180,45,0,0.5],[270,45,0,0.75],[360,45,0,1]
+    animatecolor:[1,1,1,1,0],[200,0,0,-10,0.066],[1,1,1,1,0.133],[200,1,0,-10,0.2],[1,1,1,1,0.266],[100,100,0,-10,0.333],[1,1,1,1,0.4],[0,200,0,-10,0.466],[1,1,1,0.533],[0,100,50,-10,0.6],[1,1,1,0.666],[0,0,200,-10,0.733],[1,1,1,1,0.8],[100,0,100,-10,0.866],[1,1,1,1,0.933]
+
+534:AnimateTrack
+    track:CubeParent
+    duration:31
+    animateposition:[0,10,30,0]
+
+#Normal Track for Rotation/Scale
+#Parent Track for Position
