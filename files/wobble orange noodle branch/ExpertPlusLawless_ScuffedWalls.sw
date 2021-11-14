@@ -76,21 +76,19 @@ Workspace:EnvRemoval
 
 Workspace:iswimflywobble
 
-var:TOTAL
-data:32
 
 # -- loooong
 
 118:Wall
 duration:14
-repeat:16
+repeat:18
 NJS:12
 scale:[4,0.1]
-animateScale:[10,10,10,0]
+animateScale:[2,5,8,0]
 position:[5,10]
-animatePosition:[0,0,-20,0],[0,0,60,1]
+animatePosition:[0,0,-10,0],[0,0,60,1]
 rotation:[0,0,{repeat*(360/16)}]
-animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,1]
 color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
 animateLocalRotation:[0,0,30,0]
 animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
@@ -98,45 +96,45 @@ animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
 # Post-Drop
 
 132.6:Wall
-duration:8
-repeat:32
+duration:{8-(repeat*24)}
+repeat:24
+repeatAddTime:0.02
 #NJS:12
 scale:[0.1,2]
-animateScale:[10,10,10,0]
+animateScale:[10,1,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
+rotation:[0,0,{repeat*(360/20)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 animatecolor:[0.1,0,0,-10,0],[0.3,0,0,-10,1]
 animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
 animatedissolve:[0,0],[0,0.125],[1,0.25],[1,0.85],[0,1]
 
 140.6:Wall
-duration:8
+duration:{8-(repeat*32)}
 repeat:32
-NJS:30
-scale:[0.1,2]
-animateScale:[10,10,10,0]
+repeatAddTime:0.02
+#NJS:30
+scale:[0.1,1]
+animateScale:[10,1,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
+rotation:[0,0,{repeat*(360/24)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 animatecolor:[0.2,0,0,-10,0],[0.5,0,0,-10,1]
 animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
 animatedissolve:[0,0],[0,0.1],[1,0.15],[1,0.85],[0,1]
 
-var:OtherTotal
-data:40
 
 147.6:Wall
 duration:16
-repeat:40
+repeat:32
 #NJS:12
 scale:[0.1,2]
 animateScale:[10,10,10,0]
 position:[{0+repeat/3},10]
 animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/OtherTotal)}]
+rotation:[0,0,{repeat*(360/24)}]
 animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
 color:[1,0,Random(0,0.25),-100]
 animateLocalRotation:[0,-20,90,0]
@@ -147,6 +145,25 @@ Workspace:Balloon
 
 0:import
     path:HardLawless.dat
+
+
+
+var:space
+    data:1
+
+233.6:ModelToWall
+    path:figure.dae
+    duration:10
+    interactable:false
+    normal:false
+    alpha:0.2
+    repeat:10
+    repeataddtime:0.1
+    animatePosition:[4,0,{repeat*space},0]
+    animateDefinitePosition:[0,0,0,0],[{repeat*space},0,0,1]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+
+
 
 #arrow assign path animation
 
@@ -1188,7 +1205,7 @@ var:pink
     animatescale:[100,20,700,0]
     animaterotation:[0,0,0,0]
     animateLocalRotation:[0,0,0,0],[45,0,45,1]
-    repeat:9
+    repeat:8
     repeataddtime:1
     Color:[0.58823529411,0.16078431372,0.94117647058,1]
 
@@ -1203,7 +1220,7 @@ var:pink
     animatescale:[100,20,700,0]
     animaterotation:[0,0,90,0]
     animateLocalRotation:[0,0,0,0],[45,0,45,1]
-    repeat:9
+    repeat:8
     repeataddtime:1
     Color:[0.58823529411,0.16078431372,0.94117647058,1]
 
@@ -1218,7 +1235,7 @@ var:pink
     animatescale:[100,20,700,0]
     animaterotation:[0,0,180,0]
     animateLocalRotation:[0,0,0,0],[45,0,45,1]
-    repeat:9
+    repeat:8
     repeataddtime:1
     Color:[0.58823529411,0.16078431372,0.94117647058,1]
 
@@ -1233,7 +1250,7 @@ var:pink
     animatescale:[100,20,700,0]
     animaterotation:[0,0,270,0]
     animateLocalRotation:[0,0,0,0],[45,0,45,1]
-    repeat:9
+    repeat:8
     repeataddtime:1
     Color:[0.58823529411,0.16078431372,0.94117647058,1]
 
@@ -1299,6 +1316,212 @@ var:pink
 #reddekwallanimationpartend
 
 #reddek wall background end
+
+
+var:ALR
+data:[30,0,45,0.25],[30,0,210,0.5]
+
+var:CLR
+data:[0.38823529411,0,0.94117647058,1]
+
+var:DSLV
+data:[0,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.8,0.45]
+
+var:APOS
+data:[0,0,30,0],[0,0,-10,1]
+
+#-reddek pt 2
+447:wall
+    njs:45
+	duration:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,0,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+449:wall
+    njs:45
+    interactable:false
+    disablespawneffect:true
+    #track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,90,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+451:wall
+    njs:45
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,180,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+#-end pt2
+
+#-pt 3
+463:wall
+repeat:2
+repeatAddTime:3
+    njs:45
+	duration:1
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,90,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+464:wall
+repeat:2
+repeatAddTime:1
+    njs:45
+    interactable:false
+    disablespawneffect:true
+    #track:VROOM4
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,0,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+464.5:wall
+repeat:2
+repeatAddTime:1
+    njs:45
+    interactable:false
+    disablespawneffect:true
+    scale:[0.2,0.025,0.8]
+    position:[20,20,20]
+    animatescale:[100,20,700,0]
+    animaterotation:[0,0,180,0]
+    animateLocalRotation:ALR
+    Color:CLR
+	animateDissolve:DSLV
+	animatePosition:APOS
+
+#-end pt3
+
+#notes spinnin around
+
+467.6:Note
+    njs:45
+    position:[0,10,0]
+    repeat:9
+    repeataddtime:0.2
+    color:[Random(0.2,0.5),Random(0.1,0),Random(0.1,0.5)]
+    animatescale:[8,8,8,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    #track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+	animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
+	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+473:Note
+    njs:45
+    position:[0,10,0]
+    repeat:9
+    repeataddtime:0.2
+    color:[0,0.7,0]
+    animatescale:[8,8,8,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    #track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+	animateRotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5]
+	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+473:Note
+    njs:45
+    position:[0,10,0]
+    repeat:9
+    repeataddtime:0.2
+    color:[0,0,0.7]
+    animatescale:[8,8,8,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    #track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+	animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
+	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+475:Note
+    njs:45
+    position:[0,10,0]
+    repeat:9
+    repeataddtime:0.2
+    color:[0.5,0.7,0]
+    animatescale:[8,8,8,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    #track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+	animateRotation:[0,0,0,0],[0,0,90,0.125],[0,0,180,0.25],[0,0,270,0.375],[0,0,360,0.5]
+	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+477:Note
+    njs:45
+    position:[0,10,0]
+    repeat:9
+    repeataddtime:0.2
+    color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0.5)]
+    animatescale:[8,8,8,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    #track:sideNotesTop
+    njsOffset:1
+    localrotation:[0,0,180]
+	animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
+	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+
+
+
+
+
+
 
 Workspace:iswimfly
 
@@ -1724,7 +1947,12 @@ Workspace:ProtoPhonix
 #noteBabies! Events--------------------------
 
 
+
+
+
 Workspace:NoPeepo
+
+
 #wrong way, no peepo separate for different alpha
 1:ModeltoWall
 path:wrongway.dae
@@ -1749,7 +1977,10 @@ animateposition:[-2,0,2,0]
 animaterotation:[0,180,0,0]
 
 
+
 Workspace:wobble
+
+
 
 # -- water
 
@@ -2613,12 +2844,10 @@ animateDissolve:[0.8,0],[0,1]
 
 
 
-
-
 # -- grow spin walls
 
 var:longwall
-data:[0.8,0,0.3,-100]
+data:[0.58823529411,0.16078431372,0.94117647058,1]
 
 # - CW
 448:Wall
@@ -2919,3 +3148,316 @@ workspace:ProtoOutroTest
    color: [1,0,1,-1000]
    #track:intPart
    animaterotation: [0,0,0,0],[0,0,Random(-179,179),1]
+
+
+
+
+# -- ----======-------=====  beat timer ----======-------=====  ----======-------=====
+
+0:ModeltoWall
+path:0.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+
+1:ModeltoWall
+path:1.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+2:ModeltoWall
+path:2.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+
+3:ModeltoWall
+path:3.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+
+4:ModeltoWall
+path:4.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+5:ModeltoWall
+path:5.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+6:ModeltoWall
+path:6.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+7:ModeltoWall
+path:7.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+8:ModeltoWall
+path:8.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+9:ModeltoWall
+path:9.dae
+definitedurationbeats:1
+repeat:50
+repeataddtime:10
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[4,0,7,0]
+animatedissolve:[0,0],[1,0.1]
+animaterotation:[0,20,0,0]
+
+
+#---- tens repeat --
+
+
+10:ModeltoWall
+path:1.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+20:ModeltoWall
+path:2.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+
+30:ModeltoWall
+path:3.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+
+40:ModeltoWall
+path:4.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+50:ModeltoWall
+path:5.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+60:ModeltoWall
+path:6.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+70:ModeltoWall
+path:7.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+80:ModeltoWall
+path:8.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+90:ModeltoWall
+path:9.dae
+definitedurationbeats:10
+repeat:6
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+
+100:ModeltoWall
+path:0.dae
+definitedurationbeats:10
+repeat:5
+repeataddtime:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[3.3,0,7,0]
+animatedissolve:[0,0],[1,0.05]
+animaterotation:[0,20,0,0]
+
+
+
+#---- hundreds --
+
+
+100:ModeltoWall
+path:1.dae
+definitedurationbeats:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[2.6,0,7,0]
+animatedissolve:[0,0],[1,0.01]
+animaterotation:[0,20,0,0]
+
+200:ModeltoWall
+path:2.dae
+definitedurationbeats:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[2.6,0,7,0]
+animatedissolve:[0,0],[1,0.01]
+animaterotation:[0,20,0,0]
+
+
+300:ModeltoWall
+path:3.dae
+definitedurationbeats:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[2.6,0,7,0]
+animatedissolve:[0,0],[1,0.01]
+animaterotation:[0,20,0,0]
+
+
+400:ModeltoWall
+path:4.dae
+definitedurationbeats:100
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[2.6,0,7,0]
+animatedissolve:[0,0],[1,0.01]
+animaterotation:[0,20,0,0]
+
+500:ModeltoWall
+path:5.dae
+definitedurationbeats:95
+normal:false
+thicc:12
+alpha:0.2
+animateposition:[2.6,0,7,0]
+animatedissolve:[0,0],[1,0.01]
+animaterotation:[0,20,0,0]
+
