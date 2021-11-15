@@ -1429,9 +1429,9 @@ repeatAddTime:1
 467.6:Note
     njs:45
     position:[0,10,0]
-    repeat:9
-    repeataddtime:0.2
-    color:[Random(0.2,0.5),Random(0.1,0),Random(0.1,0.5)]
+    repeat:18
+    repeataddtime:0.1
+    color:[Random(0.4,0.8),Random(0.2,0.4),Random(0.4,0.8)]
     animatescale:[8,8,8,1]
     interactable:false
     fake:true
@@ -1441,14 +1441,15 @@ repeatAddTime:1
     #track:sideNotesTop
     njsOffset:1
     localrotation:[0,0,180]
-	animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
+	#animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
+	animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,360,0.375],[0,0,480,0.5]
 	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
 
 473:Note
     njs:45
     position:[0,10,0]
     repeat:9
-    repeataddtime:0.2
+    repeataddtime:0.1
     color:[0,0.7,0]
     animatescale:[8,8,8,1]
     interactable:false
@@ -1466,9 +1467,9 @@ repeatAddTime:1
     njs:45
     position:[0,10,0]
     repeat:9
-    repeataddtime:0.2
+    repeataddtime:0.1
     color:[0,0,0.7]
-    animatescale:[8,8,8,1]
+    animatescale:[8,8,20,1]
     interactable:false
     fake:true
     disablenotegravity:true
@@ -1482,11 +1483,11 @@ repeatAddTime:1
 
 475:Note
     njs:45
-    position:[0,10,0]
+    position:[0,-10,0]
     repeat:9
-    repeataddtime:0.2
+    repeataddtime:0.1
     color:[0.5,0.7,0]
-    animatescale:[8,8,8,1]
+    animatescale:[8,8,20,1]
     interactable:false
     fake:true
     disablenotegravity:true
@@ -1500,11 +1501,11 @@ repeatAddTime:1
 
 477:Note
     njs:45
-    position:[0,10,0]
+    position:[0,-10,0]
     repeat:9
-    repeataddtime:0.2
+    repeataddtime:0.1
     color:[Random(0.7,0.5),Random(0.1,0),Random(0.1,0.5)]
-    animatescale:[8,8,8,1]
+    animatescale:[8,8,20,1]
     interactable:false
     fake:true
     disablenotegravity:true
@@ -1515,6 +1516,40 @@ repeatAddTime:1
     localrotation:[0,0,180]
 	animateRotation:[0,0,0,0],[0,0,-90,0.125],[0,0,-180,0.25],[0,0,-270,0.375],[0,0,-360,0.5]
 	animateDissolve:[1,0],[0.2,0.05],[0.8,0.1],[0.2,0.15],[1,0.2],[0.2,0.25],[0.8,0.3],[0.2,0.35],[1,0.4],[0.2,0.45]
+
+
+# -- woah
+481:Note
+    njs:13
+	njsOffset:2
+    position:[0,0,0]
+    color:[0.7,0.3,0.9]
+    animatescale:[4,4,4,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    animateLocalRotation:[0,0,0,0],[0,0,90,0.04],[0,0,180,0.08],[0,0,270,0.12],[0,0,360,0.16],[0,0,450,0.2],[0,0,540,0.24],[0,0,630,0.28],[0,0,720,0.32],[0,0,720,0.36],[0,0,720,0.4],[0,0,720,0.44],[0,0,720,0.48]
+	#animateRotation:[10,0,0,0],[-10,0,0,0.5]
+	animateDissolve:[0,0.04],[1,0.05],[1,0.45],[0,0.5]
+	animateDefinitePosition:[-6,-8,50,0,"easeOutQuint"],[4,6,-5,0.5,"easeOutQuint"]
+
+497:Note
+    njs:13
+	njsOffset:2
+    position:[0,0,0]
+    color:[0.3,0.7,0.9]
+    animatescale:[4,4,4,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    animateLocalRotation:[0,0,0,0],[0,0,90,0.04],[0,0,180,0.08],[0,0,270,0.12],[0,0,360,0.16],[0,0,450,0.2],[0,0,540,0.24],[0,0,630,0.28],[0,0,720,0.32],[0,0,720,0.36],[0,0,720,0.4],[0,0,720,0.44],[0,0,720,0.48]
+	#animateRotation:[10,0,0,0],[-10,0,0,0.5]
+	animateDissolve:[0,0.04],[1,0.05],[1,0.45],[0,0.5]
+	animateDefinitePosition:[6,-8,50,0,"easeOutQuint"],[-4,6,-5,0.5,"easeOutQuint"]
 
 
 
