@@ -1591,7 +1591,7 @@ repeatAddTime:1
 	animateDissolveArrow:[0,0],[1,0.05]
 
 # -- woah
-482:Note
+481.6:Note
     njs:13
 	njsOffset:2
     position:[0,0,0]
@@ -1753,7 +1753,7 @@ repeatAddTime:1
 	animateDissolveArrow:[0,0],[1,0.05]
 
 # -- woah
-498:Note
+497.6:Note
     njs:13
 	njsOffset:2
     position:[0,0,0]
@@ -3215,7 +3215,6 @@ data:[0.58823529411,0.16078431372,0.94117647058,1]
 448:Wall
 track:looong1
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3228,7 +3227,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong2
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3241,7 +3239,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong3
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3254,7 +3251,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong4
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3269,7 +3265,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong11
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3282,7 +3277,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong22
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3295,7 +3289,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong33
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3308,7 +3301,6 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 448:Wall
 track:looong44
 duration:120
-repeataddtime:0.5
 interactable:false
 fake:true
 scale:[0.6,0.6,70]
@@ -3322,60 +3314,60 @@ animateDissolve:[0,0],[0.6,0.05,"easeStep"]
 
 
 # -- CW animate
-455:animateTrack
+453:animateTrack
 track:looong1
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong2
 duration:4
 animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
 animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong3
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong4
 duration:4
 animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
 animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
 
 
-460:animateTrack
+459:animateTrack
 track:looong1
 duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong2
 duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong3
 duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong4
 duration:4
 animateRotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5]
 
 
-462:animateTrack
+461.5:animateTrack
 track:looong1
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong2
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong3
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong4
 duration:0.5
 animateDissolve:[1,0],[0,1]
@@ -3383,60 +3375,60 @@ animateDissolve:[1,0],[0,1]
 
 
 # -- CCW animate
-455:animateTrack
+453:animateTrack
 track:looong11
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong22
 duration:4
 animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
 animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong33
 duration:4
 animateScale:[1.5,1,1,0],[6,1,1,0.25,"easeStep"],[12,1,1,0.5,"easeStep"],[24,1,1,0.75,"easeStep"],[42,1,1,1,"easeStep"]
 
-455:animateTrack
+453:animateTrack
 track:looong44
 duration:4
 animateScale:[1,1.5,1,0],[1,2,1,0.25,"easeStep"],[1,6,1,0.5,"easeStep"],[1,12,1,0.75,"easeStep"],[1,42,1,1,"easeStep"]
 animatePosition:[0,0,0,0],[0,-0.38,0,0.25,"easeStep"],[0,-1.14,1,0.5,"easeStep"],[0,-2.28,0,0.75,"easeStep"],[0,-8,0,1,"easeStep"]
 
 
-460:animateTrack
+459:animateTrack
 track:looong11
 duration:4
 animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong22
 duration:4
 animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong33
 duration:4
 animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
-460:animateTrack
+459:animateTrack
 track:looong44
 duration:4
 animateRotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5]
 
 
-462:animateTrack
+461.5:animateTrack
 track:looong11
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong22
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong33
 duration:0.5
 animateDissolve:[1,0],[0,1]
-462:animateTrack
+461.5:animateTrack
 track:looong44
 duration:0.5
 animateDissolve:[1,0],[0,1]
