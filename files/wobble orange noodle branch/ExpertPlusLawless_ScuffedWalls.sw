@@ -2787,18 +2787,6 @@ animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
 
 
 # -- spinny blocks
-
-
-#colors to change
-
-var:bleh
-data:[0.2,0.6,0.6,-100]
-
-var:blah
-data:[0.2,0.6,0.6,100]
-
-
-
 71:Wall
 duration:1
 repeat:32
@@ -2807,7 +2795,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,10,0,0],[0,0,90,0.25],[0,-10,180,0.5],[0,0,270,0.75],[0,10,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 73:Wall
 duration:1
@@ -2817,7 +2805,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,10,0,0],[0,0,90,0.25],[0,-10,180,0.5],[0,0,270,0.75],[0,10,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 75:Wall
 duration:1
@@ -2827,8 +2815,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,10,0,0],[0,0,90,0.25],[0,-10,180,0.5],[0,0,270,0.75],[0,10,0,1]
-color:bleh
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 77:Wall
 duration:1
@@ -2838,7 +2825,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:blah
+color:[1,0.2,0.9,Random(-100,100)]
 
 78:Wall
 duration:1
@@ -2848,10 +2835,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5],[0,0,-270,0.75],[0,-360,0,1]
-color:blah
-
-
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 79:Wall
 duration:1
@@ -2861,7 +2845,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 81:Wall
 duration:1
@@ -2871,7 +2855,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 83:Wall
 duration:1
@@ -2881,10 +2865,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:bleh
-
-
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 85:Wall
 duration:1
@@ -2894,7 +2875,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,90,0.25],[0,20,180,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:blah
+color:[1,0.2,0.9,Random(-100,100)]
 
 86:Wall
 duration:1
@@ -2904,9 +2885,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,-90,0.25],[0,20,-180,0.5],[0,-20,-270,0.75],[0,20,-360,1]
-color:blah
-
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 87:Wall
 duration:1
@@ -2916,7 +2895,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,900,0.25],[0,20,1800,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 89:Wall
 duration:1
@@ -2926,7 +2905,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,90,0.25],[0,20,180,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
 
 91:Wall
 duration:1
@@ -2936,9 +2915,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,90,0.25],[0,20,180,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:bleh
-
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 93:Wall
 duration:1
@@ -2948,7 +2925,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,-90,0.25],[0,20,-180,0.5],[0,-20,-270,0.75],[0,20,-360,1]
-color:blah
+color:[1,0.2,0.9,Random(-100,100)]
 
 94:Wall
 duration:1
@@ -2958,9 +2935,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,900,0.25],[0,20,1800,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:blah
-
-
+color:[1,0.2,0.9,Random(-100,100)]
 
 95:Wall
 duration:1
@@ -2970,7 +2945,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:[0.6,0,0,1]
+color:[1,0.2,0.9,Random(-100,100)]
 
 96:Wall
 duration:1
@@ -2980,7 +2955,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,-90,0.25],[0,0,-180,0.5],[0,0,-270,0.75],[0,0,-360,1]
-color:[0,0.6,0,1]
+color:[1,0.2,0.9,Random(-100,100)]
 
 97:Wall
 duration:1
@@ -2990,7 +2965,7 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-color:[0,0,0.6,1]
+color:[1,0.2,0.9,Random(-100,100)]
 
 99:Wall
 duration:1
@@ -3000,18 +2975,65 @@ scale:[1,1,1]
 position:[Random(-10,-5),5]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,20,0,0],[0,-20,900,0.25],[0,20,1800,0.5],[0,-20,270,0.75],[0,20,0,1]
-color:bleh
+color:[1,0.2,0.9,Random(-100,100)]
+
 
 # -- dbldbldblo
 101:Wall
-duration:3
-repeat:72
-repeataddtime:0.02
-scale:[1,1,1]
-position:[Random(-10,-5),5]
-rotation:[0,0,Random(0,359)]
-animaterotation:[0,0,0,0],[0,-40,-900,0.25],[0,40,-1800,0.5],[0,-40,-2700,0.75],[0,0,-3600,1]
-color:[Random(0,1),0,Random(0,1),0.3]
+duration:{2-(repeat*0.1)}
+    position:[6,0,0]
+    animatePosition:[0,0,20,0.375],[10,0,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+	animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+	animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+	animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[-6,0,0]
+    animatePosition:[0,0,20,0.375],[-10,0,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+	animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+	animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+	animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[0,6,0]
+    animatePosition:[0,0,20,0.375],[0,10,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+	animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+	animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+	animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[0,-6,0]
+    animatePosition:[0,0,20,0.375],[0,-10,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+	animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+	animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+	animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
 
 
 
@@ -3026,35 +3048,35 @@ position:[Random(-10,-5),5]
 animatePosition:[0,0,20,0],[0,-10,40,1]
 rotation:[0,0,Random(0,359)]
 animaterotation:[0,0,0,0],[0,0,900,0.25],[0,0,1800,0.5],[0,0,2700,0.75],[0,0,3600,1]
-color:bleh
-
+color:[0.2,0.6,0.6,-100]
 
 109:Wall
 duration:3
 repeat:24
-#repeataddtime:0.02
+repeataddtime:0.02
 NJS:12
 scale:[1,40]
 animateScale:[1,1,1,0.9],[2,2,2,1,"easeStep"]
 position:[1,6]
 animatePosition:[0,0,20,0],[0,10,40,0.75],[0,10,60,1]
-rotation:[0,0,{repeat*(360/24)}]
-animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,360,1]
-color:bleh
+rotation:[0,0,{repeat*(-180/24)}]
+animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,50,360,1]
+color:[0.2,0.6,0.6,-100]
 animateDissolve:[1,0.90],[0,1]
 
 113:Wall
 duration:3
 repeat:24
-#repeataddtime:0.02
+repeataddtime:0.02
 NJS:12
 scale:[1,40]
 position:[1,6]
 animatePosition:[0,0,20,0],[0,10,40,0.75],[0,10,60,1]
-rotation:[0,0,{repeat*(360/24)}]
-animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,10,360,1]
-color:bleh
+rotation:[0,0,{repeat*(180/24)}]
+animaterotation:[0,10,0,0],[0,20,90,0.25],[0,30,180,0.5],[0,40,270,0.75],[0,50,360,1]
+color:[0.2,0.6,0.6,-100]
 animateDissolve:[1,0.7],[0,1]
+
 
 
 workspace: growblocks
