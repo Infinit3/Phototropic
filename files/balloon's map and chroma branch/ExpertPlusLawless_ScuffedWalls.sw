@@ -1638,6 +1638,256 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
+Workspace:Fiddling
+
+265:Note
+    repeat:60
+    repeatAddTime:0.5
+    localrotation:[0,Random(180,-180),0]
+    definiteDurationBeats:3
+    NJS:13
+    NJSOffset:4
+    animatedissolve:[0,0],[0,1]
+    animatedissolveArrow:[0,0],[0.4,0.2],[0.4,0.8],[0,1]
+    color:[2,0,5,0.1]
+    animatescale:[15,15,50,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    position:[0,0]
+    track:noteRandom
+    animatePosition:[Random(-20,-8),Random(-20,20),Random(5,40),0]
+
+265:Note
+    repeat:60
+    repeatAddTime:0.5
+    localrotation:[0,Random(180,-180),0]
+    definiteDurationBeats:3
+    NJS:13
+    NJSOffset:4
+    animatedissolve:[0,0],[0,1]
+    animatedissolveArrow:[0,0],[0.4,0.2],[0.4,0.8],[0,1]
+    color:[2,0,5,0.1]
+    animatescale:[15,15,50,1]
+    interactable:false
+    fake:true
+    disablenotegravity:true
+    disablespawneffect:true
+    DisableNoteLook:true
+    position:[0,0]
+    track:noteRandom
+    animatePosition:[Random(20,8),Random(-20,20),Random(5,40),0]
+
+
+
+
+Workspace:Heaven [real]
+
+100:Wall
+    njs:10
+    NJSOffset:3
+    animateDissolve:[0,0],[1,0.25]
+    interactable:false
+    Position:[Random(20,-20),Random(17.5,19),Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[0.1,0.1,0.1]
+    animateScale:[30,30,30,1]
+    track:cloudsTop
+    color:[1,1,1,2]
+    localrotation:[Random(-360,360),Random(-360,360),Random(-360,360)]
+
+100:Wall
+    njs:10
+    NJSOffset:3
+    interactable:false
+    animateDissolve:[0,0],[1,0.25]
+    Position:[Random(20,-20),Random(-7.5,-9),Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[0.1,0.1,0.1]
+    animateScale:[30,30,30,1]
+    track:cloudsBottom
+    color:[1,1,1,2]
+    localrotation:[Random(-360,360),Random(-360,360),Random(-360,360)]
+
+90:animatetrack
+    track:cloudsTop
+    animateDissolve:[0,0]
+    duration:1
+
+90:animatetrack
+    track:cloudsBottom
+    animateDissolve:[0,0]
+    duration:1
+
+102:AnimateTrack
+    track:cloudsBottom
+    animateDissolve:[0,0],[1,1]
+    duration:1
+
+102:AnimateTrack
+    track:cloudsTop
+    animateDissolve:[0,0],[1,1]
+    duration:1
+
+104:Note
+  position:[Random(-15,15),Random(-5,15),0]
+  njs:5
+  NJSOffset:2
+  repeat:55
+  repeatAddTime:0.22
+  interactable:false
+  animateScale:[1.25,1.25,1.25,0]
+  color:[Random(0.239,0.992),Random(0.106,0.25),Random(0.475,0.737)]
+  animateDissolve:[0.25,0]
+  animateDissolveArrow:[0,0]
+  animateLocalRotation:[180,180,180,0,"easeInOutSine"],[45,76,23,0.25,"easeInOutSine"],[0,0,0,0.6,"easeInOutSine"]
+
+### cloud beat animation
+
+103:AnimateTrack
+    track:cloudsBottom
+    animatePosition:[0,0,0,0],[0,4,0,0.25,"easeInOutCubic"],[0,0,0,1,"easeInOutQuad"]
+    duration:0.75
+    repeat:15
+    repeatAddtime:2
+
+103:AnimateTrack
+    track:cloudsTop
+    animatePosition:[0,0,0,0],[0,-4,0,0.25,"easeInOutCubic"],[0,0,0,1,"easeInOutQuad"]
+    duration:0.75
+    repeat:15
+    repeatAddtime:2
+
+#### start side walls random ###
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(12,14),-10,Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallLeft
+    localrotation:[0,0,Random(-20,20)]
+    color:[0.878,0.078,0.866,-10]
+
+100:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(-12,-14),-10,Random(-1,1)]
+    repeat:132
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallRight
+    localrotation:[0,0,Random(-20,20)]
+    color:[0.878,0.078,0.866,-10]
+
+95:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(12,14),-10,Random(-1,1)]
+    repeat:24
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallLeft
+    localrotation:[0,0,Random(-20,20)]
+    color:[0.878,0.078,0.866,-10]
+
+95:Wall
+    animateDissolve:[0,0],[1,0.2],[1,0.75],[0,1]
+    njs:10
+    NJSOffset:3
+    interactable:false
+    Position:[Random(-12,-14),-10,Random(-1,1)]
+    repeat:24
+    repeataddtime:0.25
+    scale:[2,Random(19,24),2]
+    track:RandoWallRight
+    localrotation:[0,0,Random(-20,20)]
+    color:[0.878,0.078,0.866,-10]
+
+### Side wall dissolve in transition scale thing ###
+
+99:AnimateTrack
+    track:RandoWallRight
+    duration:0.1
+    repeat:9
+    repeatAddTime:0.25
+    animateRotation:[0,0,{(repeat*40)+40},1]
+
+99:AnimateTrack
+    track:RandoWallLeft
+    duration:0.1
+    repeat:9
+    repeatAddTime:0.25
+    animateRotation:[0,0,{(repeat*40)+40},1]
+
+99:AnimateTrack
+    track:RandoWallRight
+    animateDissolve:[0,0],[1,1,"easeInOutQuad"]
+    repeat:9
+    repeatAddTime:0.25
+    duration:0.25
+    
+99:AnimateTrack
+    track:RandoWallLeft
+    animateDissolve:[0,0],[1,1,"easeInOutQuad"]
+    repeat:9
+    repeatAddTime:0.25
+    duration:0.25
+
+101:AnimateTrack
+    track:RandoWallRight
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+    duration:1
+    animateDissolve:[0,0],[1,0.1,"easeInOutQuad"]
+
+101:AnimateTrack
+    track:RandoWallLeft
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+    duration:1
+    animateDissolve:[0,0],[1,0.1,"easeInOutQuad"]
+
+0:AnimateTrack
+    track:RandoWallRight
+    animateDissolve:[0,0]
+    duration:1
+
+0:AnimateTrack
+    track:RandoWallLeft
+    animateDissolve:[0,0]
+    duration:1
+
+
+
+
+### Side wall animation ###
+
+
+103:AnimateTrack
+    duration:0.75
+    repeat:15
+    repeataddtime:2
+    track:RandoWallRight
+    animateColor:[0,0,0,0,0],[0.878,0.078,0.866,-10,0.25,"easeInOutCubic"],[0,0,0,0,1,"easeInOutQuad"]
+    
+103:AnimateTrack
+    duration:0.75
+    repeat:15
+    repeataddtime:2
+    track:RandoWallLeft
+    animateColor:[0,0,0,0,0],[0.878,0.078,0.866,-10,0.25,"easeInOutCubic"],[0,0,0,0,1,"easeInOutQuad"]
+
 Workspace:iswimfly
 
 var:sides
@@ -1833,7 +2083,10 @@ data:yPos+Sin(radians)*radius-height/2
 Workspace:ProtoPhonix
 
 
-
+101: AnimateTrack
+   track:pdParticles
+   duration: 0.8
+   animateDissolve: [1,0],[0,1]
 
 
 #pre-drop particles--------------------------
@@ -1993,6 +2246,63 @@ Workspace:ProtoPhonix
 #noteBabies! Events-------------------------- 
 
 Workspace:WobbleOrange
+
+# -- dbldbldblo
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[6,0,0]
+    animatePosition:[0,0,20,0.375],[10,0,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[-6,0,0]
+    animatePosition:[0,0,20,0.375],[-10,0,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[0,6,0]
+    animatePosition:[0,0,20,0.375],[0,10,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
+
+101:Wall
+duration:{2-(repeat*0.1)}
+    position:[0,-6,0]
+    animatePosition:[0,0,20,0.375],[0,-10,20,0.5]
+    repeat:16
+    repeataddtime:0.1
+    color:[Random(0,1),0,Random(0,1),0.5]
+    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
+    scale:[1.5,1.5,1.5]
+    interactable:false
+    fake:true
+    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
+    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
 
 #wrong way, no peepo separate for different alpha
 1:ModeltoWall
@@ -2586,19 +2896,19 @@ data:32
 
 # -- loooong
 
-118:Wall
-duration:14
-repeat:32
-NJS:12
-scale:[2,0.1]
-animateScale:[10,10,10,0]
-position:[5,10]
-animatePosition:[0,0,-20,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
-color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
-animateLocalRotation:[0,0,30,0]
-animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
+#118:Wall
+#duration:14
+#repeat:32
+#NJS:12
+#scale:[2,0.1]
+#animateScale:[10,10,10,0]
+#position:[5,10]
+#animatePosition:[0,0,-20,0],[0,0,60,1]
+#rotation:[0,0,{repeat*(360/TOTAL)}]
+#animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
+#color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
+#animateLocalRotation:[0,0,30,0]
+#animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
 
 # Post-Drop
 
