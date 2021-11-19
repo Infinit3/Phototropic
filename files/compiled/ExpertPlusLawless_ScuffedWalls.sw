@@ -2355,7 +2355,7 @@ repeatAddTime:1
 # -- drop
 502:Note
     njs:60
-    position:[10,0,0]
+    position:[12,0]
     repeat:6
     repeataddtime:0.1
     color:[1,1,1]
@@ -2373,7 +2373,7 @@ repeatAddTime:1
 
 502:Note
     njs:60
-    position:[-10,0,0]
+    position:[-12,0]
     repeat:6
     repeataddtime:0.1
     color:[1,1,1]
@@ -2391,7 +2391,7 @@ repeatAddTime:1
 
 502:Note
     njs:60
-    position:[0,10,0]
+    position:[0,12]
     repeat:6
     repeataddtime:0.1
     color:[1,1,1]
@@ -2409,7 +2409,7 @@ repeatAddTime:1
 
 502:Note
     njs:60
-    position:[0,-10,0]
+    position:[0,-12]
     repeat:6
     repeataddtime:0.1
     color:[1,1,1]
@@ -2434,7 +2434,7 @@ Workspace:floating Arrows
 506:Note
     repeat:54
     repeatAddTime:0.5
-    localrotation:[0,Random(180,-180),0]
+    #localrotation:[0,Random(0,359),0]
     definiteDurationBeats:3
     NJS:13
     NJSOffset:4
@@ -2447,9 +2447,174 @@ Workspace:floating Arrows
     disablenotegravity:true
     disablespawneffect:true
     DisableNoteLook:true
-    position:[Random(10,14),0]
-	animateRotation:[0,0,Random(0,359),0],[0,0,Random(0,359),1]
+    position:[Random(16,22),0]
+	animatePosition:[0,0,0,0,"easeOutQuad"],[8,0,0,1,"easeOutQuad"]
+	animateRotation:[0,0,Random(0,359),0]
+	animateLocalRotation:[0,0,0,0],[Random(-30,30),Random(-30,30),Random(-30,30),0.5]
 
+
+var:Ymin
+data:0
+
+var:Ymax
+data:30 
+
+505.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[6,Ymin,25,0],[6,Ymax,25,1]
+#animaterotation:[0,0,0,0],[0,0,60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+509.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[-6,Ymin,20,0],[-6,Ymax,20,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+513.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[5,Ymin,35,0],[5,Ymax,35,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+
+517.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[-6,Ymin,25,0],[-6,Ymax,25,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+
+521.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[7,Ymin,20,0],[7,Ymax,20,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+525.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[-4,Ymin,25,0],[-4,Ymax,25,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+
+529.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[6,Ymin,25,0],[6,Ymax,25,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+
+533.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[5,Ymin,15,0],[5,Ymax,15,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
+
+533.4:Note
+NJS:13
+repeat:100
+repeataddtime:0.012
+animateScale:[{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},{1.5*(100-repeat)/100},0]
+position:[0,0]
+animateDefinitePosition:[-5,Ymin,15,0],[-5,Ymax,15,1]
+#animaterotation:[0,0,0,0],[0,0,-60,0.5],[0,0,180,1]
+animateLocalRotation:[0,0,0,0],[90,90,90,0.05],[180,180,180,0.1],[270,270,270,0.15],[360,360,360,0.2],[450,450,450,0.25],[540,540,540,0.3],[630,630,630,0.35],[720,720,720,0.4],[810,810,810,0.45],[900,900,900,0.5],[990,990,990,0.55],[1080,1080,1080,0.6],[1170,1170,1170,0.65],[1260,1260,1260,0.7],[1350,1350,1350,0.75],[1440,1440,1440,0.8],[1530,1530,1530,0.85],[1620,1620,1620,0.9],[1710,1710,1710,0.95],[1710,1710,1710,0.95],[1800,1800,1800,1]
+color:[{(100-repeat*2)/100},{(30-repeat/3.3)/100},{(30-repeat/3.3)/100}]
+animateDissolve:[0,0],[{(100-repeat)/100},0.2]
+animateDissolveArrow:[0,0]
+fake:true
+interactable:false
+disableSpawnEffect:true
+disableNoteLook:true
 
 
 
