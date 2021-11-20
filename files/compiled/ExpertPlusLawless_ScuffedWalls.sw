@@ -3783,48 +3783,49 @@ duration:{2-(repeat*0.1)}
 
 workspace: growblocks
 
-# -- grow blocks
-
 var:growbiiig
-data:[0.6,0.1,0.5,100]
+data:[0.7,0.4,0.9,-1000]
 
 # -- CW
 374:Wall
 track:biiig
 duration:60
-repeat:12
+repeat:10
 repeataddtime:0.2
 interactable:false
 fake:true
-scale:[0.3,0.3,0.3]
+scale:[1,1,1]
+animateScale:[0.33,0.33,0.33,0]
 position:[0,0]
 animateRotation:[0,0,Random(0,359),0]
 animateLocalRotation:[0,0,0,0],[180,90,90,0.5],[90,269,269,1]
-animatedefinitePosition:[Random(5,20),Random(6,8),Random(-6,60),0],[Random(5,20),-0.5,Random(-10,60),0.10]
+animatedefinitePosition:[Random(7,20),Random(6,8),Random(-6,60),0],[Random(7,20),-0.5,Random(-10,60),0.10]
 color:growbiiig
 
 374:Wall
 track:biiig
 duration:60
-repeat:12
+repeat:10
 repeataddtime:0.2
 interactable:false
 fake:true
-scale:[0.3,0.3,0.3]
+scale:[1,1,1]
+animateScale:[0.33,0.33,0.33,0]
 position:[0,0]
 animateRotation:[0,0,Random(0,-359),0]
-animatedefinitePosition:[Random(-5,-20),Random(6,8),Random(-6,60),0],[Random(-5,-20),-0.5,Random(-10,60),0.10]
+animatedefinitePosition:[Random(-7,-20),Random(6,8),Random(-6,60),0],[Random(-7,-20),-0.5,Random(-10,60),0.10]
 color:growbiiig
 
 # -- CCW
 374:Wall
 track:biiig2
 duration:60
-repeat:12
+repeat:10
 repeataddtime:0.2
 interactable:false
 fake:true
-scale:[0.3,0.3,0.3]
+scale:[1,1,1]
+animateScale:[0.33,0.33,0.33,0]
 position:[0,0]
 #Rotation:[0,0,45]
 animateRotation:[0,0,Random(0,359),0]
@@ -3834,11 +3835,12 @@ color:growbiiig
 374:Wall
 track:biiig2
 duration:60
-repeat:12
+repeat:10
 repeataddtime:0.2
 interactable:false
 fake:true
-scale:[0.3,0.3,0.3]
+scale:[1,1,1]
+animateScale:[0.33,0.33,0.33,0]
 position:[0,0]
 #Rotation:[0,Random(-5,60),0]
 animateRotation:[0,0,Random(0,-359),0]
@@ -3847,30 +3849,34 @@ animatedefinitePosition:[Random(-5,-20),Random(6,8),Random(-6,60),0],[Random(-5,
 color:growbiiig
 
 
-
 # -- CW
-391:animateTrack
+389:animateTrack
 track:biiig
-duration:8
+duration:16
 animateScale:[1.5,1.5,1.5,0],[1,1,1,0.25,"easeStep"],[1.5,1.5,1.5,0.5,"easeStep"],[1,1,1,0.75,"easeStep"],[1.5,1.5,1.5,1,"easeStep"]
 
-407:animateTrack
+405:animateTrack
 track:biiig
 duration:8
-animateScale:[1.5,1.5,1.5,0],[2,2,2,0.25,"easeStep"],[3,3,3,0.5,"easeStep"],[2,2,2,0.75,"easeStep"],[4,4,4,1,"easeStep"]
+animateScale:[1.5,1.5,1.5,0],[2,2,2,0.25,"easeStep"],[1.75,1.75,1.75,0.5,"easeStep"],[2.5,2.5,2.5,0.75,"easeStep"],[2,2,2,1,"easeStep"]
 
 413:animateTrack
 track:biiig
 duration:4
-animateScale:[4,4,4,0],[6,6,6,0.25,"easeStep"],[8,8,8,0.5,"easeStep"],[4,4,4,0.75,"easeStep"],[6,6,6,1,"easeStep"]
+animateScale:[2,2,2,0],[3,3,3,0.25,"easeStep"],[4,4,4,0.5,"easeStep"],[6,6,6,0.75,"easeStep"],[4,4,4,1,"easeStep"]
+
+417:animateTrack
+track:biiig
+duration:4
+animatePosition:[Random(0,-3),0,0,0,"easeStep"],[0,Random(0,-3),0,0.125,"easeStep"],[Random(0,-3),0,0,0.25,"easeStep"],[0,Random(0,-3),0,0.375,"easeStep"],[Random(0,-3),0,0,0.5,"easeStep"],[0,Random(0,-3),0,0.625,"easeStep"],[Random(0,-3),0,0,0.75,"easeStep"],[0,Random(0,-3),0,0.875,"easeStep"],[Random(0,-3),0,0,1,"easeStep"]
 
 # -- CCW
-391:animateTrack
+389:animateTrack
 track:biiig2
-duration:8
+duration:16
 animateScale:[1.5,1.5,1.5,0],[1,1,1,0.25,"easeStep"],[1.5,1.5,1.5,0.5,"easeStep"],[1,1,1,0.75,"easeStep"],[1.5,1.5,1.5,1,"easeStep"]
 
-407:animateTrack
+405:animateTrack
 track:biiig2
 duration:8
 animateScale:[1.5,1.5,1.5,0],[2,2,2,0.25,"easeStep"],[3,3,3,0.5,"easeStep"],[2,2,2,0.75,"easeStep"],[4,4,4,1,"easeStep"]
@@ -3880,13 +3886,23 @@ track:biiig2
 duration:4
 animateScale:[4,4,4,0],[6,6,6,0.25,"easeStep"],[8,8,8,0.5,"easeStep"],[4,4,4,0.75,"easeStep"],[6,6,6,1,"easeStep"]
 
+417:animateTrack
+track:biiig2
+duration:4
+animatePosition:[Random(0,3),0,0,0,"easeStep"],[0,Random(0,3),0,0.125,"easeStep"],[Random(0,3),0,0,0.25,"easeStep"],[0,Random(0,3),0,0.375,"easeStep"],[Random(0,3),0,0,0.5,"easeStep"],[0,Random(0,3),0,0.625,"easeStep"],[Random(0,3),0,0,0.75,"easeStep"],[0,Random(0,3),0,0.875,"easeStep"],[Random(0,3),0,0,1,"easeStep"]
 
 # -- CW
-423:animateTrack
+421:animateTrack
 track:biiig
-duration:12
+duration:8
+animateRotation:[0,0,15,0,"easeStep"],[0,0,30,0.125,"easeStep"],[0,0,45,0.25,"easeStep"],[0,0,60,0.375,"easeStep"],[0,0,75,0.5,"easeStep"],[0,0,90,0.625,"easeStep"],[0,0,105,0.75,"easeStep"],[0,0,120,0.875,"easeStep"],[0,0,135,1,"easeStep"]
+animateDissolve:[0.2,0],[1,0.0625],[0.2,0.125],[1,0.1875],[0.2,0.25],[1,0.3125],[0.2,0.375],[1,0.4375],[0.2,0.5],[1,0.5625],[0.2,0.625],[1,0.6875],[0.2,0.75],[1,0.8125],[0.2,0.875],[1,0.9375],[1,1]
+
+429:animateTrack
+track:biiig
+duration:6
 animateRotation:[0,0,30,0],[0,0,60,0.05],[0,0,90,0.1],[0,0,120,0.15],[0,0,150,0.2],[0,0,180,0.25],[0,0,210,0.3],[0,0,240,0.35],[0,0,270,0.4],[0,0,300,0.45],[0,0,330,0.5],[0,0,360,0.55],[0,0,45,0.6],[0,0,90,0.65],[0,0,135,0.7],[0,0,180,0.75],[0,0,225,0.8],[0,0,270,0.85],[0,0,315,0.9],[0,0,360,0.95],[0,0,360,1]
-animateDissolve:[1,0],[0.2,0.0416666666666667],[1,0.0833333333333333],[0.2,0.125],[1,0.166666666666667],[0.2,0.208333333333333],[1,0.25],[0.2,0.291666666666667],[1,0.333333333333333],[0.2,0.375],[1,0.416666666666667],[0.2,0.458333333333333],[1,0.5],[0.2,0.541666666666667],[1,0.583333333333333],[0.2,0.625],[1,0.666666666666667],[0.2,0.708333333333333],[1,0.75],[0.2,0.791666666666667],[0.2,0.791666666666667],[1,0.833333333333333],[0.2,0.875],[1,0.916666666666667],[0.2,0.958333333333333],[1,1]
+
 
 434:animateTrack
 track:biiig
@@ -3894,11 +3910,16 @@ duration:1
 animateDissolve:[0.8,0],[0,1]
 
 # -- CCW
-423:animateTrack
+421:animateTrack
 track:biiig2
-duration:12
+duration:8
+animateRotation:[0,0,-15,0,"easeStep"],[0,0,-30,0.125,"easeStep"],[0,0,-45,0.25,"easeStep"],[0,0,-60,0.375,"easeStep"],[0,0,-75,0.5,"easeStep"],[0,0,-90,0.625,"easeStep"],[0,0,-105,0.75,"easeStep"],[0,0,-120,0.875,"easeStep"],[0,0,-135,1,"easeStep"]
+animateDissolve:[0.2,0],[1,0.0625],[0.2,0.125],[1,0.1875],[0.2,0.25],[1,0.3125],[0.2,0.375],[1,0.4375],[0.2,0.5],[1,0.5625],[0.2,0.625],[1,0.6875],[0.2,0.75],[1,0.8125],[0.2,0.875],[1,0.9375],[1,1]
+
+429:animateTrack
+track:biiig2
+duration:6
 animateRotation:[0,0,-30,0],[0,0,-60,0.05],[0,0,-90,0.1],[0,0,-120,0.15],[0,0,-150,0.2],[0,0,-180,0.25],[0,0,-210,0.3],[0,0,-240,0.35],[0,0,-270,0.4],[0,0,-300,0.45],[0,0,-330,0.5],[0,0,-360,0.55],[0,0,-45,0.6],[0,0,-90,0.65],[0,0,-135,0.7],[0,0,-180,0.75],[0,0,-225,0.8],[0,0,-270,0.85],[0,0,-315,0.9],[0,0,-360,0.95],[0,0,-360,1]
-animateDissolve:[1,0],[0.2,0.0416666666666667],[1,0.0833333333333333],[0.2,0.125],[1,0.166666666666667],[0.2,0.208333333333333],[1,0.25],[0.2,0.291666666666667],[1,0.333333333333333],[0.2,0.375],[1,0.416666666666667],[0.2,0.458333333333333],[1,0.5],[0.2,0.541666666666667],[1,0.583333333333333],[0.2,0.625],[1,0.666666666666667],[0.2,0.708333333333333],[1,0.75],[0.2,0.791666666666667],[0.2,0.791666666666667],[1,0.833333333333333],[0.2,0.875],[1,0.916666666666667],[0.2,0.958333333333333],[1,1]
 
 434:animateTrack
 track:biiig2
