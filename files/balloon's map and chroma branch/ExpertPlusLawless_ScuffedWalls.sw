@@ -1254,9 +1254,12 @@ Workspace:whitewallOut
 var:space
     data:2.5
 
-231.25:ModelToWall
+231:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1264,10 +1267,13 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    
 
-233.25:ModelToWall
+
+
+232:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1275,10 +1281,23 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-234.25:ModelToWall
+233:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
+
+234:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1287,10 +1306,11 @@ var:space
     animateRotation:[0,0,90,0]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-235.25:ModelToWall
+235:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1298,10 +1318,11 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-236.25:ModelToWall
+236:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1310,10 +1331,11 @@ var:space
     animateRotation:[0,0,90,0]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-237.25:ModelToWall
+237:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1321,10 +1343,11 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-238.25:ModelToWall
+238:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1332,6 +1355,7 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
     
 
 Workspace:bombFling2
@@ -1404,6 +1428,7 @@ Workspace:whiteParticles
     track:whiteParticles
     njs:40
     interactable:false
+    
 
 239:wall
     repeat:120
@@ -1467,6 +1492,7 @@ Workspace:whiteParticles
     track:whiteParticles
     animateDissolve:[1,0],[0,1]
     duration:1
+
 Workspace:whiteParticles2
 
 
@@ -1483,7 +1509,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1495,7 +1521,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1507,7 +1533,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1523,16 +1549,12 @@ Workspace:whiteParticles2
     duration:1
     animateDissolve:[0,0]
 
-
-
-
-
 255:AnimateTrack
     track:whiteParticles2
     animateDissolve:[0,0],[1,1]
     duration:2
 
-257:AnimateTrack
+261:AnimateTrack
     track:whiteParticles2
     animateDissolve:[1,0],[0,1]
     duration:0.0001
@@ -1543,9 +1565,12 @@ Workspace:whitewallOut2
 var:space
     data:2.5
 
-248.25:ModelToWall
+248:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1554,9 +1579,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-249.25:ModelToWall
+249:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1565,9 +1593,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-250.25:ModelToWall
+250:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1577,9 +1608,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-251.25:ModelToWall
+251:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1588,9 +1622,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-252.25:ModelToWall
+252:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1600,9 +1637,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-253.25:ModelToWall
+253:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1611,9 +1651,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-254.25:ModelToWall
+254:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1737,7 +1780,7 @@ Workspace:Heaven [real]
   position:[Random(-15,15),Random(-5,15),0]
   njs:5
   NJSOffset:2
-  repeat:55
+  repeat:132
   repeatAddTime:0.22
   interactable:false
   animateScale:[1.25,1.25,1.25,0]
@@ -1887,6 +1930,43 @@ Workspace:Heaven [real]
     repeataddtime:2
     track:RandoWallLeft
     animateColor:[0,0,0,0,0],[0.878,0.078,0.866,-10,0.25,"easeInOutCubic"],[0,0,0,0,1,"easeInOutQuad"]
+
+
+##### heaven note anims #####
+
+0:AssignPathAnimation
+    duration:4
+    track:HeavenPathTop
+    animatePosition:[0,10,0,0],[0,0,0,0.4,"easeOutQuad"]
+    animateDissolve:[0,0],[0.9,0.4]
+    animateDissolveArrow:[0,0],[1,0.2]
+
+0:AssignPathAnimation
+    duration:4
+    track:HeavenPathBottom
+    animatePosition:[0,-5,0,0],[0,0,0,0.4,"easeOutQuad"]
+    animateDissolve:[0,0],[0.9,0.4]
+    animateDissolveArrow:[0,0],[1,0.2]
+
+101.5:AnimateTrack
+    track:HeavenPathTop
+    duration:0.5
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+
+101.5:AnimateTrack
+    track:HeavenPathBottom
+    duration:0.5
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+
+0:AnimateTrack
+    track:HeavenPathBottom
+    duration:0.5
+    animateScale:[0,0,0,0]
+
+0:AnimateTrack
+    track:HeavenPathTop
+    duration:0.5
+    animateScale:[0,0,0,0]
 
 Workspace:iswimfly
 
