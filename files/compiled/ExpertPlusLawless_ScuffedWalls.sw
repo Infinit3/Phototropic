@@ -12,6 +12,11 @@
 
 # Playtest your maps
 
+Workspace:Imports
+
+0:Import
+Path:ExpertPlusStandard.dat
+
 Workspace:EnvRemoval
 
 1:Environment
@@ -2434,8 +2439,8 @@ repeatAddTime:1
 Workspace:floating Arrows
 
 506:Note
-    repeat:54
-    repeatAddTime:0.5
+    repeat:108
+    repeatAddTime:0.25
     #localrotation:[0,Random(0,359),0]
     definiteDurationBeats:3
     NJS:13
