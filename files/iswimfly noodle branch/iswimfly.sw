@@ -10,10 +10,82 @@
 
 # Playtest your maps
 
-Workspace:Imports
+
+Workspace:Import2.0.0
 
 0:Import
 Path:ExpertPlusStandard.dat
+
+
+Workspace:whiteParticles2
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(5,15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-5,-15),Random(-5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(5,10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+250:wall
+    repeat:120
+    repeatAddTime:0.1
+    scale:[0.05,0.05,3]
+    color:[1,1,1,1]
+    position:[Random(-15,15),Random(-5,-10),0]
+    DisableSpawnEffect:true
+    track:whiteParticles2
+    njs:10
+    interactable:false
+    rotation:[90,0,0]
+
+200:AnimateTrack
+    track:whiteParticles2
+    duration:1
+    animateDissolve:[0,0]
+
+255:AnimateTrack
+    track:whiteParticles2
+    animateDissolve:[0,0],[1,1]
+    duration:2
+
+257:AnimateTrack
+    track:whiteParticles2
+    duration:0.25
+    animateRotation:[0,0,0,0],[90,0,0,1]
+
+261.5:AnimateTrack
+    track:whiteParticles2
+    animateDissolve:[1,0],[0,1]
+    duration:0.0001
 
 Workspace:iswimflywobble
 
