@@ -94,11 +94,6 @@ Workspace:Notes
 
 #arrow assign path animation
 
-0:assignPathAnimation
-    track:glitch
-    duration:1.6
-    animatedissolve:[0,0],[0,1]
-    animatedissolveArrow:[0,0.1],[0,0.3],[1,0.31],[1,0.4],[0,0.5]
 
 197.5:AppendToAllNotesBetween
     tobeat:198.7
@@ -1254,9 +1249,12 @@ Workspace:whitewallOut
 var:space
     data:2.5
 
-231.25:ModelToWall
+231:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1264,10 +1262,13 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    
 
-233.25:ModelToWall
+
+
+232:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1275,10 +1276,23 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-234.25:ModelToWall
+233:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    interactable:false
+    normal:false
+    repeat:10
+    repeataddtime:0.1
+    color:[1,1,1,1]
+    animatePosition:[0,0,{repeat*space-1},0]
+    animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
+
+234:ModelToWall
+    path:figure.dae
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1287,10 +1301,11 @@ var:space
     animateRotation:[0,0,90,0]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-235.25:ModelToWall
+235:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1298,10 +1313,11 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-236.25:ModelToWall
+236:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1310,10 +1326,11 @@ var:space
     animateRotation:[0,0,90,0]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-237.25:ModelToWall
+237:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1321,10 +1338,11 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
 
-238.25:ModelToWall
+238:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
     interactable:false
     normal:false
     repeat:10
@@ -1332,6 +1350,7 @@ var:space
     color:[1,1,1,1]
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
+    definitetime:beats
     
 
 Workspace:bombFling2
@@ -1404,6 +1423,7 @@ Workspace:whiteParticles
     track:whiteParticles
     njs:40
     interactable:false
+    
 
 239:wall
     repeat:120
@@ -1467,6 +1487,7 @@ Workspace:whiteParticles
     track:whiteParticles
     animateDissolve:[1,0],[0,1]
     duration:1
+
 Workspace:whiteParticles2
 
 
@@ -1483,7 +1504,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1495,7 +1516,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1507,7 +1528,7 @@ Workspace:whiteParticles2
     rotation:[90,0,0]
 
 250:wall
-    repeat:120
+    repeat:180
     repeatAddTime:0.1
     scale:[0.05,0.05,3]
     color:[1,1,1,1]
@@ -1523,16 +1544,12 @@ Workspace:whiteParticles2
     duration:1
     animateDissolve:[0,0]
 
-
-
-
-
 255:AnimateTrack
     track:whiteParticles2
     animateDissolve:[0,0],[1,1]
     duration:2
 
-257:AnimateTrack
+261:AnimateTrack
     track:whiteParticles2
     animateDissolve:[1,0],[0,1]
     duration:0.0001
@@ -1543,9 +1560,12 @@ Workspace:whitewallOut2
 var:space
     data:2.5
 
-248.25:ModelToWall
+248:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1554,9 +1574,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-249.25:ModelToWall
+249:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1565,9 +1588,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-250.25:ModelToWall
+250:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1577,9 +1603,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-251.25:ModelToWall
+251:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1588,9 +1617,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-252.25:ModelToWall
+252:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1600,9 +1632,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-253.25:ModelToWall
+253:ModelToWall
     path:figure.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1611,9 +1646,12 @@ var:space
     animatePosition:[0,0,{repeat*space-1},0]
     animateDissolve:[0,0],[1,0.5],[1,0.9],[0,1]
 
-254.25:ModelToWall
+254:ModelToWall
     path:squareAnim.dae
-    definitedurationbeats:0.1
+    definitedurationbeats:0.5
+    definitetime:beats
+    NJS:20
+    NJSOffset:-0.4
     interactable:false
     normal:false
     repeat:10
@@ -1737,7 +1775,7 @@ Workspace:Heaven [real]
   position:[Random(-15,15),Random(-5,15),0]
   njs:5
   NJSOffset:2
-  repeat:55
+  repeat:132
   repeatAddTime:0.22
   interactable:false
   animateScale:[1.25,1.25,1.25,0]
@@ -1887,6 +1925,30 @@ Workspace:Heaven [real]
     repeataddtime:2
     track:RandoWallLeft
     animateColor:[0,0,0,0,0],[0.878,0.078,0.866,-10,0.25,"easeInOutCubic"],[0,0,0,0,1,"easeInOutQuad"]
+
+
+##### heaven note anims #####
+
+
+101.5:AnimateTrack
+    track:HeavenPathTop
+    duration:0.5
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+
+101.5:AnimateTrack
+    track:HeavenPathBottom
+    duration:0.5
+    animateScale:[0,0,0,0],[1,1,1,1,"easeOutBack"]
+
+0:AnimateTrack
+    track:HeavenPathBottom
+    duration:0.5
+    animateScale:[0,0,0,0]
+
+0:AnimateTrack
+    track:HeavenPathTop
+    duration:0.5
+    animateScale:[0,0,0,0]
 
 Workspace:iswimfly
 
@@ -2079,881 +2141,3 @@ data:yPos+Sin(radians)*radius-height/2
     track:Bubbly2
     duration:1.5
     animatedissolve:[1,0],[0,1]
-
-Workspace:ProtoPhonix
-
-
-101: AnimateTrack
-   track:pdParticles
-   duration: 0.8
-   animateDissolve: [1,0],[0,1]
-
-
-#pre-drop particles--------------------------
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,20,0,0]
-   rotation: [ 0, Random(-90,90), 0]
-   color: [15,15,15,15]
-   njs: 30
-   fake: true
-   interactable: false
-   track:pdParticles
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,20,0,0]
-   rotation: [0, Random(-90,90) , 0]
-   color: [15,0,15,15]
-   njs: 30
-   fake: true
-   interactable: false
-   track:pdParticles
-
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,-20,0,0]
-   rotation: [ 0, Random(-90,90), 0]
-   color: [15,15,15,15]
-   njs: 30
-   fake: true
-   interactable: false
-   track:pdParticles
-71: Wall
-   duration: -1
-   repeat: 1200
-   repeatAddTime: 0.1
-   scale: [0.2,0.2,150]
-   position: [0,0,0]
-   animateDefinitePosition: [0,-20,0,0]
-   rotation: [0, Random(-90,90) , 0]
-   color: [15,0,15,15]
-   njs: 30
-   fake: true
-   interactable: false
-   track:pdParticles
-#pre-drop particles--------------------------
-
-#pre-drop particles Events--------------------------
-
-0: AssignPathAnimation
-   track:pdParticles
-   duration: 1
-   animateDissolve: [1,0],[1,0.3],[0,1]
-133: AnimateTrack
-   track:pdParticles
-   duration: 1
-   animateDissolve: [1,0],[0,1]
-
-#levelupNote--------------------------
-
-165: note
-   position: [0,0,0]
-   definiteDurationBeats: 100
-   scale: [5,5,5]
-   color: [1,1,1,1]
-   localRotation: [0,0,-7]
-   cutdirection:8
-   fake: true
-   interactable: false
-   track:levelupNote
-   disableNoteLook: true
-   disableNoteGravity: true
-
-#levelupNote--------------------------
-
-#levelupNote Events--------------------------
-
-165:AssignPathAnimation
-   track:levelupNote
-   duration:1
-   animateDefinitePosition: [0,10,60,0.5]
-165:AnimateTrack
-   track:levelupNote
-   duration:1
-   repeat: 24
-   repeatAddTime: 1
-   animateScale: [{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },{ 5 + repeat * 1.2 },0],[{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },{ 5 + repeat * 1.5 },1, "easeOutBack"]
-   animateDissolve: [0,0],[1,0.8]
-   animateDissolveArrow: [0,0],[1,0.8]
-0:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [0,0]
-189:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [1,0],[0,1]
-0:AnimateTrack
-   track:levelupNote
-   duration:1
-   animateDissolve: [0,0]
-   animateDissolveArrow: [0,0]
-164.6: AnimateTrack
-   track:levelupNote
-   duration: 1
-   repeat: 24
-   repeatAddTime: 1
-   animateColor: [1,0,0,1,0],[1,1,1,1,0.8]
-#levelupNote Events--------------------------
-
-#noteBabies!--------------------------
-
-189: note
-   repeat: 100
-   repeatAddTime: 0.1
-   position: [Random(-10,-20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),10,0]
-   fake: true
-   interactable: false
-   disableNoteLook: true
-   track:noteBabies!
-   njs: 150
-   njsOffset: 2
-189: note
-   repeat: 100
-   repeatAddTime: 0.1
-   position: [Random(10,20),0,0]
-   scale: [5,5,5]
-   rotation: [Random(-90,90),-10,0]
-   fake: true
-   interactable: false
-   disableNoteLook: true
-   track:noteBabies!
-   njs: 150
-   njsOffset: 2
-
-#noteBabies!--------------------------
-
-#noteBabies! Events--------------------------
-0: AssignPathAnimation
-   track:noteBabies!
-   duration: 1
-   animateDissolveArrow: [0,0]
-   animateDissolve: [0,0],[1,0.5]
-#noteBabies! Events-------------------------- 
-
-Workspace:WobbleOrange
-
-# -- dbldbldblo
-101:Wall
-duration:{2-(repeat*0.1)}
-    position:[6,0,0]
-    animatePosition:[0,0,20,0.375],[10,0,20,0.5]
-    repeat:16
-    repeataddtime:0.1
-    color:[Random(0,1),0,Random(0,1),0.5]
-    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
-    scale:[1.5,1.5,1.5]
-    interactable:false
-    fake:true
-    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
-    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
-
-101:Wall
-duration:{2-(repeat*0.1)}
-    position:[-6,0,0]
-    animatePosition:[0,0,20,0.375],[-10,0,20,0.5]
-    repeat:16
-    repeataddtime:0.1
-    color:[Random(0,1),0,Random(0,1),0.5]
-    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
-    scale:[1.5,1.5,1.5]
-    interactable:false
-    fake:true
-    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
-    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
-
-101:Wall
-duration:{2-(repeat*0.1)}
-    position:[0,6,0]
-    animatePosition:[0,0,20,0.375],[0,10,20,0.5]
-    repeat:16
-    repeataddtime:0.1
-    color:[Random(0,1),0,Random(0,1),0.5]
-    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
-    scale:[1.5,1.5,1.5]
-    interactable:false
-    fake:true
-    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
-    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
-
-101:Wall
-duration:{2-(repeat*0.1)}
-    position:[0,-6,0]
-    animatePosition:[0,0,20,0.375],[0,-10,20,0.5]
-    repeat:16
-    repeataddtime:0.1
-    color:[Random(0,1),0,Random(0,1),0.5]
-    animateColor:[Random(0,1),0,Random(0,1),1,0.37],[1,1,1,1,0.375,"easeStep"]
-    scale:[1.5,1.5,1.5]
-    interactable:false
-    fake:true
-    animateRotation:[0,0,0,0],[0,0,120,0.125],[0,0,240,0.25],[0,0,90,0.375]
-    animateDissolve:[0,0],[1,0.1],[1,0.45],[0,0.5]
-
-#wrong way, no peepo separate for different alpha
-1:ModeltoWall
-path:wrongway.dae
-duration:590
-interactable:false
-normal:false
-thicc:12
-alpha:0.2
-position:[0,0]
-animateposition:[-2,0,2,0]
-animaterotation:[0,180,0,0]
-
-1:ModeltoWall
-path:nopeepo.dae
-duration:590
-interactable:false
-normal:false
-thicc:12
-alpha:0.1
-position:[0,0]
-animateposition:[-2,0,2,0]
-animaterotation:[0,180,0,0]
-
-
-
-
-
-# -- rain part 1
-
-1:ModeltoWall
-path:somecloud.dae
-duration:67
-interactable:false
-normal:false
-hasanimation:true
-thicc:12
-alpha:0.2
-position:[0,6]
-#animateposition:[0,7,0,0]
-animatedissolve:[0,0],[0.4,0.1],[0.4,0.9],[0,1]
-
-
-2:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:12
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(-2+repeat/2)},5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-4:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:12
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[0,5,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-6:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:10
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(3-repeat/2)},5,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# -- rain part 2
-
-
-
-33:ModeltoWall
-path:fullcloud.dae
-duration:30
-interactable:false
-normal:false
-hasanimation:true
-thicc:12
-alpha:0.2
-position:[0,6]
-#animateposition:[0,7,0,0]
-animatedissolve:[0,0],[0.4,0.15],[0.4,0.9],[0,1]
-
-34:ModeltoWall
-path:umbrella.dae
-duration:27
-interactable:false
-normal:false
-thicc:12
-alpha:0.2
-position:[0,0]
-#animateposition:[-2,0,2,0]
-#animaterotation:[0,0,0,0],[0,179,0,1]
-animatedissolve:[0,0],[1,0.1],[1,0.95],[0,1]
-
-# -- umbrella drops
-
-35:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-110+repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-35:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-130+repeat*10)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-30-repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38:ModeltoWall
-path:umdrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-#thicc:12
-alpha:0.5
-position:[0,0]
-#animateposition:[-2,0,2,0]
-animaterotation:[0,{(-20+repeat*20)},0,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# -- random drops
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-2,5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[0,5,4,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-1,5,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-3,5,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,5,10,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,5,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-39:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,5,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,5,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-
-# --- more small drop
-
-35:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,5,16,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-3.55:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,5,14,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-36:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-3,5,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-36.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[1,5,18,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,5,12,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-37.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:8
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[2,5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-38:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(-3+repeat)},5,7,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-39:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:6
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[3,5,6,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-39.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[-1,5,8,0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-38.5:ModeltoWall
-path:smalldrop.dae
-duration:2
-repeat:7
-repeataddtime:3
-interactable:false
-normal:false
-thicc:12
-alpha:0.5
-position:[0,0]
-animateposition:[{(3-repeat)},5,{(2+repeat)},0]
-animatedissolve:[0,0],[1,0.2],[1,0.9],[0,0.95]
-
-
-
-# --- 
-
-
-
-
-# -- spinning triangles ----------------
-
-307:AnimateTrack
-    track:Bubbly
-    duration:3
-    animatedissolve:[0,0],[1,1]
-
-309:modelToWall
-    track:Bubbly
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:335
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(-10,-5),Random(0,6)]
-    rotation:[0,0,Random(0,359)]
-    color:[0.1,1,1,1]
-
-309:modelToWall
-    track:Bubbly
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:335
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(5,10),Random(0,6)]
-    rotation:[0,0,Random(0,359)]
-    color:[0,1,0,1]
-
-339:AnimateTrack
-    track:Bubbly
-    duration:1.5
-    animatedissolve:[1,0],[0,1]
-
-340:AnimateTrack
-    track:Bubbly2
-    duration:2
-    animatedissolve:[0,0],[1,1]
-
-341:modelToWall
-    track:Bubbly2
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:360
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(-10,-5),0]
-    #rotation:[0,0,Random(0,359)]
-    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-    color:[1,0.5,0.05,1]
-
-341:modelToWall
-    track:Bubbly2
-	path:triangle.dae
-	normal:true
-    duration:1
-    repeat:360
-    repeataddtime:0.1
-    #NJS:30
-    #scale:[1,1,2]
-    position:[Random(10,5),0]
-    #rotation:[0,0,Random(0,359)]
-    animaterotation:[0,0,0,0],[0,0,90,0.25],[0,0,180,0.5],[0,0,270,0.75],[0,0,0,1]
-    color:[1,0.5,0.05,1]
-
-371.5:AnimateTrack
-    track:Bubbly2
-    duration:1.5
-    animatedissolve:[1,0],[0,1]
-
-workspace: growblocks
-
-
-# -- grow blocks random
-
-374:Wall
-track:biiig
-duration:60
-repeat:24
-repeataddtime:0.2
-interactable:false
-fake:true
-scale:[0.4,0.4,0.4]
-position:[-8,0]
-Rotation:[0,Random(-60,5),0]
-animatedefinitePosition:[0,Random(6,8),Random(4,60),0],[0,-0.5,Random(4,60),0.25]
-color:[{0.2+repeat/100},0.1,{0.6-repeat/100},1]
-
-
-374:Wall
-track:biiig
-duration:60
-repeat:24
-repeataddtime:0.2
-interactable:false
-fake:true
-scale:[0.4,0.4,0.4]
-position:[8,0]
-Rotation:[0,Random(-5,60),0]
-animatedefinitePosition:[0,Random(6,8),Random(4,60),0],[0,-0.5,Random(4,60),0.25]
-color:[{0.2+repeat/100},0.1,{0.9-repeat/100},1]
-
-373:animateTrack
-    track:biiig
-    duration:1
-    repeat:18
-    repeataddtime:1
-    animatePosition:[0,0,0,0],[0.25,0,0,0.1],[-0.25,0,0,0.2],[0.25,0,0,0.3],[-0.25,0,0,0.4],[0.25,0,0,0.5],[-0.25,0,0,0.6],[0.25,0,0,0.7],[-0.25,0,0,0.8],[0.25,0,0,0.9],[0,0,0,1]
-
-389:AnimateTrack
-    track:biiig
-    duration:0.25
-    repeataddtime:2
-    repeat:8
-    animatePosition:[-0.5,0,0,0],[-0.5,0,0,0.09],[0.5,0,0,0.1],[0.5,0,0,0.19],[-0.5,0,0,0.2],[-0.5,0,0,0.29],[0.5,0,0,0.3],[0.5,0,0,0.39],[-0.5,0,0,0.4],[-0.5,0,0,0.49],[0.5,0,0,0.5],[0.5,0,0,0.59],[-0.5,0,0,0.6],[-0.5,0,0,0.69],[0.5,0,0,0.7],[0.5,0,0,0.79],[0,0,0,0.8]
-
-405:animateTrack
-    track:biiig
-    duration:1
-    animateScale:[{1+(5*repeat)},{1+(10*repeat)}{1+(5*repeat)}1,0],[{2+(5*repeat)},{2+(10*repeat)},{2+(5*repeat)},1,"easeInOutSine"]
-    repeat:5
-    repeataddtime:2
-
-
-Workspace:iswimflyWobble
-
-var:TOTAL
-data:32
-
-# -- loooong
-
-#118:Wall
-#duration:14
-#repeat:32
-#NJS:12
-#scale:[2,0.1]
-#animateScale:[10,10,10,0]
-#position:[5,10]
-#animatePosition:[0,0,-20,0],[0,0,60,1]
-#rotation:[0,0,{repeat*(360/TOTAL)}]
-#animaterotation:[0,0,1800,0],[0,0,2700,0.5],[0,0,3600,1]
-#color:[{0.1+Random(0,0.8)},0,{0.4+Random(0,0.5)},-10]
-#animateLocalRotation:[0,0,30,0]
-#animatedissolve:[0,0],[1,0.05],[1,0.9],[0,1]
-
-# Post-Drop
-
-132.6:Wall
-duration:8
-repeat:32
-#NJS:12
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-animatecolor:[0.1,0,0,-10,0],[0.3,0,0,-10,1]
-animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
-animatedissolve:[0,0],[0,0.125],[1,0.25],[1,0.85],[0,1]
-
-140.6:Wall
-duration:8
-repeat:32
-NJS:30
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/TOTAL)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-animatecolor:[0.2,0,0,-10,0],[0.5,0,0,-10,1]
-animateLocalRotation:[0,-20,0,0],[0,-20,90,0.25]
-animatedissolve:[0,0],[0,0.1],[1,0.15],[1,0.85],[0,1]
-
-var:OtherTotal
-data:40
-
-147.6:Wall
-duration:16
-repeat:40
-#NJS:12
-scale:[0.1,2]
-animateScale:[10,10,10,0]
-position:[{0+repeat/3},10]
-animatePosition:[0,0,40,0],[0,0,60,1]
-rotation:[0,0,{repeat*(360/OtherTotal)}]
-animaterotation:[0,0,180,0],[0,0,270,0.5],[0,0,360,0.75],[0,0,90,1]
-color:[1,0,Random(0,0.25),-100]
-animateLocalRotation:[0,-20,90,0]
-animatedissolve:[0,0],[0,0.15],[1,0.2]
-
