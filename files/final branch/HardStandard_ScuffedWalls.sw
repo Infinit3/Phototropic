@@ -4523,14 +4523,14 @@ data:2
 
 # Center of the Cube on the X Axis
 var:CenterX
-data:2
+data:0
 # Center of the Cube on the Y Axis
 var:CenterY
-data:10
+data:0
 
 # Center of the Cube on the Z Axis
 var:CenterZ
-data:30
+data:0
 
 # Right Square Set One
 535:Wall
@@ -4633,7 +4633,7 @@ data:30
 533:AnimateTrack
     track:CubeParent
     duration:32
-    animateposition:[0,10,30,0]
+    animateposition:[0,15,60,0]
 
 #Normal Track for Rotation/Scale
 #Parent Track for Position
