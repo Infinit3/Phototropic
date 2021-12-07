@@ -2977,7 +2977,7 @@ data:0
 533:AnimateTrack
     track:CubeParent
     duration:32
-    animateposition:[0,10,30,0]
+    animateposition:[0,15,60,0]
 
 #Normal Track for Rotation/Scale
 #Parent Track for Position
